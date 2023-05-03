@@ -36,11 +36,11 @@ a:hover {
 
 /* MAIN NAVIGATION */
 
-.navbar-brand {
+/* .navbar-brand {
   margin-top: 0.3125rem;
   padding-top: 0;
   padding-bottom: 0;
-}
+} */
 
 .nav-link {
   background-color: var(--schodark);

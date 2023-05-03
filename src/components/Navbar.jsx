@@ -5,9 +5,9 @@ import Logo from "../images/schogo.png";
 export default function Navbar() {
   return (
     <div className="container">
-      <nav className="navbar navbar-expand-lg pt-4 navbar-dark" id="menu">
+      <nav className="navbar navbar-expand-lg pt-4 navbar-dark align-items-start" id="menu">
         <NavLink to="/">
-          <img src={Logo} className="navbar-brand align-self-start" alt="scho.pro" width="60" height="60" />
+          <img src={Logo} className="navbar-brand" alt="scho.pro" width="60" height="60" />
         </NavLink>
         <button
           className="navbar-toggler"
