@@ -8,33 +8,22 @@ export default function About() {
             <h1 className="mb-4">
               <span className="gradient">About Me</span>
             </h1>
+            <p className="intro">Hi there, my name is Siobhan. I'm a UX/UI and digital designer based in London in the UK.</p>
             <p className="intro">
-              Hi there, my name is Siobhan. I'm primarily a UX/UI and digital
-              designer based in London in the UK.
+              I recently graduated with a first in Graphic Design from the University of Hertfordshire, and I've previously achieved a certificate in UX/UI
+              Design from General Assembly. I've worked for many years in graphic and web design and I have experience both working solo and in teams (small and
+              large).
             </p>
             <p className="intro">
-              I'm currently studying Graphic Design at the University of
-              Hertfordshire, and I've previously achieved a certificate in UX/UI
-              Design from General Assembly. I've worked for many years in
-              graphic and web design and I have experience both working solo and
-              in teams (small and large).
-            </p>
-            <p className="intro">
-              I love to create, no matter the format, and I pride myself on
-              crafting design that looks great but is also a joy to use
-              (accessibility is key!) When I'm not designing, I enjoy coding,
-              making gifs, gaming, football, and occasionally video editing.
+              I love to create, no matter the format, and I pride myself on crafting design that looks great but is also a joy to use (accessibility is key!)
+              When I'm not designing, I enjoy coding, making gifs, gaming, football, and occasionally video editing.
             </p>
             <p className="intro">
               For more projects & examples of my work:
               <ul>
                 <li>
                   <strong>
-                    <a
-                      href="scho-portfolio-2023.pdf"
-                      className="gradient"
-                      download
-                    >
+                    <a href="scho-portfolio-2023.pdf" className="gradient" download>
                       download my portfolio
                     </a>
                   </strong>
@@ -52,8 +41,7 @@ export default function About() {
             <p className="intro">
               I'm currently
               <strong>available for freelance opportunities</strong> so please
-              <Link to="/contact"> head to the contact page</Link> to get in
-              touch !
+              <Link to="/contact"> head to the contact page</Link> to get in touch !
             </p>
           </div>
           <div className="col-12 col-lg-5 profile ps-md-5">
@@ -74,9 +62,7 @@ export default function About() {
               <p>
                 BA(Hons) Graphic Design
                 <br />
-                <span className="p-desc">
-                  University of Hertfordshire [2019-2023]
-                </span>
+                <span className="p-desc">University of Hertfordshire [2019-2023]</span>
               </p>
               <p className="mb-0">
                 Certificate in UX/UI Design
