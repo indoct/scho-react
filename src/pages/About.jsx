@@ -40,8 +40,8 @@ export default function About() {
             </p>
             <p className="intro">
               I'm currently
-              <strong> available for freelance opportunities</strong>, so please
-              <Link to="/contact"> head to the contact page</Link> to get in touch !
+              <strong> available for freelance opportunities</strong>, so please &nbsp;
+              <Link to="/contact">head to the contact page</Link> to get in touch !
             </p>
           </div>
           <div className="col-12 col-lg-5 profile ps-md-5">
