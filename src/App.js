@@ -28,7 +28,7 @@ function App() {
           <Route path="/work/growbuddy" element={<GrowBuddy />} />
           <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
           <Route path="/work/juno" element={<Juno />} />
-          <Route path="/*" component={NotFound} />
+          <Route path="*" component={NotFound} />
         </Routes>
         <Footer />
         <BackTopButton />
