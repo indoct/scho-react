@@ -28,12 +28,17 @@ function App() {
           <Route path="/work/growbuddy" element={<GrowBuddy />} />
           <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
           <Route path="/work/juno" element={<Juno />} />
+          <Route path="*" component={NotFound} />
         </Routes>
         <Footer />
         <BackTopButton />
       </BrowserRouter>
     </div>
   );
+}
+
+function NotFound() {
+  return <>You have landed on a page that doesn't exist</>;
 }
 
 export default App;
