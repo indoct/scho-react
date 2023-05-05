@@ -8,14 +8,14 @@ export default function NotFound() {
           <div class="col-12 col-lg-6">
             <h1 class="gradient mb-4 smallerh1">404</h1>
             <p class="pb-3 pb-sm-5">Unfortunately, the page you're trying to access doesn't exist.</p>
-            <p>
+            {/* <p>
               You can let me know on the <Link to="/contact">contact page</Link>, or by sending me an email at:
               <a href="mailto:hello@scho.pro" class="gradient">
                 hello@scho.pro
               </a>
-            </p>
+            </p> */}
             <p>
-              In the meantime, go <Link to="/"> back to the homepage</Link>
+              <Link to="/">Go back to the homepage.</Link>
             </p>
           </div>
         </div>
