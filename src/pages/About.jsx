@@ -8,11 +8,11 @@ export default function About() {
             <h1 className="mb-4">
               <span className="gradient">About Me</span>
             </h1>
-            <p className="intro">Hi there, my name is Siobhan. I'm a UX/UI and digital designer based in London in the UK.</p>
+            <p className="intro">Hi there, my name is Siobhan. I'm a UX/UI and graphic designer - and frontend developer - based in London, UK.</p>
             <p className="intro">
-              I recently graduated with a first in Graphic Design from the University of Hertfordshire, and I've previously achieved a certificate in UX/UI
-              Design from General Assembly. I've worked for many years in graphic and web design and I have experience both working solo and in teams (small and
-              large).
+              I recently graduated with a first in Graphic Design from the University of Hertfordshire, and I previously acquired a certificate in UX/UI Design
+              from General Assembly. I've worked for many years in graphic and web design and I have experience both working solo and in teams both small and
+              large.
             </p>
             <p className="intro">
               I love to create, no matter the format, and I pride myself on crafting design that looks great but is also a joy to use (accessibility is key!)
@@ -40,7 +40,7 @@ export default function About() {
             </p>
             <p className="intro">
               I'm currently
-              <strong>available for freelance opportunities</strong> so please
+              <strong> available for freelance opportunities</strong>, so please
               <Link to="/contact"> head to the contact page</Link> to get in touch !
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function About() {
               <p className="mb-0">
                 Certificate in UX/UI Design
                 <br />
-                <span className="p-desc">General Assembly [2017]</span>
+                <span className="p-desc">General Assembly, 2017</span>
               </p>
             </div>
             <h6>Software:</h6>
