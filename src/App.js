@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -17,7 +17,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,12 +28,10 @@ function App() {
           <Route path="/work/growbuddy" element={<GrowBuddy />} />
           <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
           <Route path="/work/juno" element={<Juno />} />
-          {/* default redirect to home page */}
-          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
         <BackTopButton />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
