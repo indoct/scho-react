@@ -15,7 +15,9 @@ export default function NotFound() {
               </a>
             </p> */}
             <p>
-              <Link to="/">Go back to the homepage.</Link>
+              <Link to="/" className="pb-3">
+                Go back to the homepage.
+              </Link>
             </p>
           </div>
         </div>
