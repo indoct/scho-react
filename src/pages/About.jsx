@@ -27,7 +27,7 @@ export default function About() {
                       download my portfolio
                     </a>
                   </strong>
-                  <span className="small">(PDF, 17mb)</span>
+                  <span className="small"> (PDF, 17mb)</span>
                 </li>
                 <li>
                   <strong>
