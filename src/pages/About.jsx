@@ -60,9 +60,9 @@ export default function About() {
             <h6>Education:</h6>
             <div className="item mb-4">
               <p>
-                BA(Hons) Graphic Design
+                BA(Hons) Graphic Design [<span className="grade">First</span>]
                 <br />
-                <span className="p-desc">University of Hertfordshire [2019-2023]</span>
+                <span className="p-desc">University of Hertfordshire, 2019-2023</span>
               </p>
               <p className="mb-0">
                 Certificate in UX/UI Design
@@ -81,12 +81,13 @@ export default function About() {
             </p>
             <p className="mb-4">
               <h6>Stack:</h6>
-              <span className="item">HTML</span>
-              <span className="item">CSS</span>
-              <span className="item">Vanilla JS</span>
+              <span className="item">HTML5</span>
+              <span className="item">CSS3</span>
+              <span className="item">Javascript</span>
+              <span className="item">Bootstrap</span>
+              <span className="item">Wordpress</span>
               <span className="item">React</span>
             </p>
-            {/* <a href="schoulihan.pdf" class="faux-btn d-block mt-4">Download Full CV</a> */}
           </div>
         </div>
       </section>
