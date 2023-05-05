@@ -7,6 +7,7 @@ import BackTopButton from "./components/BackTopButton";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 import BeyondBitesize from "./pages/work/BeyondBitesize";
 import Scho from "./pages/work/Scho";
 import GrowBuddy from "./pages/work/GrowBuddy";
@@ -28,17 +29,13 @@ function App() {
           <Route path="/work/growbuddy" element={<GrowBuddy />} />
           <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
           <Route path="/work/juno" element={<Juno />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
         <BackTopButton />
       </BrowserRouter>
     </div>
   );
-}
-
-function NotFound() {
-  return <>You have landed on a page that doesn't exist</>;
 }
 
 export default App;

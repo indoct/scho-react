@@ -6,7 +6,7 @@ export default function NotFound() {
       <section class="container">
         <div class="row justify-content-center text-center mt-5">
           <div class="col-12 col-lg-6">
-            <h1 class="gradient mb-4 smallerh1">404 (This page doesn't exist!)</h1>
+            <h1 class="gradient mb-4 smallerh1">404</h1>
             <p class="pb-3 pb-sm-5">Unfortunately, the page you're trying to access doesn't exist.</p>
             <p>
               You can let me know by visiting
