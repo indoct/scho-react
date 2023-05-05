@@ -43,23 +43,31 @@ export default function Navbar() {
                   <div id="collapseTwo" className="proj-nav-collapse collapse" data-bs-parent="#proj-navExample">
                     <div className="proj-nav-body">
                       <ul>
-                        <NavLink className="nav-link g1" to="/work/beyondbitesize">
-                          <li className="sub-link">Beyond Bitesize</li>
-                        </NavLink>
-                        <NavLink className="nav-link g2" to="/work/scho">
-                          <li className="sub-link">Personal Identity (scho.)</li>
-                        </NavLink>
-                        <NavLink className="nav-link g3" to="/work/growbuddy">
-                          <li className="sub-link">Grow Buddy</li>
-                        </NavLink>
+                        <li className="sub-link">
+                          <NavLink className="nav-link g1" to="/work/beyondbitesize">
+                            Beyond Bitesize
+                          </NavLink>
+                        </li>
+                        <li className="sub-link">
+                          <NavLink className="nav-link g2" to="/work/scho">
+                            Personal Identity (scho.)
+                          </NavLink>
+                        </li>
+                        <li className="sub-link">
+                          <NavLink className="nav-link g3" to="/work/growbuddy">
+                            Grow Buddy
+                          </NavLink>
+                        </li>
                         <li className="sub-link">
                           <NavLink className="nav-link g4" to="/work/theodddystrict">
                             The Odd Dystrict
                           </NavLink>
                         </li>
-                        <NavLink className="nav-link g1" to="/work/juno">
-                          <li className="sub-link">Juno Bakeshop</li>
-                        </NavLink>
+                        <li className="sub-link">
+                          <NavLink className="nav-link g1" to="/work/juno">
+                            Juno Bakeshop
+                          </NavLink>
+                        </li>
                       </ul>
                     </div>
                   </div>
