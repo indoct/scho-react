@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -28,6 +28,8 @@ function App() {
           <Route path="/work/growbuddy" element={<GrowBuddy />} />
           <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
           <Route path="/work/juno" element={<Juno />} />
+          {/* default redirect to home page */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
         <BackTopButton />
