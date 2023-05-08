@@ -49,7 +49,7 @@ export default function About() {
               <span className="gradient">Quick Profile</span>
             </h2>
             <h6>Skills:</h6>
-            <p className="mb-4">
+            <p className="mb-4 d-flex">
               <span className="item">User Experience (UX)</span>
               <span className="item">User Interface (UI)</span>
               <span className="item">Branding</span>
@@ -71,7 +71,7 @@ export default function About() {
               </p>
             </div>
             <h6>Software:</h6>
-            <p className="mb-4">
+            <p className="mb-4 d-flex">
               <span className="item">Adobe Illustrator</span>
               <span className="item">Adobe Photoshop</span>
               <span className="item">Adobe XD</span>
@@ -79,7 +79,7 @@ export default function About() {
               <span className="item">Adobe InDesign</span>
               <span className="item">Adobe Premiere Pro</span>
             </p>
-            <p className="mb-4">
+            <p className="mb-4 d-flex">
               <h6>Stack:</h6>
               <span className="item">HTML5</span>
               <span className="item">CSS3</span>
