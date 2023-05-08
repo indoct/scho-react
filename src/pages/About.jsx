@@ -79,8 +79,8 @@ export default function About() {
               <span className="item">Adobe InDesign</span>
               <span className="item">Adobe Premiere Pro</span>
             </p>
+            <h6>Stack:</h6>
             <p className="mb-4 d-flex">
-              <h6>Stack:</h6>
               <span className="item">HTML5</span>
               <span className="item">CSS3</span>
               <span className="item">Javascript</span>
