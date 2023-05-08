@@ -209,9 +209,9 @@ h3 {
 }
 
 h6 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .smallerh1 {
@@ -343,6 +343,7 @@ img:hover {
   background: var(--schogrey);
   margin: 3px 6px 3px 0;
   white-space: nowrap;
+  line-height: 1;
 }
 
 .grey {
