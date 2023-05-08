@@ -332,6 +332,7 @@ img:hover {
 .profile p,
 .profile {
   font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 
 .grade {
@@ -340,8 +341,7 @@ img:hover {
 .item {
   padding: 0.5rem 0.8rem;
   background: var(--schogrey);
-  margin-right: 0.8rem;
-  line-height: 2.5;
+  margin: 3px 6px 3px 0;
   white-space: nowrap;
 }
 
