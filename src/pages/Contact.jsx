@@ -11,6 +11,7 @@ export default function Contact() {
             </p>
             <form name="contact" method="POST" data-netlify="true" class="row g-3" netlify>
               <div class="col-12">
+                <input type="hidden" name="form-name" value="contact" />
                 <label for="inputName" class="form-label">
                   Name <span class="asterisk">*</span>
                 </label>
@@ -26,7 +27,7 @@ export default function Contact() {
                 <label for="inputMessage" class="form-label">
                   Message <span class="asterisk">*</span>
                 </label>
-                <textarea class="form-control" id="message" rows="7" placeholder="Tell me a little about your project!" name="message" required></textarea>
+                <textarea class="form-control" id="inputMessage" rows="7" placeholder="Tell me a little about your project!" name="message" required></textarea>
               </div>
               <div class="col-12">
                 <button type="submit" class="el-button">
