@@ -24,53 +24,32 @@ export default function BeyondBitesize() {
 
   return (
     <>
-      <FsLightbox
-        toggler={lightboxController.toggler}
-        sources={[bb04, bb01, bb02, bb03]}
-        slide={lightboxController.slide}
-        type="image"
-      />
+      <FsLightbox toggler={lightboxController.toggler} sources={[bb04, bb01, bb02, bb03]} slide={lightboxController.slide} type="image" />
 
       <div className="container mt-md-5 pt-4">
         <div className="row pb-2">
           <div className="col-md-8">
             <p className="categories">
-              <span className="p-cat">UX & UI</span>/
-              <span className="p-cat">Product Design</span>/
-              <span className="p-cat">Prototyping</span>
+              <span className="p-cat">UX & UI</span>/<span className="p-cat">Product Design</span>/<span className="p-cat">Prototyping</span>
             </p>
             <h1 className="mb-3">
               <span className="gradient">Beyond Bitesize</span>
             </h1>
             <p className="intro">
-              Submission for the D&AD Awards for 2023. The brief was to create a
-              learning experience for the BBC that expands upon their Bitesize
-              platform - one that is fun, personalised, engaging & inclusive to
-              children of all ages. I designed the app with sections for
-              holistic learning of all aspects, including regular academic
-              subjects and life skills. There are inclusive, customisable
-              characters, parent feedback and positive reinforcement.
+              Submission for the D&AD Awards for 2023. The brief was to create a learning experience for the BBC that expands upon their Bitesize platform - one
+              that is fun, personalised, engaging & inclusive to children of all ages. I designed the app with sections for holistic learning of all aspects,
+              including regular academic subjects and life skills. There are inclusive, customisable characters, parent feedback and positive reinforcement.
             </p>
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>
-              <a
-                href="https://go/beyond-bitesize-ui"
-                target="_blank"
-                rel="noreferrer"
-                className="proj-link"
-              >
+              <a href="https://go/beyond-bitesize-ui" target="_blank" rel="noreferrer" className="proj-link">
                 Interactive App UI Prototype
               </a>
               <br />
             </p>
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>
-              <a
-                href="https://go/beyond-bitesize-lesson"
-                target="_blank"
-                rel="noreferrer"
-                className="proj-link"
-              >
+              <a href="https://go/beyond-bitesize-lesson" target="_blank" rel="noreferrer" className="proj-link">
                 Example Lesson Prototype
               </a>
             </p>
@@ -78,40 +57,20 @@ export default function BeyondBitesize() {
         </div>
         <div className="row pb-2 pb-lg-3">
           <div className="col-lg-6">
-            <img
-              src={bb04}
-              onClick={() => openLightboxOnSlide(1)}
-              alt="Beyond Bitesize Screens"
-              className="proj-img img-fluid mb-2 mb-md-0"
-            />
+            <img src={bb04} onClick={() => openLightboxOnSlide(1)} alt="Beyond Bitesize Screens" className="proj-img img-fluid mb-2 mb-md-0" />
           </div>
           <div className="col-lg-6 mb-xs-2">
-            <img
-              src={bb02}
-              onClick={() => openLightboxOnSlide(2)}
-              alt="Beyond Bitesize Screens"
-              className="proj-img img-fluid"
-            />
+            <img src={bb01} onClick={() => openLightboxOnSlide(2)} alt="Beyond Bitesize Screens" className="proj-img img-fluid" />
           </div>
         </div>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 pb-lg-2">
-            <img
-              src={bb01}
-              alt="Beyond Bitesize Screens"
-              onClick={() => openLightboxOnSlide(3)}
-              className="proj-img img-fluid mb-2 mb-md-0"
-            />
+            <img src={bb02} alt="Beyond Bitesize Screens" onClick={() => openLightboxOnSlide(3)} className="proj-img img-fluid mb-2 mb-md-0" />
           </div>
           <div className="col-lg-6">
-            <img
-              src={bb03}
-              alt="Beyond Bitesize Screens"
-              onClick={() => openLightboxOnSlide(4)}
-              className="proj-img img-fluid"
-            />
+            <img src={bb03} alt="Beyond Bitesize Screens" onClick={() => openLightboxOnSlide(4)} className="proj-img img-fluid" />
           </div>
         </div>
         <div className="row mt-3">
