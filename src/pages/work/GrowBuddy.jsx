@@ -65,7 +65,7 @@ export default function GrowBuddy() {
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>
               <a
-                href="https://go/grow-buddy"
+                href="https://xd.adobe.com/view/69206444-cd85-4daf-ab3f-c6c57c09eda8-3c73/?fullscreen"
                 target="_blank"
                 rel="noreferrer"
                 className="proj-link"

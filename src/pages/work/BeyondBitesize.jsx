@@ -42,14 +42,14 @@ export default function BeyondBitesize() {
             </p>
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>
-              <a href="https://go/beyond-bitesize-ui" target="_blank" rel="noreferrer" className="proj-link">
+              <a href="https://xd.adobe.com/view/8a2fa891-de57-4c04-abc8-b673855e0a58-df7c/?fullscreen" target="_blank" rel="noreferrer" className="proj-link">
                 Interactive App UI Prototype
               </a>
               <br />
             </p>
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>
-              <a href="https://go/beyond-bitesize-lesson" target="_blank" rel="noreferrer" className="proj-link">
+              <a href="https://xd.adobe.com/view/5ce946f8-63b2-4607-9611-289f01cb177a-09ba/?fullscreen" target="_blank" rel="noreferrer" className="proj-link">
                 Example Lesson Prototype
               </a>
             </p>
