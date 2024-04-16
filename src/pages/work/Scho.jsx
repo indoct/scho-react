@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import FsLightbox from "fslightbox-react";
 
@@ -24,41 +24,72 @@ export default function Scho() {
 
   return (
     <>
-      <FsLightbox toggler={lightboxController.toggler} sources={[scho01, scho02, scho03, scho04]} slide={lightboxController.slide} type="image" />
+      <FsLightbox
+        toggler={lightboxController.toggler}
+        sources={[scho01, scho02, scho03, scho04]}
+        slide={lightboxController.slide}
+        type="image"
+      />
 
       <div className="container mt-md-5 pt-4">
         <div className="row pb-2">
           <div className="col-md-8">
             <p className="categories">
-              <span className="p-cat">Identity Design</span>/<span className="p-cat">Branding</span>/<span className="p-cat">Packaging</span>
+              <span className="p-cat">Identity Design</span>/
+              <span className="p-cat">Branding</span>/
+              <span className="p-cat">Packaging</span>
             </p>
             <h1 className="mb-3">
               <span className="gradient">Personal Branding & Identity</span>
             </h1>
             <p className="intro">
-              The growth of my design and personal brand over the years needed a fresh face, so I created a new brand identity for scho. The new logomark is
-              elegant but colourful; a graphical representation of the first part of my Chinese name '雪', or snow. Like snow, I wanted it to feel striking,
-              unique and clean. I also created a self-promotional pack which can be posted through the mailbox - with collateral such as business cards, a
-              branded 'red packet', a CV, and some stickers.
+              The growth of my design and personal brand over the years needed a
+              fresh face, so I created a new brand identity for scho. The new
+              logomark is elegant but colourful; a graphical representation of
+              the first part of my Chinese name '雪', or snow. Like snow, I
+              wanted it to feel striking, unique and clean. I also created a
+              self-promotional pack which can be posted through the mailbox -
+              with collateral such as business cards, a branded 'red packet', a
+              CV, and some stickers.
             </p>
           </div>
         </div>
         <div className="row pb-2 pb-lg-3">
           <div className="col-lg-6">
-            <img src={scho01} onClick={() => openLightboxOnSlide(1)} alt="scho personal branding" className="proj-img img-fluid mb-2 mb-md-0" />
+            <img
+              src={scho01}
+              onClick={() => openLightboxOnSlide(1)}
+              alt="scho personal branding"
+              className="proj-img img-fluid mb-2 mb-md-0"
+            />
           </div>
           <div className="col-lg-6 mb-xs-2">
-            <img src={scho02} onClick={() => openLightboxOnSlide(2)} alt="scho personal branding" className="proj-img img-fluid" />
+            <img
+              src={scho02}
+              onClick={() => openLightboxOnSlide(2)}
+              alt="scho personal branding"
+              className="proj-img img-fluid"
+            />
           </div>
         </div>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 pb-lg-2">
-            <img src={scho03} onClick={() => openLightboxOnSlide(3)} alt="scho personal branding" className="proj-img img-fluid mb-2 mb-md-0" />
+            <img
+              src={scho03}
+              onClick={() => openLightboxOnSlide(3)}
+              alt="scho personal branding"
+              className="proj-img img-fluid mb-2 mb-md-0"
+            />
           </div>
           <div className="col-lg-6">
-            <img src={scho04} onClick={() => openLightboxOnSlide(4)} alt="scho personal branding" className="proj-img img-fluid" />
+            <img
+              src={scho04}
+              onClick={() => openLightboxOnSlide(4)}
+              alt="scho personal branding"
+              className="proj-img img-fluid"
+            />
           </div>
         </div>
         <div className="row mt-3">

@@ -1,13 +1,21 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../images/schogo.png";
 
 export default function Navbar() {
   return (
     <div className="container">
-      <nav className="navbar navbar-expand-lg pt-4 navbar-dark align-items-start" id="menu">
+      <nav
+        className="navbar navbar-expand-lg pt-4 navbar-dark align-items-start"
+        id="menu"
+      >
         <NavLink to="/">
-          <img src={Logo} className="navbar-brand" alt="scho.pro" width="60" height="60" />
+          <img
+            src={Logo}
+            className="navbar-brand"
+            alt="scho.pro"
+            width="60"
+            height="60"
+          />
         </NavLink>
         <button
           className="navbar-toggler"
@@ -20,7 +28,10 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav flex-column">
             <NavLink to="/" className="nav-link g1">
               <li className="nav-item">Home</li>
@@ -40,11 +51,18 @@ export default function Navbar() {
                       Projects
                     </button>
                   </p>
-                  <div id="collapseTwo" className="proj-nav-collapse collapse" data-bs-parent="#proj-navExample">
+                  <div
+                    id="collapseTwo"
+                    className="proj-nav-collapse collapse"
+                    data-bs-parent="#proj-navExample"
+                  >
                     <div className="proj-nav-body">
                       <ul>
                         <li className="sub-link">
-                          <NavLink className="nav-link g1" to="/work/beyondbitesize">
+                          <NavLink
+                            className="nav-link g1"
+                            to="/work/beyondbitesize"
+                          >
                             Beyond Bitesize
                           </NavLink>
                         </li>
@@ -59,7 +77,10 @@ export default function Navbar() {
                           </NavLink>
                         </li>
                         <li className="sub-link">
-                          <NavLink className="nav-link g4" to="/work/theodddystrict">
+                          <NavLink
+                            className="nav-link g4"
+                            to="/work/theodddystrict"
+                          >
                             The Odd Dystrict
                           </NavLink>
                         </li>
