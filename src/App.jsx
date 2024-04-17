@@ -14,6 +14,7 @@ import GrowBuddy from "./pages/work/GrowBuddy";
 import TheOddDystrict from "./pages/work/TheOddDystrict";
 import Juno from "./pages/work/Juno";
 import "./App.css";
+import ESFJoinUs from "./pages/work/ESFJoinUs";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
           <Route path="/work/beyondbitesize" element={<BeyondBitesize />} />
           <Route path="/work/scho" element={<Scho />} />
           <Route path="/work/growbuddy" element={<GrowBuddy />} />

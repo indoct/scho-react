@@ -1,13 +1,17 @@
-import bb04 from "../../images/project/bb-04.jpg";
-import bb01 from "../../images/project/bb-01.jpg";
-import bb02 from "../../images/project/bb-02.jpg";
-import bb03 from "../../images/project/bb-03.jpg";
-
-import React, { useState } from "react";
+import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { Link } from "react-router-dom";
 
 import BackButton from "../../components/BackButton";
+
+import joinus01 from "../../images/project/joinus-01.jpg";
+import joinus02 from "../../images/project/joinus-02.jpg";
+import joinus03 from "../../images/project/joinus-03.jpg";
+import joinus04 from "../../images/project/joinus-04.jpg";
+import joinus05 from "../../images/project/joinus-05.jpg";
+import joinus06 from "../../images/project/joinus-06.jpg";
+import joinus07 from "../../images/project/joinus-07.jpg";
+import joinus08 from "../../images/project/joinus-08.jpg";
 
 export default function ESFJoinUs() {
   const [lightboxController, setLightboxController] = useState({
@@ -26,12 +30,12 @@ export default function ESFJoinUs() {
     <>
       <FsLightbox
         toggler={lightboxController.toggler}
-        sources={[bb04, bb01, bb02, bb03]}
+        sources={[joinus04, joinus01, joinus02, joinus03]}
         slide={lightboxController.slide}
         type="image"
       />
 
-      <div className="container mt-md-5 pt-4">
+      <div className="container d-flex flex-column pt-2 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
             <p className="categories">
@@ -40,56 +44,50 @@ export default function ESFJoinUs() {
               <span className="p-cat">Prototyping</span>
             </p>
             <h1 className="mb-3">
-              <span className="gradient">Beyond Bitesize</span>
+              <span className="gradient">English Schools Foundation</span>
             </h1>
             <p className="intro">
-              Submission for the D&AD Awards for 2023. The brief was to create a
-              learning experience for the BBC that expands upon their Bitesize
-              platform - one that is fun, personalised, engaging & inclusive to
-              children of all ages. I designed the app with sections for
-              holistic learning of all aspects, including regular academic
-              subjects and life skills. There are inclusive, customisable
-              characters, parent feedback and positive reinforcement.
+              A dynamic, fresh face for the ESF - Hong Kong's largest provider
+              of English-medium education.
+            </p>
+            <p className="intro">
+              The English Schools Foundation (est. 1967) approached me to add a
+              few pages to their existing website for a summer student
+              recruitment drive for their 22 schools. After discussions it
+              became clear that our visions were aligned and that a complete
+              redesign and separate site for the campaign would make more sense
+              to achieve the project goals.
             </p>
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>
               <a
-                href="https://xd.adobe.com/view/8a2fa891-de57-4c04-abc8-b673855e0a58-df7c/?fullscreen"
+                href="https://join-us.esf.edu.hk"
                 target="_blank"
                 rel="noreferrer"
                 className="proj-link"
               >
-                Interactive App UI Prototype
+                ESF Join Us Campaign
               </a>
               <br />
-            </p>
-            <p className="plink-cont">
-              <i className="fa-solid fa-up-right-from-square link-icon"></i>
-              <a
-                href="https://xd.adobe.com/view/5ce946f8-63b2-4607-9611-289f01cb177a-09ba/?fullscreen"
-                target="_blank"
-                rel="noreferrer"
-                className="proj-link"
-              >
-                Example Lesson Prototype
-              </a>
             </p>
           </div>
         </div>
         <div className="row pb-2 pb-lg-3">
-          <div className="col-lg-6">
+          <div className="col-sm-8 mb-xs-2">
             <img
-              src={bb04}
+              src={joinus01}
               onClick={() => openLightboxOnSlide(1)}
-              alt="Beyond Bitesize Screens"
+              alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-          <div className="col-lg-6 mb-xs-2">
+        </div>
+        <div className="row pb-2 pb-lg-3">
+          <div className="col-sm-8 mb-xs-2">
             <img
-              src={bb01}
+              src={joinus02}
               onClick={() => openLightboxOnSlide(2)}
-              alt="Beyond Bitesize Screens"
+              alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
           </div>
@@ -99,17 +97,35 @@ export default function ESFJoinUs() {
         <div className="row">
           <div className="col-lg-6 pb-lg-2">
             <img
-              src={bb02}
-              alt="Beyond Bitesize Screens"
+              src={joinus03}
+              alt="ESF Join Us Culture Highlights"
               onClick={() => openLightboxOnSlide(3)}
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-lg-6">
             <img
-              src={bb03}
-              alt="Beyond Bitesize Screens"
+              src={joinus04}
+              alt="ESF Join Us School Map Static"
               onClick={() => openLightboxOnSlide(4)}
+              className="proj-img img-fluid"
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-6 pb-lg-2">
+            <img
+              src={joinus05}
+              alt="ESF Join Us Culture Highlights"
+              onClick={() => openLightboxOnSlide(5)}
+              className="proj-img img-fluid mb-2 mb-md-0"
+            />
+          </div>
+          <div className="col-lg-6">
+            <img
+              src={joinus06}
+              alt="ESF Join Us School Map Static"
+              onClick={() => openLightboxOnSlide(6)}
               className="proj-img img-fluid"
             />
           </div>

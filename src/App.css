@@ -1,5 +1,8 @@
 .container {
-  max-width: 1600px;
+  max-width: 1560px;
+}
+nav .container {
+  max-width: 1736px;
 }
 
 :root {
@@ -12,6 +15,10 @@
   --schocyan: #62e8e8;
   --schogreen: #93f0a3;
   --schoaccent: #878d92;
+}
+
+.navbar-nav {
+  align-items: flex-end;
 }
 
 html,
@@ -45,6 +52,11 @@ a:hover {
 .nav-link {
   background-color: var(--schodark);
   color: var(--scholight);
+}
+
+.nav-item .nav-link:not(.sub-link),
+.navbar-nav button {
+  font-size: 1.1rem;
 }
 
 .nav-link.g1:hover,
@@ -111,10 +123,16 @@ button.g2:hover,
 .proj-nav-body {
   font-size: 0.9rem;
   padding: 10px 0;
+  list-style: none;
 }
 
-.sub-link {
+.sub-li {
   padding: 2px 0;
+}
+
+.sub-li a {
+  color: var(--schopale);
+  letter-spacing: 0.25px;
 }
 
 .proj-nav-body ul {
@@ -133,7 +151,6 @@ button.g2:hover,
   background-color: transparent;
   color: var(--scholight);
   box-shadow: none;
-  font-size: 1.2rem;
 }
 
 .accordion-button {
@@ -164,10 +181,6 @@ button.g2:hover,
   background-image: none;
   font-family: "Font Awesome 5 Free";
   content: "\f078";
-}
-
-.sub-link a {
-  color: var(--schopale);
 }
 
 .accordion-button::after {
@@ -220,9 +233,27 @@ h6 {
 
 .gradient {
   background: #c582ff;
-  background: -webkit-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
-  background: -moz-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
-  background: linear-gradient(100deg, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
+  background: -webkit-linear-gradient(
+    to right,
+    #c582ff 0%,
+    #62e8e8 33%,
+    #93f0a3 66%,
+    #dbf093 100%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #c582ff 0%,
+    #62e8e8 33%,
+    #93f0a3 66%,
+    #dbf093 100%
+  );
+  background: linear-gradient(
+    100deg,
+    #c582ff 0%,
+    #62e8e8 33%,
+    #93f0a3 66%,
+    #dbf093 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -230,9 +261,27 @@ h6 {
 
 .grad-bg {
   background: #c582ff;
-  background: -webkit-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
-  background: -moz-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
-  background: linear-gradient(100deg, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
+  background: -webkit-linear-gradient(
+    to right,
+    #c582ff 0%,
+    #62e8e8 33%,
+    #93f0a3 66%,
+    #dbf093 100%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #c582ff 0%,
+    #62e8e8 33%,
+    #93f0a3 66%,
+    #dbf093 100%
+  );
+  background: linear-gradient(
+    100deg,
+    #c582ff 0%,
+    #62e8e8 33%,
+    #93f0a3 66%,
+    #dbf093 100%
+  );
   color: var(--schodark);
   border: 0;
 }
@@ -381,7 +430,10 @@ textarea.form-control {
   border-radius: 0;
   background: var(--schogrey);
   border: 0;
-  color: var(--scholight);
+}
+
+form .form-control::placeholder {
+  color: var(--schoaccent) !important;
 }
 
 .asterisk {
