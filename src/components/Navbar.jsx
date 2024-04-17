@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../images/schogo.png";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav className="navbar pt-4 navbar-dark fixed-top" id="menu">
       <div className="container">
@@ -16,9 +17,17 @@ export default function Navbar() {
             />
           </NavLink>
         </div>
-        <div className="nav-cont d-flex align-items-end">
+        <div className="mode-switch">
+          <DarkModeSwitch
+            style={{ marginBottom: "2rem" }}
+            checked={props.isDarkMode}
+            onChange={props.toggleDarkMode}
+            size={30}
+          />
+        </div>
+        <div className="nav-cont">
           <button
-            className="navbar-toggler"
+            className="navbar-toggler collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -63,6 +72,8 @@ export default function Navbar() {
                           >
                             Join Us (ESF)
                           </NavLink>
+                        </li>
+                        <li className="sub-li">
                           <NavLink
                             className="nav-link g1 sub-link"
                             to="/work/beyondbitesize"

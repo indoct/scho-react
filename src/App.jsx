@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -17,25 +18,37 @@ import "./App.css";
 import ESFJoinUs from "./pages/work/ESFJoinUs";
 
 function App() {
+  const [isDarkMode, setDarkMode] = useState(
+    true
+    // JSON.parse(localStorage.getItem("isDarkMode"))
+  );
+
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked);
+    localStorage.setItem("isDarkMode", JSON.stringify(checked));
+  };
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
-          <Route path="/work/beyondbitesize" element={<BeyondBitesize />} />
-          <Route path="/work/scho" element={<Scho />} />
-          <Route path="/work/growbuddy" element={<GrowBuddy />} />
-          <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
-          <Route path="/work/juno" element={<Juno />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-        <BackTopButton />
-      </BrowserRouter>
+      <main className={isDarkMode ? "dark-mode" : "light-mode"}>
+        <BrowserRouter>
+          <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
+            <Route path="/work/beyondbitesize" element={<BeyondBitesize />} />
+            <Route path="/work/scho" element={<Scho />} />
+            <Route path="/work/growbuddy" element={<GrowBuddy />} />
+            <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
+            <Route path="/work/juno" element={<Juno />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+          <BackTopButton />
+        </BrowserRouter>
+      </main>
     </div>
   );
 }

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 import bbscreen from "../images/project/bb-screen.png";
 import schopb from "../images/project/scho-pb.png";
@@ -33,20 +32,13 @@ export default function Home() {
                 data-aos-duration="1200"
                 data-aos-delay="200"
               >
-                Welcome to the design portfolio of London based designer SC
-                Houlihan. I like to craft attractive, useful things and
-                experiences.
+                Hi there! I'm SC Houlihan, but 'scho' is easier to spell ;)
+                <br />
+                I'm a Frontend Developer and UX/UI Designer based in London.
               </p>
             </div>
           </div>
         </section>
-        {/* <div className="container">
-          <div className="row gx-5">
-            <div className="col test">1</div>
-            <div className="col test">2</div>
-            <div className="col test">3</div>
-          </div>
-        </div> */}
         <section id="case-studies" data-aos="fade-in" data-aos-duration="1200">
           <div className="row work-row mb-2 g-2">
             <div className="col-12 col-md-6 col-xl-4">
