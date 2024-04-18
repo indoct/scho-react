@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import bbscreen from "../images/project/bb-screen.png";
-import schopb from "../images/project/scho-pb.png";
-import gbscreen from "../images/project/gb-screen.png";
+import bbscreen from "../images/project/grid-bb-screen.png";
+import schopb from "../images/project/grid-scho-screen.png";
+import gbscreen from "../images/project/grid-gb-screen.png";
 import todscreen from "../images/project/tod-screen.png";
 import junobag from "../images/project/juno-bag.png";
 

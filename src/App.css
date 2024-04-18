@@ -425,9 +425,9 @@ img:hover {
   text-decoration: none;
 }
 .p-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   margin-bottom: 0;
   color: var(--scholight);
 }
@@ -437,9 +437,10 @@ img:hover {
 }
 
 .p-desc {
-  font-size: 1rem;
+  font-size: 0.94rem;
   color: #b8bdbf;
   margin-bottom: 0;
+  letter-spacing: 0.01rem;
 }
 
 .light-mode .p-desc {
@@ -659,6 +660,9 @@ footer {
   background-color: var(--schopearl);
 }
 
+.light-mode footer a {
+  color: var(--schoash);
+}
 .footer-soc {
   text-align: right;
 }
