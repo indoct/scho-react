@@ -42,8 +42,8 @@ export default function Home() {
         <section id="case-studies" data-aos="fade-in" data-aos-duration="1200">
           <div className="row work-row mb-2 g-2">
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project py-4">
-                <Link to="work/beyondbitesize" className="text-center">
+              <article className="project">
+                <Link to="work/beyondbitesize" className="px-4 py-3">
                   <img
                     src={bbscreen}
                     alt="Beyond Bitesize Screen 1"
@@ -57,8 +57,8 @@ export default function Home() {
               </article>
             </div>
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project py-4">
-                <Link to="work/scho" className="text-center">
+              <article className="project">
+                <Link to="work/scho" className="px-4 py-3">
                   <img
                     src={schopb}
                     alt="scho. business card"
@@ -72,13 +72,15 @@ export default function Home() {
               </article>
             </div>
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project py-4">
-                <Link to="work/growbuddy" className="text-center">
-                  <img
-                    src={gbscreen}
-                    alt="Grow Buddy Pack"
-                    className="img-fluid bb"
-                  />
+              <article className="project">
+                <Link to="work/growbuddy" className="px-4 py-3">
+                  <div className="img-cont">
+                    <img
+                      src={gbscreen}
+                      alt="Grow Buddy Pack"
+                      className="img-fluid bb"
+                    />
+                  </div>
                   <h2 className="p-title">Grow Buddy</h2>
                   <p className="p-desc">
                     A pack & companion app for growing microgreens
@@ -89,8 +91,8 @@ export default function Home() {
             {/* </div>
           <div className="row work-row mb-2 gx-2"> */}
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project py-4">
-                <Link to="work/theodddystrict">
+              <article className="project">
+                <Link to="work/theodddystrict" className="px-4 py-3">
                   <img
                     src={todscreen}
                     alt="A screencap of the homepage"
@@ -104,8 +106,8 @@ export default function Home() {
               </article>
             </div>
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project py-4">
-                <Link to="work/juno">
+              <article className="project">
+                <Link to="work/juno" className="px-4 py-3">
                   <img
                     src={junobag}
                     alt="Juno packaging with stamp logo"
