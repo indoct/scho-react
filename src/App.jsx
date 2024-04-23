@@ -18,14 +18,14 @@ import "./App.css";
 import ESFJoinUs from "./pages/work/ESFJoinUs";
 
 function App() {
-  const [isDarkMode, setDarkMode] = useState(
+  const [isDarkMode, setIsDarkMode] = useState(
     true
     // JSON.parse(localStorage.getItem("isDarkMode"))
   );
 
-  const toggleDarkMode = (checked) => {
-    setDarkMode(checked);
-    localStorage.setItem("isDarkMode", JSON.stringify(checked));
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    // localStorage.setItem("isDarkMode", JSON.stringify(checked));
   };
 
   return (
