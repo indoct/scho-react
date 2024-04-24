@@ -26,8 +26,12 @@ nav .container {
   --schostone: #dfdbd8;
   --schoclay: #cdc6c1;
   --schoash: #71645b;
+  --schoiris: #7c498b;
+  --scholapis: #1476b3;
+  --schoteal: #2ca58d;
+  --schoapple: #a2bd4a;
 }
-/* #685d55 */
+
 html,
 body {
   font-family: neue-haas-grotesk-display, sans-serif;
@@ -54,6 +58,15 @@ main.light-mode {
 a {
   color: var(--scholime);
   text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.light-mode a {
+  color: var(--schoiris);
+}
+
+.light-mode a:hover {
+  color: var(--schoiris);
 }
 
 a:hover {
@@ -92,6 +105,26 @@ a:hover {
 
 .mode-switch {
   padding-right: 1em;
+}
+
+.light-mode .theme-toggle__within {
+  fill: var(--schodark);
+}
+
+/* .hamburger-react div {
+  height: 0.19rem !important;
+} */
+
+.theme-toggle__within {
+  fill: var(--scholight);
+  font-size: 34px;
+  margin-top: -2px;
+}
+
+.theme-toggle {
+  min-width: 48px;
+  min-height: 48px;
+  padding-right: 18px;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
@@ -137,6 +170,10 @@ nav .navbar-toggler {
   color: var(--scholight);
 }
 
+.light-mode .nav-link {
+  color: var(--schoonyx);
+}
+
 .nav-item .nav-link:not(.sub-link),
 .navbar-nav button {
   font-size: 1.1rem;
@@ -168,11 +205,74 @@ button.g2:hover,
 .nav-link.active.g4:hover {
   color: var(--scholime);
 }
+/* 
+.light-mode .nav-link.g1:hover,
+.light-mode .nav-link.active.g1:hover {
+  color: var(--schoiris);
+}
+
+.light-mode .nav-link.g2:hover,
+.light-mode .nav-link.active.g2:hover,
+.light-mode button.g2:hover,
+.light-mode .accordion-button:hover {
+  color: var(--scholapis);
+}
+
+.light-mode .nav-link.g3:hover,
+.light-mode .nav-link.active.g3:hover {
+  color: var(--schopearl);
+  /* border-right: 4px solid var(--schoteal); */
+/* margin-right: 5px; 
+}*/
+
+.light-mode .nav-link:hover,
+.light-mode .project-nav .accordion-button:hover,
+.light-mode .project-nav .accordion-button:not(.collapsed) {
+  background-color: var(--schoonyx);
+  color: var(--schostone);
+}
+
+#menu .project-nav .accordion-button {
+  border-radius: 0px;
+}
+
+.accordion {
+  transition: none;
+}
+/* .nav-item .g3::before {
+  transition: opacity 0.4s;
+  content: ">";
+  opacity: 0;
+  padding-right: 5px;
+} */
+
+/* .nav-item:hover .g3::before {
+  opacity: 1;
+} */
+
+/* .light-mode .nav-link.g4:hover,
+.light-mode .nav-link.active.g4:hover {
+  color: var(--schoapple);
+} */
 
 #menu .navbar-nav .nav-link {
-  padding: 0;
-  padding-right: 10px;
+  padding: 0 5px;
   text-align: right;
+}
+
+.proj-nav-body {
+  font-size: 0.9rem;
+  padding: 5px 0;
+  list-style: none;
+  margin: 4px 0;
+}
+
+.light-mode .proj-nav-body {
+  background-color: var(--schostone);
+}
+
+#menu .sub-li .sub-link {
+  padding: 0 8px;
 }
 
 .nav-link i {
@@ -187,6 +287,11 @@ button.g2:hover,
   color: #696f76;
 }
 
+.light-mode #menu a.active {
+  color: #9e9894;
+  pointer-events: none;
+}
+
 .nav-item a.nav-link.active:hover {
   text-decoration: none;
 }
@@ -197,17 +302,11 @@ button.g2:hover,
 }
 
 .nav-link {
-  transition: all 0.8s;
+  transition: all 0.4s;
 }
 
 .nav-link:hover {
   color: var(--schopurp);
-}
-
-.proj-nav-body {
-  font-size: 0.9rem;
-  padding: 10px 0;
-  list-style: none;
 }
 
 .sub-li {
@@ -237,6 +336,10 @@ button.g2:hover,
   box-shadow: none;
 }
 
+.light-mode .accordion-button {
+  color: var(--schoonyx);
+}
+
 .accordion-button {
   align-items: flex-end;
   width: auto;
@@ -253,18 +356,28 @@ button.g2:hover,
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 0.85rem;
-  content: "\f054";
+  content: "\2b";
   margin-right: 3px;
   margin-bottom: 7px;
   text-align: Center;
   background-image: none;
   color: var(--schocyan);
+  transition: all 0.15s;
+}
+
+.light-mode .accordion-button::before {
+  color: var(--schoiris);
+}
+
+.light-mode .accordion-button:hover::before,
+.light-mode .project-nav .accordion-button:not(.collapsed)::before {
+  color: var(--schostone);
 }
 
 .accordion-button:not(.collapsed)::before {
   background-image: none;
   font-family: "Font Awesome 5 Free";
-  content: "\f078";
+  content: "\f068";
 }
 
 .accordion-button::after {
@@ -337,6 +450,20 @@ h6 {
     #62e8e8 33%,
     #93f0a3 66%,
     #dbf093 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-mode .gradient {
+  background: #713c7c;
+  background: linear-gradient(
+    100deg,
+    #7c498b 0%,
+    #1476b3 33%,
+    #2ca58d 66%,
+    #a2bd4a 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -503,6 +630,11 @@ img:hover {
   line-height: 1;
 }
 
+.light-mode .item,
+.light-mode .form-control {
+  background: var(--schostone);
+}
+
 .grey {
   background-color: var(--schogrey);
   padding-left: 10px;
@@ -542,6 +674,10 @@ textarea.form-control {
 
 form .form-control::placeholder {
   color: var(--schoaccent) !important;
+}
+
+.light-mode .form-control::placeholder {
+  color: var(--schoash) !important;
 }
 
 .asterisk {

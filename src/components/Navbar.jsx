@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../images/schogo.png";
-import { DarkModeSwitch } from "react-toggle-dark-mode";
+import "@theme-toggles/react/css/Within.css";
+import { Within } from "@theme-toggles/react";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
 
 export default function Navbar(props) {
   const [isOpen, setOpen] = useState(false);
+  const { toggleDarkMode, isDarkMode } = props;
 
   return (
     <nav className="navbar pt-4 navbar-dark fixed-top" id="menu">
@@ -16,23 +18,25 @@ export default function Navbar(props) {
               src={Logo}
               className="navbar-brand"
               alt="scho.pro"
-              width="60"
-              height="60"
+              width="50"
+              height="50"
             />
           </NavLink>
         </div>
         <div className="navbar-right">
           <div className="nav-cont">
             <div className="toggles">
-              <button
-                className="mode-switch"
-                onClick={props.toggleDarkMode}
-                checked={props.isDarkMode}
-              >
-                {" "}
-                mode
-                {/* <DarkModeSwitch style={{ marginTop: "0.6rem" }} size={24} /> */}
-              </button>
+              <Within
+                duration={750}
+                toggled={isDarkMode}
+                toggle={toggleDarkMode}
+                aria-label={`Switch between dark and light theme (currently ${
+                  isDarkMode ? "Dark" : "Light"
+                } Mode)`}
+                title={`Switch between dark and light theme (currently ${
+                  isDarkMode ? "Dark" : "Light"
+                } Mode)`}
+              />
               <button
                 className="navbar-toggler collapsed"
                 type="button"
@@ -40,16 +44,19 @@ export default function Navbar(props) {
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
                 aria-expanded="false"
-                aria-label="Toggle navigation"
+                aria-label={`Toggle navigation menu open or closed (currently ${
+                  isOpen ? "open" : "closed"
+                })`}
+                title={`Toggle navigation menu open or closed (currently ${
+                  isOpen ? "open" : "closed"
+                })`}
               >
                 <Hamburger
                   toggled={isOpen}
                   toggle={setOpen}
-                  label="Show menu"
+                  color={isDarkMode ? "var(--scholight)" : "var(--schogrey)"}
                   rounded
-                  color="var(--scholight)"
                 />
-                {/* <span className="navbar-toggler-icon"></span> */}
               </button>
             </div>
             <div className="collapse navbar-collapse" id="navbarNav">
@@ -62,16 +69,18 @@ export default function Navbar(props) {
                 <li className="nav-item project-nav">
                   <div className="accordion">
                     <div className="accordion-item">
-                      <p className="accordion-header align-items-end nav-link">
+                      <p className="accordion-header align-items-end">
                         <button
-                          className="accordion-button collapsed"
+                          className="accordion-button collapsed nav-link"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseTwo"
                           aria-expanded="false"
                           aria-controls="collapseTwo"
+                          aria-label="Show/hide Work Menu"
+                          title="Show/hide Work Menu"
                         >
-                          Projects
+                          Work
                         </button>
                       </p>
                       <div
