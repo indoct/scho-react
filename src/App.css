@@ -5,10 +5,17 @@ body {
 .container {
   max-width: 1480px;
 }
-nav .container {
-  max-width: 1920px;
-  padding-left: 60px;
-  padding-right: 60px;
+
+@media screen and (min-width: 1440px) {
+  nav .container {
+    max-width: 1920px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    align-items: flex-end;
+  }
 }
 
 :root {
@@ -50,11 +57,6 @@ main.light-mode {
   color: var(--schoonyx);
 }
 
-/* body {
-  background: var(--scholight);
-  color: var(--schodark);
-} */
-
 a {
   color: var(--scholime);
   text-decoration: underline;
@@ -78,18 +80,31 @@ a:hover {
 .App .navbar .container {
   align-items: flex-start;
 }
+
+.navbar-nav {
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  height: 100vh;
+  background-color: #212326;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  pointer-events: none;
+}
+
 .navbar-brand {
   padding: 0;
-}
-.navbar-nav {
-  margin-top: 1rem;
-  align-items: flex-end;
+  pointer-events: initial;
 }
 
 .navbar-right {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  pointer-events: initial;
 }
 
 .nav-cont {
@@ -117,7 +132,7 @@ a:hover {
 
 .theme-toggle__within {
   fill: var(--scholight);
-  font-size: 34px;
+  font-size: 32px;
   margin-top: -2px;
 }
 
@@ -677,7 +692,7 @@ form .form-control::placeholder {
 }
 
 .light-mode .form-control::placeholder {
-  color: var(--schoash) !important;
+  color: #99897e !important;
 }
 
 .asterisk {
@@ -822,6 +837,9 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: #212326;
+  }
   .header {
     padding: 1rem 0.75rem 1.3rem;
   }

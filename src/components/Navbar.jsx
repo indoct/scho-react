@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../images/schogo.png";
+import Logo from "../images/schogo.svg";
+import LogoLM from "../images/schogo-light.svg";
 import "@theme-toggles/react/css/Within.css";
 import { Within } from "@theme-toggles/react";
 import { useState } from "react";
@@ -15,7 +16,7 @@ export default function Navbar(props) {
         <div className="logo-cont">
           <NavLink to="/">
             <img
-              src={Logo}
+              src={isDarkMode ? Logo : LogoLM}
               className="navbar-brand"
               alt="scho.pro"
               width="50"
