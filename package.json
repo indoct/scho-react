@@ -16,6 +16,7 @@
     "aos": "^3.0.0-beta.6",
     "eslint": "^9.0.0",
     "eslint-config-react-app": "^7.0.1",
+    "framer-motion": "^11.1.7",
     "fslightbox-react": "^1.7.4",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",

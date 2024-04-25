@@ -10,8 +10,16 @@ export default function Navbar(props) {
   const [isOpen, setOpen] = useState(false);
   const { toggleDarkMode, isDarkMode } = props;
 
+  // const collapseMenu = (e) => {
+  //   if (e.target.classList.contains("ml")) {
+  //     e.currentTarget.classList.remove("show");
+  //     e.stopPropagation();
+  //     setOpen(!isOpen);
+  //   } else console.log(`not a nav-link`);
+  // };
+
   return (
-    <nav className="navbar pt-4 navbar-dark fixed-top" id="menu">
+    <nav className="navbar navbar-dark fixed-top" id="menu">
       <div className="container">
         <div className="logo-cont">
           <NavLink to="/">
@@ -60,10 +68,14 @@ export default function Navbar(props) {
                 />
               </button>
             </div>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarNav"
+              // onClick={collapseMenu}
+            >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <NavLink to="/" className="nav-link g1">
+                  <NavLink to="/" className="nav-link g1 ml">
                     Home
                   </NavLink>
                 </li>
@@ -144,12 +156,12 @@ export default function Navbar(props) {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link g3" to="/about">
+                  <NavLink className="nav-link g3 ml" to="/about">
                     About
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link g4" to="/contact">
+                  <NavLink className="nav-link g4 ml" to="/contact">
                     Contact
                   </NavLink>
                 </li>

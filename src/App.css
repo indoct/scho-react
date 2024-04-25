@@ -81,16 +81,6 @@ a:hover {
   align-items: flex-start;
 }
 
-.navbar-nav {
-  position: absolute;
-  left: 0;
-  width: 100% !important;
-  height: 100vh;
-  background-color: #212326;
-  justify-content: center;
-  align-items: center;
-}
-
 .navbar {
   pointer-events: none;
 }
@@ -837,6 +827,15 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
+  .navbar-nav {
+    position: absolute;
+    left: 0;
+    width: 100% !important;
+    height: 100vh;
+    background-color: #212326;
+    justify-content: center;
+    align-items: center;
+  }
   .navbar {
     background-color: #212326;
   }
