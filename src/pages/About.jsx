@@ -10,7 +10,7 @@ export default function About() {
   }, []);
 
   return (
-    <section className="container about">
+    <section className="container about pt-5 pt-lg-5">
       {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -19,7 +19,7 @@ export default function About() {
         className="row pt-4 pt-lg-5"
       > */}
       <div
-        className="row pt-4 pt-lg-5"
+        className="row"
         data-aos="fade-up"
         data-aos-delay="100"
         data-aos-duration="1200"

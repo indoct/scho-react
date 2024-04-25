@@ -1,14 +1,25 @@
-import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <motion.div
-      key="contact-cont"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className="container"
+    // <motion.div
+    //   key="contact-cont"
+    //   initial={{ opacity: 0 }}
+    //   animate={{ opacity: 1 }}
+    //   exit={{ opacity: 0 }}
+    //   transition={{ duration: 1 }}
+    //   className="container"
+    // >
+    <div
+      className="container pt-5"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="1200"
     >
       <div className="row justify-content-center text-center">
         <div className="col-12 col-lg-6">
@@ -71,7 +82,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <div className="container">
+      <div className="container mt-4">
         <div className="row justify-content-center">
           <div className="col-12 col-lg-6 text-center contact-block align-self-center">
             <p>
@@ -83,6 +94,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

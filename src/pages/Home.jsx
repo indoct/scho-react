@@ -39,7 +39,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="case-studies" data-aos="fade-in" data-aos-duration="1200">
+        <section
+          id="case-studies"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <div className="row work-row mb-2 g-2">
             <div className="col-12 col-md-6 col-xl-4">
               <article className="project">

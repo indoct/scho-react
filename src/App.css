@@ -290,11 +290,11 @@ button.g2:hover,
 #menu a.active {
   text-decoration: line-through;
   color: #696f76;
+  pointer-events: none;
 }
 
 .light-mode #menu a.active {
   color: #9e9894;
-  pointer-events: none;
 }
 
 .nav-item a.nav-link.active:hover {
@@ -666,8 +666,12 @@ img:hover {
 /* CONTACT FORM PAGE */
 
 .contact-block {
-  padding: 6rem 0;
+  padding: 4rem 0;
   border: 2px solid var(--schogrey);
+}
+
+.light-mode .contact-block {
+  border: 2px solid var(--schostone);
 }
 
 input.form-control,
@@ -689,17 +693,30 @@ form .form-control::placeholder {
   color: var(--schopurp) !important;
 }
 
-button.el-button {
+.el-button {
   border-radius: 0 !important;
   padding: 0.6rem 1.6rem !important;
-  border: 2px solid #93f0a3 !important;
+  border: 2px solid #93f0a3;
   transition: all 0.4s !important;
   background-color: var(--schogreen);
 }
 
-button.el-button:hover {
-  background: var(--schodark) !important;
-  color: var(--schogreen) !important;
+.el-button:hover {
+  background: var(--schodark);
+  color: var(--schogreen);
+}
+
+.light-mode .el-button {
+  color: var(--schopearl);
+  background-color: var(--schoonyx);
+  border: 2px solid var(--schoonyx);
+}
+
+.light-mode button.el-button:hover {
+  /* background: var(--schoclay) !important; */
+  background: var(--scholapis);
+  color: var(--schopearl) !important;
+  border: 2px solid var(--scholapis);
 }
 
 .email-big {
@@ -710,8 +727,12 @@ button.el-button:hover {
   border: 2px solid transparent;
 }
 
-a.email-big:hover {
-  border: 2px solid var(--scholight);
+.email-big:hover {
+  border-bottom: 2px solid var(--schogreen);
+}
+
+.light-mode .email-big:hover {
+  border-bottom: 2px solid var(--scholapis);
 }
 
 /* PROJECT PAGE */
@@ -814,7 +835,7 @@ footer {
 }
 
 .light-mode footer {
-  background-color: var(--schopearl);
+  background-color: var(--schostone);
 }
 
 .light-mode footer a {
