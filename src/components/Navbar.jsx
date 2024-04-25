@@ -19,7 +19,7 @@ export default function Navbar(props) {
   // };
 
   return (
-    <nav className="navbar navbar-dark fixed-top" id="menu">
+    <nav className="navbar pt-4 navbar-dark fixed-top" id="menu">
       <div className="container">
         <div className="logo-cont">
           <NavLink to="/">

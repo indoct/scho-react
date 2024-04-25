@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -18,6 +19,8 @@ import "./App.css";
 import ESFJoinUs from "./pages/work/ESFJoinUs";
 
 function App() {
+  const location = useLocation();
+
   const [isDarkMode, setIsDarkMode] = useState(
     true
     // JSON.parse(localStorage.getItem("isDarkMode"))
@@ -31,10 +34,10 @@ function App() {
   return (
     <div className="App">
       <main className={isDarkMode ? "dark-mode" : "light-mode"}>
-        <BrowserRouter>
-          <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-          <Routes>
-            <Route path="/" element={<Home />} />
+        <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        <AnimatePresence mode="wait" initial={false}>
+          <Routes location={location} key={location.pathname}>
+            <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
@@ -46,8 +49,8 @@ function App() {
             <Route path="/*" element={<NotFound />} />
           </Routes>
           <Footer />
-          <BackTopButton />
-        </BrowserRouter>
+        </AnimatePresence>
+        <BackTopButton />
       </main>
     </div>
   );
