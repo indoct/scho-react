@@ -47,8 +47,8 @@ export default function Home() {
         >
           <div className="row work-row mb-2 g-2">
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project">
-                <Link to="work/beyondbitesize" className="px-4 py-3">
+              <figure className="project-card px-4 py-3">
+                <div className="card-cover">
                   <img
                     src={bbscreen}
                     alt="Beyond Bitesize Screen 1"
@@ -58,8 +58,23 @@ export default function Home() {
                   <p className="p-desc">
                     An engaging and inclusive learning platform
                   </p>
-                </Link>
-              </article>
+                </div>
+                <figcaption className="card-info">
+                  <h2 className="p-title">Beyond Bitesize</h2>
+                  <p className="p-desc">
+                    An engaging and inclusive learning platform
+                  </p>
+                  <div className="figbtn-cont">
+                    <Link to="work/beyondbitesize" className="figbtn1">
+                      Case Study <i class="fa-solid fa-arrow-right"></i>
+                    </Link>
+                    <a href="https://beyondbitesize.com" className="figbtn2">
+                      Visit Website{" "}
+                      <i className="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
             </div>
             <div className="col-12 col-md-6 col-xl-4">
               <article className="project">

@@ -22,14 +22,15 @@ function App() {
   const location = useLocation();
 
   const [isDarkMode, setIsDarkMode] = useState(
-    true
-    // JSON.parse(localStorage.getItem("isDarkMode"))
+    JSON.parse(localStorage.getItem("isDarkMode"))
   );
 
-  const toggleDarkMode = () => {
+  const toggleDarkMode = (checked) => {
     setIsDarkMode(!isDarkMode);
-    // localStorage.setItem("isDarkMode", JSON.stringify(checked));
+    localStorage.setItem("isDarkMode", JSON.stringify(checked));
   };
+
+  console.log(isDarkMode);
 
   return (
     <div className="App">

@@ -230,6 +230,102 @@ button.g2:hover,
 /* margin-right: 5px; 
 }*/
 
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--schostone);
+}
+
+figcaption i {
+  font-size: 0.9rem;
+}
+
+.figbtn2 i {
+  font-size: 0.8em;
+}
+
+.card-info {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.project-card figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+figcaption .p-title {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.light-mode figcaption .p-desc {
+  color: var(--schoonyx);
+  padding-bottom: 2em;
+  font-size: 1.05rem;
+}
+
+.card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.45s ease-in-out;
+  background-color: var(--schoclay);
+}
+
+.project-card:hover figcaption {
+  opacity: 1;
+}
+
+.card-info a {
+  border: 2px solid var(--schoonyx);
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--schoonyx);
+  padding: 0.5em 1em;
+  column-gap: 1.2em;
+  border-radius: 32px;
+  font-size: 1rem;
+}
+
+.card-info a:hover {
+  background-color: var(--schoiris);
+  color: var(--schopearl);
+}
+
+.figbtn-cont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0.5em;
+  margin: 0 auto;
+}
+
+.figbtn1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.figbtn2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
 .light-mode .nav-link:hover,
 .light-mode .project-nav .accordion-button:hover,
 .light-mode .project-nav .accordion-button:not(.collapsed) {
