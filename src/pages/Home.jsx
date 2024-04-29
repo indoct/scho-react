@@ -66,7 +66,7 @@ export default function Home() {
                   </p>
                   <div className="figbtn-cont">
                     <Link to="work/beyondbitesize" className="figbtn1">
-                      Case Study <i class="fa-solid fa-arrow-right"></i>
+                      Case Study <i className="fa-solid fa-arrow-right"></i>
                     </Link>
                     <a href="https://beyondbitesize.com" className="figbtn2">
                       Visit Website{" "}
