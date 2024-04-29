@@ -1,32 +1,9 @@
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import BackButton from "../../components/BackButton";
 
-import joinus01 from "../../images/project/joinus-01.jpg";
-import joinus02 from "../../images/project/joinus-02.jpg";
-import joinus03 from "../../images/project/joinus-03.jpg";
-import joinus04 from "../../images/project/joinus-04.jpg";
-import joinus05 from "../../images/project/joinus-05.jpg";
-import joinus06 from "../../images/project/joinus-06.jpg";
-import joinus07 from "../../images/project/joinus-07.jpg";
-import joinus08 from "../../images/project/joinus-08.jpg";
-
 export default function ESFJoinUs() {
-  const [lightboxController, setLightboxController] = useState({
-    toggler: false,
-    slide: 1,
-  });
-
-  function openLightboxOnSlide(number) {
-    setLightboxController({
-      toggler: !lightboxController.toggler,
-      slide: number,
-    });
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -34,21 +11,6 @@ export default function ESFJoinUs() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      {/* <FsLightbox
-        toggler={lightboxController.toggler}
-        sources={[
-          joinus01,
-          joinus02,
-          joinus03,
-          joinus04,
-          joinus05,
-          joinus06,
-          joinus07,
-          joinus08,
-        ]}
-        slide={lightboxController.slide}
-        type="image"
-      /> */}
       <div className="container d-flex flex-column pt-4 pt-lg-5 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
@@ -61,7 +23,7 @@ export default function ESFJoinUs() {
               <span className="gradient">English Schools Foundation</span>
             </h1>
             <p className="intro">
-              A dynamic, fresh face for the ESF - Hong Kong's largest provider
+              A fresh, dynamic face for the ESF - Hong Kong's largest provider
               of English-medium education.
             </p>
             <p className="intro">
@@ -89,8 +51,7 @@ export default function ESFJoinUs() {
         <div className="row pb-2 pb-lg-3">
           <div className="col-12 mb-xs-2">
             <img
-              src={joinus01}
-              onClick={() => openLightboxOnSlide(1)}
+              src="../../src/images/esf/joinus-01.jpg"
               alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
@@ -99,8 +60,7 @@ export default function ESFJoinUs() {
         <div className="row pb-2 pb-lg-3">
           <div className="col-12 mb-xs-2">
             <img
-              src={joinus02}
-              onClick={() => openLightboxOnSlide(2)}
+              src="../../src/images/esf/joinus-02.jpg"
               alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
@@ -111,17 +71,15 @@ export default function ESFJoinUs() {
         <div className="row">
           <div className="col-12 pb-lg-2">
             <img
-              src={joinus03}
+              src="../../src/images/esf/joinus-03.jpg"
               alt="ESF Join Us Culture Highlights"
-              onClick={() => openLightboxOnSlide(3)}
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src={joinus04}
+              src="../../src/images/esf/joinus-04.jpg"
               alt="ESF Join Us School Map Static"
-              onClick={() => openLightboxOnSlide(4)}
               className="proj-img img-fluid"
             />
           </div>
@@ -129,17 +87,15 @@ export default function ESFJoinUs() {
         <div className="row">
           <div className="col-12 pb-lg-2">
             <img
-              src={joinus05}
+              src="../../src/images/esf/joinus-05.jpg"
               alt="ESF Join Us Culture Highlights"
-              onClick={() => openLightboxOnSlide(5)}
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src={joinus06}
+              src="../../src/images/esf/joinus-06.jpg"
               alt="ESF Join Us School Map Static"
-              onClick={() => openLightboxOnSlide(6)}
               className="proj-img img-fluid"
             />
           </div>
@@ -147,17 +103,15 @@ export default function ESFJoinUs() {
         <div className="row">
           <div className="col-12 pb-lg-2">
             <img
-              src={joinus07}
+              src="../../src/images/esf/joinus-07.jpg"
               alt="ESF Join Us Culture Highlights"
-              onClick={() => openLightboxOnSlide(7)}
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src={joinus08}
+              src="../../src/images/esf/joinus-08.jpg"
               alt="ESF Join Us School Map Static"
-              onClick={() => openLightboxOnSlide(8)}
               className="proj-img img-fluid"
             />
           </div>

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 import BackButton from "../../components/BackButton";
 
-import bb04 from "../../images/project/bb-04.jpg";
-import bb01 from "../../images/project/bb-01.jpg";
-import bb02 from "../../images/project/bb-02.jpg";
-import bb03 from "../../images/project/bb-03.jpg";
+// import bb04 from "../../images/project/bb-04.jpg";
+// import bb01 from "../../images/project/bb-01.jpg";
+// import bb02 from "../../images/project/bb-02.jpg";
+// import bb03 from "../../images/project/bb-03.jpg";
 
 export default function BeyondBitesize() {
   const [lightboxController, setLightboxController] = useState({

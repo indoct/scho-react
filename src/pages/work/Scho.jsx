@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import FsLightbox from "fslightbox-react";
 
-import scho01 from "../../images/project/scho-01-min.jpg";
-import scho02 from "../../images/project/scho-02-min.jpg";
-import scho03 from "../../images/project/scho-03-min.jpg";
-import scho04 from "../../images/project/scho-04-min.jpg";
+// import scho01 from "../../images/project/scho-01-min.jpg";
+// import scho02 from "../../images/project/scho-02-min.jpg";
+// import scho03 from "../../images/project/scho-03-min.jpg";
+// import scho04 from "../../images/project/scho-04-min.jpg";
 
 import BackButton from "../../components/BackButton";
 
