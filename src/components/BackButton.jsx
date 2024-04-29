@@ -4,7 +4,7 @@ export default function BackButton() {
   const navigate = useNavigate();
 
   return (
-    <div className="col col-lg-6">
+    <div className="col col-sm-6">
       <button
         className="back-link"
         onClick={() => {

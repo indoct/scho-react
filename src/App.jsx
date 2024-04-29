@@ -30,27 +30,25 @@ function App() {
     localStorage.setItem("isDarkMode", JSON.stringify(checked));
   };
 
-  console.log(isDarkMode);
-
   return (
     <div className="App">
       <main className={isDarkMode ? "dark-mode" : "light-mode"}>
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        {/* <AnimatePresence mode="wait" initial={false}> */}
-        <Routes location={location} key={location.pathname}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
-          <Route path="/work/beyondbitesize" element={<BeyondBitesize />} />
-          <Route path="/work/scho" element={<Scho />} />
-          <Route path="/work/growbuddy" element={<GrowBuddy />} />
-          <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
-          <Route path="/work/juno" element={<Juno />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
+        <AnimatePresence mode="wait" initial={false}>
+          <Routes location={location} key={location.pathname}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
+            <Route path="/work/beyondbitesize" element={<BeyondBitesize />} />
+            <Route path="/work/scho" element={<Scho />} />
+            <Route path="/work/growbuddy" element={<GrowBuddy />} />
+            <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
+            <Route path="/work/juno" element={<Juno />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+        </AnimatePresence>
         <Footer />
-        {/* </AnimatePresence> */}
         <BackTopButton />
       </main>
     </div>

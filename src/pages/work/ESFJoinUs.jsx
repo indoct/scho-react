@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import BackButton from "../../components/BackButton";
 
@@ -27,15 +28,28 @@ export default function ESFJoinUs() {
   }
 
   return (
-    <>
-      <FsLightbox
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: "easeInOut", duration: 0.6 }}
+    >
+      {/* <FsLightbox
         toggler={lightboxController.toggler}
-        sources={[joinus04, joinus01, joinus02, joinus03]}
+        sources={[
+          joinus01,
+          joinus02,
+          joinus03,
+          joinus04,
+          joinus05,
+          joinus06,
+          joinus07,
+          joinus08,
+        ]}
         slide={lightboxController.slide}
         type="image"
-      />
-
-      <div className="container d-flex flex-column pt-2 justify-content-center">
+      /> */}
+      <div className="container d-flex flex-column pt-4 pt-lg-5 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
             <p className="categories">
@@ -73,7 +87,7 @@ export default function ESFJoinUs() {
           </div>
         </div>
         <div className="row pb-2 pb-lg-3">
-          <div className="col-sm-8 mb-xs-2">
+          <div className="col-12 mb-xs-2">
             <img
               src={joinus01}
               onClick={() => openLightboxOnSlide(1)}
@@ -83,7 +97,7 @@ export default function ESFJoinUs() {
           </div>
         </div>
         <div className="row pb-2 pb-lg-3">
-          <div className="col-sm-8 mb-xs-2">
+          <div className="col-12 mb-xs-2">
             <img
               src={joinus02}
               onClick={() => openLightboxOnSlide(2)}
@@ -95,7 +109,7 @@ export default function ESFJoinUs() {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 pb-lg-2">
+          <div className="col-12 pb-lg-2">
             <img
               src={joinus03}
               alt="ESF Join Us Culture Highlights"
@@ -103,7 +117,7 @@ export default function ESFJoinUs() {
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-          <div className="col-lg-6">
+          <div className="col-12">
             <img
               src={joinus04}
               alt="ESF Join Us School Map Static"
@@ -113,7 +127,7 @@ export default function ESFJoinUs() {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-6 pb-lg-2">
+          <div className="col-12 pb-lg-2">
             <img
               src={joinus05}
               alt="ESF Join Us Culture Highlights"
@@ -121,7 +135,7 @@ export default function ESFJoinUs() {
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-          <div className="col-lg-6">
+          <div className="col-12">
             <img
               src={joinus06}
               alt="ESF Join Us School Map Static"
@@ -130,9 +144,27 @@ export default function ESFJoinUs() {
             />
           </div>
         </div>
+        <div className="row">
+          <div className="col-12 pb-lg-2">
+            <img
+              src={joinus07}
+              alt="ESF Join Us Culture Highlights"
+              onClick={() => openLightboxOnSlide(7)}
+              className="proj-img img-fluid mb-2 mb-md-0"
+            />
+          </div>
+          <div className="col-12">
+            <img
+              src={joinus08}
+              alt="ESF Join Us School Map Static"
+              onClick={() => openLightboxOnSlide(8)}
+              className="proj-img img-fluid"
+            />
+          </div>
+        </div>
         <div className="row mt-3">
           <BackButton />
-          <div className="col col-lg-6 text-end">
+          <div className="col col-sm-6 text-end">
             <div className="d-flex flex-column justify-content-end">
               <div>
                 <Link to="../work/scho">
@@ -146,6 +178,6 @@ export default function ESFJoinUs() {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
