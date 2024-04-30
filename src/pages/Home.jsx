@@ -162,21 +162,27 @@ export default function Home() {
                     alt="Beyond Bitesize Screen 1"
                     className="img-fluid bb"
                   />
-                  <h2 className="p-title">Beyond Bitesize</h2>
+                  <h2 className="p-title">The Odd Dystrict</h2>
                   <p className="p-desc">
-                    An engaging and inclusive learning platform
+                    Website and web3 app where users could mint an art NFT and
+                    interact with their portfolio.
                   </p>
                 </div>
-                <figcaption className="card-info">
-                  <h2 className="p-title">Beyond Bitesize</h2>
+                <figcaption className="card-info px-3 py-3">
+                  {/* <h2 className="p-title">Get Set Sports Academy</h2>
                   <p className="p-desc">
-                    An engaging and inclusive learning platform
-                  </p>
+                    A web app for people to easily create their own Baldur's
+                    Gate 3 piercing combinations
+                  </p> */}
                   <div className="figbtn-cont">
-                    <Link to="work/beyondbitesize" className="figbtn1">
-                      Case Study <i className="fa-solid fa-arrow-right"></i>
+                    <Link to="work/esfjoinus" className="figbtn1">
+                      Project Page <i className="fa-solid fa-arrow-right"></i>
                     </Link>
-                    <a href="https://beyondbitesize.com" className="figbtn2">
+                    <a
+                      href="https://join-us.esf.edu.hk"
+                      className="figbtn2"
+                      target="_blank"
+                    >
                       Visit Website{" "}
                       <i className="fa fa-external-link" aria-hidden="true"></i>
                     </a>
@@ -185,68 +191,102 @@ export default function Home() {
               </figure>
             </div>
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project">
-                <Link to="work/scho" className="px-3 py-3">
+              <figure className="project-card px-3 py-3">
+                <div className="card-cover">
                   <img
-                    src={schopb}
-                    alt="scho. business card"
+                    src={bbscreen}
+                    alt="Beyond Bitesize Screen 1"
                     className="img-fluid bb"
                   />
-                  <h2 className="p-title">Personal Branding (scho.)</h2>
+                  <h2 className="p-title">Personal Identity (scho.)</h2>
                   <p className="p-desc">
-                    Rebranding and collateral of my design identity
+                    Website and web3 app where users could mint an art NFT and
+                    interact with their portfolio.
                   </p>
-                </Link>
-              </article>
-            </div>
-            <div className="col-12 col-md-6 col-xl-4">
-              <article className="project">
-                <Link to="work/growbuddy" className="px-3 py-3">
-                  <div className="img-cont">
-                    <img
-                      src={gbscreen}
-                      alt="Grow Buddy Pack"
-                      className="img-fluid bb"
-                    />
+                </div>
+                <figcaption className="card-info px-3 py-3">
+                  {/* <h2 className="p-title">Get Set Sports Academy</h2>
+                  <p className="p-desc">
+                    A web app for people to easily create their own Baldur's
+                    Gate 3 piercing combinations
+                  </p> */}
+                  <div className="figbtn-cont">
+                    <Link to="work/esfjoinus" className="figbtn1">
+                      Project Page <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                    <a
+                      href="https://join-us.esf.edu.hk"
+                      className="figbtn2"
+                      target="_blank"
+                    >
+                      Visit Website{" "}
+                      <i className="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
                   </div>
-                  <h2 className="p-title">Grow Buddy</h2>
-                  <p className="p-desc">
-                    A pack & companion app for growing microgreens
-                  </p>
-                </Link>
-              </article>
-            </div>
-            {/* </div>
-          <div className="row work-row mb-2 gx-2"> */}
-            <div className="col-12 col-md-6 col-xl-4">
-              <article className="project">
-                <Link to="work/theodddystrict" className="px-3 py-3">
-                  <img
-                    src={todscreen}
-                    alt="A screencap of the homepage"
-                    className="img-fluid bb"
-                  />
-                  <h2 className="p-title">The Odd Dystrict</h2>
-                  <p className="p-desc">
-                    Identity & UI design for an NFT project
-                  </p>
-                </Link>
-              </article>
+                </figcaption>
+              </figure>
             </div>
             <div className="col-12 col-md-6 col-xl-4">
-              <article className="project">
-                <Link to="work/juno" className="px-3 py-3">
+              <figure className="project-card px-3 py-3">
+                <div className="card-cover">
                   <img
-                    src={junobag}
-                    alt="Juno packaging with stamp logo"
+                    src={bbscreen}
+                    alt="Beyond Bitesize Screen 1"
                     className="img-fluid bb"
                   />
-                  <h2 className="p-title">Juno Bakeshop</h2>
+                  <h2 className="p-title">N7 Ipsum</h2>
                   <p className="p-desc">
-                    Identity design for a small home bakery business
+                    A Mass Effect lorem ipsum dummy text generator -
                   </p>
-                </Link>
-              </article>
+                </div>
+                <figcaption className="card-info px-3 py-3">
+                  {/* <h2 className="p-title">Get Set Sports Academy</h2>
+                  <p className="p-desc">
+                    A web app for people to easily create their own Baldur's
+                    Gate 3 piercing combinations
+                  </p> */}
+                  <div className="figbtn-cont">
+                    <Link to="work/esfjoinus" className="figbtn1">
+                      Project Page <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                    <a
+                      href="https://join-us.esf.edu.hk"
+                      className="figbtn2"
+                      target="_blank"
+                    >
+                      Visit Website{" "}
+                      <i className="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div className="row my-5 justify-content-center">
+            <div className="col-6 text-center contact-block px-5">
+              <p>
+                If you'd like to see more work or get in touch, please fill out
+                the contact form or you can email me at: <br />
+                <a href="mailto:hello@scho.pro" className="email-big gradient">
+                  hello@scho.pro
+                </a>
+              </p>
+              {/* <p>
+                More general design work can be found in my downloadable
+                portfolio on the About page.
+              </p>
+              <p>And I can be found around the web at:</p> */}
+              <div className="social-icons">
+                <button>
+                  <i class="fa-brands fa-square-github"></i>
+                </button>
+                <button>
+                  <i class="fa-brands fa-linkedin" />
+                </button>
+                <button>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
             </div>
           </div>
         </section>

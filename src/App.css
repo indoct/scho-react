@@ -47,14 +47,16 @@ body {
   font-size: 1.2rem;
 }
 
-main.dark-mode {
+main {
   background: var(--schodark);
   color: var(--scholight);
+  transition: all 0.4s ease;
 }
 
 main.light-mode {
   background: var(--schopearl);
   color: var(--schoonyx);
+  transition: all 0.4s ease;
 }
 
 a {
@@ -239,10 +241,12 @@ figure {
   overflow: hidden;
   border-radius: 12px;
   background-color: var(--schogrey);
+  transition: all 0.4s ease;
 }
 
 .light-mode .project-card {
   background-color: var(--schostone);
+  transition: all 0.4s ease;
 }
 
 figcaption i {
@@ -996,6 +1000,19 @@ footer {
 }
 .footer-soc {
   text-align: right;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons button {
+  background-color: transparent;
+  color: var(--scholight);
+  border: 0;
 }
 
 /* Media Queries */

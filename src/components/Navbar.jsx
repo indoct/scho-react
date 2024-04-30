@@ -36,7 +36,7 @@ export default function Navbar(props) {
           <div className="nav-cont">
             <div className="toggles">
               <Within
-                duration={750}
+                duration={950}
                 toggled={isDarkMode}
                 toggle={toggleDarkMode}
                 aria-label={`Switch between dark and light theme (currently ${
