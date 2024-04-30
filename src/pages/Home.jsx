@@ -47,7 +47,115 @@ export default function Home() {
         >
           <div className="row work-row mb-2 g-2">
             <div className="col-12 col-md-6 col-xl-4">
-              <figure className="project-card px-4 py-3">
+              <figure className="project-card px-3 py-3">
+                <div className="card-cover">
+                  <img
+                    src={bbscreen}
+                    alt="Beyond Bitesize Screen 1"
+                    className="img-fluid bb"
+                  />
+                  <h2 className="p-title">English Schools Foundation</h2>
+                  <p className="p-desc">
+                    A fresh, dynamic face for the ESF - Hong Kong's largest
+                    provider of English-medium education.
+                  </p>
+                </div>
+                <figcaption className="card-info px-3 py-3">
+                  {/* <h2 className="p-title">English Schools Foundation</h2>
+                  <p className="p-desc">
+                    A fresh, dynamic face for the ESF - Hong Kong's largest
+                    provider of English-medium education.
+                  </p> */}
+                  <div className="figbtn-cont">
+                    <Link to="work/esfjoinus" className="figbtn1">
+                      Project Page <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                    <a
+                      href="https://join-us.esf.edu.hk"
+                      className="figbtn2"
+                      target="_blank"
+                    >
+                      Visit Website{" "}
+                      <i className="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-12 col-md-6 col-xl-4">
+              <figure className="project-card px-3 py-3">
+                <div className="card-cover">
+                  <img
+                    src={bbscreen}
+                    alt="Beyond Bitesize Screen 1"
+                    className="img-fluid bb"
+                  />
+                  <h2 className="p-title">Get Set Sports Academy</h2>
+                  <p className="p-desc">
+                    Building an attractive and easily maintainable web presence
+                    for a leading athletics training academy.
+                  </p>
+                </div>
+                <figcaption className="card-info px-3 py-3">
+                  {/* <h2 className="p-title">Get Set Sports Academy</h2>
+                  <p className="p-desc">
+                    Building an attractive and easily maintainable web presence
+                    for a leading athletics training academy.
+                  </p> */}
+                  <div className="figbtn-cont">
+                    <Link to="work/esfjoinus" className="figbtn1">
+                      Project Page <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                    <a
+                      href="https://join-us.esf.edu.hk"
+                      className="figbtn2"
+                      target="_blank"
+                    >
+                      Visit Website{" "}
+                      <i className="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-12 col-md-6 col-xl-4">
+              <figure className="project-card px-3 py-3">
+                <div className="card-cover">
+                  <img
+                    src={bbscreen}
+                    alt="Beyond Bitesize Screen 1"
+                    className="img-fluid bb"
+                  />
+                  <h2 className="p-title">BG3 Piercing Set Creator</h2>
+                  <p className="p-desc">
+                    A web app for people to easily create their own Baldur's
+                    Gate 3 piercing combinations
+                  </p>
+                </div>
+                <figcaption className="card-info px-3 py-3">
+                  {/* <h2 className="p-title">Get Set Sports Academy</h2>
+                  <p className="p-desc">
+                    A web app for people to easily create their own Baldur's
+                    Gate 3 piercing combinations
+                  </p> */}
+                  <div className="figbtn-cont">
+                    <Link to="work/esfjoinus" className="figbtn1">
+                      Project Page <i className="fa-solid fa-arrow-right"></i>
+                    </Link>
+                    <a
+                      href="https://join-us.esf.edu.hk"
+                      className="figbtn2"
+                      target="_blank"
+                    >
+                      Visit Website{" "}
+                      <i className="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-12 col-md-6 col-xl-4">
+              <figure className="project-card px-3 py-3">
                 <div className="card-cover">
                   <img
                     src={bbscreen}
@@ -78,7 +186,7 @@ export default function Home() {
             </div>
             <div className="col-12 col-md-6 col-xl-4">
               <article className="project">
-                <Link to="work/scho" className="px-4 py-3">
+                <Link to="work/scho" className="px-3 py-3">
                   <img
                     src={schopb}
                     alt="scho. business card"
@@ -93,7 +201,7 @@ export default function Home() {
             </div>
             <div className="col-12 col-md-6 col-xl-4">
               <article className="project">
-                <Link to="work/growbuddy" className="px-4 py-3">
+                <Link to="work/growbuddy" className="px-3 py-3">
                   <div className="img-cont">
                     <img
                       src={gbscreen}
@@ -112,7 +220,7 @@ export default function Home() {
           <div className="row work-row mb-2 gx-2"> */}
             <div className="col-12 col-md-6 col-xl-4">
               <article className="project">
-                <Link to="work/theodddystrict" className="px-4 py-3">
+                <Link to="work/theodddystrict" className="px-3 py-3">
                   <img
                     src={todscreen}
                     alt="A screencap of the homepage"
@@ -127,7 +235,7 @@ export default function Home() {
             </div>
             <div className="col-12 col-md-6 col-xl-4">
               <article className="project">
-                <Link to="work/juno" className="px-4 py-3">
+                <Link to="work/juno" className="px-3 py-3">
                   <img
                     src={junobag}
                     alt="Juno packaging with stamp logo"

@@ -238,6 +238,10 @@ figure {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
+  background-color: var(--schogrey);
+}
+
+.light-mode .project-card {
   background-color: var(--schostone);
 }
 
@@ -259,6 +263,10 @@ figcaption i {
   z-index: 10;
 }
 
+.card-cover img {
+  margin-bottom: 0.5rem;
+}
+
 .project-card figcaption {
   display: flex;
   flex-direction: column;
@@ -276,7 +284,6 @@ figcaption .p-title {
 .light-mode figcaption .p-desc {
   color: var(--schoonyx);
   padding-bottom: 2em;
-  font-size: 1.05rem;
 }
 
 .card-info {
@@ -284,10 +291,14 @@ figcaption .p-title {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 75%;
   opacity: 0;
   transition: 0.45s ease-in-out;
-  background-color: var(--schoclay);
+  background-color: rgba(83, 87, 94, 0.98);
+}
+
+.light-mode .card-info {
+  background-color: rgb(205 198 193 / 97%);
 }
 
 .project-card:hover figcaption {
@@ -307,11 +318,23 @@ figcaption .p-title {
   column-gap: 1.2em;
   border-radius: 32px;
   font-size: 1rem;
-}
-
-.card-info a:hover {
   background-color: var(--schoiris);
   color: var(--schopearl);
+}
+
+/* .card-info .figbtn1 {
+  background-color: var(--schoiris);
+  color: var(--schopearl);
+}
+
+.card-info .figbtn2 {
+  background-color: var(--scholapis);
+  color: var(--schopearl);
+} */
+
+.card-info a:hover {
+  background-color: var(--schoapple);
+  color: var(--schoonyx);
 }
 
 .figbtn-cont {
@@ -602,6 +625,33 @@ h6 {
   border: 0;
 }
 
+.light-mode .grad-bg {
+  background: #c582ff;
+  background: -webkit-linear-gradient(
+    to right,
+    #7c498b 0%,
+    #1476b3 33%,
+    #2ca58d 66%,
+    #a2bd4a 100%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #7c498b 0%,
+    #1476b3 33%,
+    #2ca58d 66%,
+    #a2bd4a 100%
+  );
+  background: linear-gradient(
+    100deg,
+    #7c498b 0%,
+    #1476b3 33%,
+    #2ca58d 66%,
+    #a2bd4a 100%
+  );
+  color: var(--schodark);
+  border: 0;
+}
+
 .pf-item-block {
   background: #33363a;
 }
@@ -673,11 +723,12 @@ h6 {
   text-decoration: none;
 }
 .p-title {
-  font-size: 1.2rem;
+  font-size: 1.24rem;
   font-weight: 700;
-  margin-top: 0.75rem;
-  margin-bottom: 0;
+  margin-bottom: 0.23rem;
+  letter-spacing: 0.02rem;
   color: var(--scholight);
+  font-family: neue-haas-grotesk-display, Helvetica, sans-serif;
 }
 
 .light-mode .p-title {
@@ -685,14 +736,15 @@ h6 {
 }
 
 .p-desc {
-  font-size: 0.94rem;
+  font-family: neue-haas-grotesk-text, Helvetica, sans-serif;
+  font-size: 0.86rem;
   color: #b8bdbf;
   margin-bottom: 0;
-  letter-spacing: 0.01rem;
+  line-height: 1.3;
 }
 
 .light-mode .p-desc {
-  color: var(--schoash);
+  color: #695d54;
 }
 
 /* ABOUT ME */
