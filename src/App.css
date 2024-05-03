@@ -41,8 +41,8 @@ body {
 
 html,
 body {
-  font-family: neue-haas-grotesk-display, sans-serif;
-  font-weight: 500;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 18px;
 }
@@ -186,7 +186,7 @@ nav .navbar-toggler {
 
 .nav-item .nav-link:not(.sub-link),
 .navbar-nav button {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .navbar-collapse {
@@ -656,7 +656,7 @@ h6 {
 
 .header {
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 #btn-back-to-top {
@@ -821,12 +821,12 @@ h6 {
   text-decoration: none;
 }
 .p-title {
-  font-size: 1.24rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin-bottom: 0.23rem;
   letter-spacing: 0.02rem;
   color: var(--scholight);
-  font-family: neue-haas-grotesk-display, Helvetica, sans-serif;
+  font-family: "neue-haas-grotesk-text", sans-serif;
 }
 
 .light-mode .p-title {
@@ -834,11 +834,10 @@ h6 {
 }
 
 .p-desc {
-  font-family: neue-haas-grotesk-text, Helvetica, sans-serif;
-  font-size: 0.86rem;
+  font-family: "neue-haas-grotesk-text", sans-serif;
   color: #b8bdbf;
   margin-bottom: 0;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .light-mode .p-desc {
@@ -988,7 +987,7 @@ form .form-control::placeholder {
 }
 
 a.email-big {
-  display: block;
+  display: inline-block;
   font-size: 2rem;
   transition: all 0.8s;
   padding: 0.4rem 0.6rem;
