@@ -16,13 +16,14 @@ export default function ESFJoinUs() {
           <div className="col-md-8">
             <p className="categories">
               <span className="p-cat">UX & UI</span>/
-              <span className="p-cat">Product Design</span>/
-              <span className="p-cat">Prototyping</span>
+              <span className="p-cat">Information Architecture</span>/
+              <span className="p-cat">Web Design & Dev</span>/
+              <span className="p-cat">CMS</span>
             </p>
             <h1 className="mb-3">
               <span className="gradient">English Schools Foundation</span>
             </h1>
-            <p className="intro">
+            <p className="proj-tagline">
               A fresh, dynamic face for the ESF - Hong Kong's largest provider
               of English-medium education.
             </p>
@@ -31,7 +32,7 @@ export default function ESFJoinUs() {
               few pages to their existing website for a summer student
               recruitment drive for their 22 schools. After discussions it
               became clear that our visions were aligned and that a complete
-              redesign and separate site for the campaign would make more sense
+              redesign and separate site for the campaign would be better suited
               to achieve the project goals.
             </p>
             <p className="plink-cont">
@@ -40,36 +41,37 @@ export default function ESFJoinUs() {
                 href="https://join-us.esf.edu.hk"
                 target="_blank"
                 rel="noreferrer"
-                className="proj-link"
+                className="proj-url"
               >
-                ESF Join Us Campaign
+                Visit ESF Website
               </a>
               <br />
             </p>
           </div>
         </div>
-        <div className="row pb-2 pb-lg-3">
-          <div className="col-12 mb-xs-2">
+        <div className="row pb-2 py-lg-3 project-images justify-content-center">
+          <div className="col-12">
             <img
               src="../../src/images/esf/joinus-01.jpg"
               alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-        </div>
-        <div className="row pb-2 pb-lg-3">
-          <div className="col-12 mb-xs-2">
+          <div className="col-6 cs-caption">
+            <p>
+              Trying to take down a rogue Spectre and his army of synthetics?
+              No, they didn't cover this in Basic. And I would again. But I also
+              know what it is to leave everything behind and fight.
+            </p>
+          </div>
+          <div className="col-12">
             <img
               src="../../src/images/esf/joinus-02.jpg"
               alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
           </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 pb-lg-2">
+          <div className="col-12">
             <img
               src="../../src/images/esf/joinus-03.jpg"
               alt="ESF Join Us Culture Highlights"
@@ -83,9 +85,15 @@ export default function ESFJoinUs() {
               className="proj-img img-fluid"
             />
           </div>
-        </div>
-        <div className="row">
-          <div className="col-12 pb-lg-2">
+          <div className="col-6 cs-caption">
+            <p>
+              SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
+              his army of synthetics? No, they didn't cover this in Basic. And I
+              would again. But I also know what it is to leave everything behind
+              and fight.
+            </p>
+          </div>
+          <div className="col-12">
             <img
               src="../../src/images/esf/joinus-05.jpg"
               alt="ESF Join Us Culture Highlights"
@@ -99,18 +107,52 @@ export default function ESFJoinUs() {
               className="proj-img img-fluid"
             />
           </div>
-        </div>
-        <div className="row">
-          <div className="col-12 pb-lg-2">
+          <div className="col-12">
             <img
               src="../../src/images/esf/joinus-07.jpg"
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
+          <div className="col-6 cs-caption">
+            <p>
+              INFO ARCHITECTURE / ADMISSIONS. Trying to take down a rogue
+              Spectre and his army of synthetics? No, they didn't cover this in
+              Basic. And I would again. But I also know what it is to leave
+              everything behind and fight.
+            </p>
+          </div>
           <div className="col-12">
             <img
               src="../../src/images/esf/joinus-08.jpg"
+              alt="ESF Join Us School Map Static"
+              className="proj-img img-fluid"
+            />
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/esf/joinus-09.jpg"
+              alt="ESF Join Us School Map Static"
+              className="proj-img img-fluid"
+            />
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/esf/joinus-10.jpg"
+              alt="ESF Join Us School Map Static"
+              className="proj-img img-fluid"
+            />
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/esf/joinus-11.jpg"
+              alt="ESF Join Us School Map Static"
+              className="proj-img img-fluid"
+            />
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/esf/joinus-12.jpg"
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />

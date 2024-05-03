@@ -16,24 +16,25 @@ export default function About() {
             <h1 className="mb-4">
               <span className="gradient">About Me</span>
             </h1>
-            <p className="intro">
-              Hi there, my name is Siobhan. I'm a UX/UI and graphic designer -
-              and frontend developer - based in London, UK.
+            <p className="about-copy">
+              Hi there, my name is Siobhan. I'm a frontend developer and
+              designer based in London, UK. My focus is on digital experiences
+              and UX/UI but I also design for print and physical media.
             </p>
-            <p className="intro">
+            <p className="about-copy">
               I recently graduated with a first in Graphic Design from the
               University of Hertfordshire, and I previously acquired a
               certificate in UX/UI Design from General Assembly. I've worked for
               many years in graphic and web design and I have experience both
               working solo and in teams both small and large.
             </p>
-            <p className="intro">
+            <p className="about-copy">
               I love to create, no matter the format, and I pride myself on
               crafting design that looks great but is also a joy to use
               (accessibility is key!) When I'm not designing, I enjoy coding,
               making gifs, gaming, football, and occasionally video editing.
             </p>
-            <div className="intro">
+            <div className="about-copy">
               For more projects & examples of my work:
               <ul>
                 <li>
@@ -57,7 +58,7 @@ export default function About() {
                 </li>
               </ul>
             </div>
-            <p className="intro">
+            <p className="about-copy">
               I'm currently
               <strong> available for freelance opportunities</strong>, so please
               &nbsp;

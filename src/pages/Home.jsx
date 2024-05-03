@@ -4,10 +4,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import bbscreen from "../images/project/grid-bb-screen.png";
+<<<<<<< Updated upstream
 import schopb from "../images/project/grid-scho-screen.png";
 import gbscreen from "../images/project/grid-gb-screen.png";
 import todscreen from "../images/project/tod-screen.png";
 import junobag from "../images/project/juno-bag.png";
+=======
+import esfscreen from "../images/project/project-cover-esf.jpg";
+import prcscreen from "../images/project/project-cover-prc.jpg";
+import gsscreen from "../images/project/project-cover-gs.jpg";
+import todscreen from "../images/project/project-cover-tod.jpg";
+import n7iscreen from "../images/project/project-cover-n7i.jpg";
+import schoscreen from "../images/project/project-cover-scho.png";
+>>>>>>> Stashed changes
 
 export default function Home() {
   useEffect(() => {
@@ -39,6 +48,7 @@ export default function Home() {
         data-aos-duration="1000"
         className="row work-row mb-2 g-2"
       >
+<<<<<<< Updated upstream
         <div className="col-12 col-md-6 col-xl-4">
           <figure className="project-card px-3 py-3">
             <div className="card-cover">
@@ -255,6 +265,167 @@ export default function Home() {
           </figure>
         </div>
       </section>
+=======
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
+            <img src={esfscreen} alt="ESF Join Us cover image" />
+          </div>
+          <div className="card-text">
+            {" "}
+            <h2 className="p-title">English Schools Foundation</h2>
+            <p className="p-desc">
+              A fresh, dynamic face for the ESF - Hong Kong's largest provider
+              of English-medium education.
+            </p>
+          </div>
+
+          <ul className="proj-links">
+            <li>
+              <Link to="work/esfjoinus">
+                case study
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            <li>
+              <a href="https://join-us.esf.edu.hk" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
+            <img
+              src={gsscreen}
+              alt="Get Set Sports Academy project cover image"
+            />
+          </div>
+          <div className="card-text">
+            <h2 className="p-title">Get Set Sports Academy</h2>
+            <p className="p-desc">
+              Building an attractive and easily maintainable web presence for a
+              leading athletics academy.
+            </p>
+          </div>
+          <ul className="proj-links">
+            <li>
+              <Link to="work/esfjoinus">
+                case study
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            <li>
+              <a href="https://getsetsportsacademy.com" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
+            <img
+              src={prcscreen}
+              alt="BG3 Piercing Set Creator project cover image"
+            />
+          </div>
+          <div className="card-text">
+            <h2 className="p-title">BG3 Piercing Set Creator</h2>
+            <p className="p-desc">
+              A web app for people to easily create their own custom Baldur's
+              Gate 3 piercing combinations.
+            </p>
+          </div>
+          <ul className="proj-links">
+            <li>
+              <Link to="work/esfjoinus">
+                case study
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            <li>
+              <a href="https://piercings.indoc.dev" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
+            <img src={todscreen} alt="The Odd Dystrict project cover image" />
+          </div>
+          <h2 className="p-title">The Odd Dystrict</h2>
+          <p className="p-desc">
+            Website and web3 interface where users could mint an art NFT and
+            interact with their portfolio.
+          </p>
+          <ul className="proj-links">
+            <li>
+              <Link to="work/esfjoinus">
+                case study
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            <li>
+              <a href="https://the-odd-dystrict.com" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
+            <img src={schoscreen} alt="scho " />
+          </div>
+          <h2 className="p-title">SCHO. Portfolio Website</h2>
+          <p className="p-desc">
+            Personal identity design and web dev portfolio, handcrafted to
+            display my work.
+          </p>
+          <ul className="proj-links">
+            <li>
+              <Link to="work/esfjoinus">
+                case study
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            {/* <li>
+              <a href="https://the-odd-dystrict.com" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li> */}
+          </ul>
+        </li>
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
+            <img src={n7iscreen} alt="Beyond Bitesize Screen 1" />
+          </div>
+          <h2 className="p-title">N7 Ipsum</h2>
+          <p className="p-desc">
+            A Mass Effect lorem ipsum dummy text generator. Does what it says on
+            the tin.
+          </p>
+          <ul className="proj-links">
+            <li>
+              <Link to="work/esfjoinus">
+                project
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            <li>
+              <a href="https://n7-ipsum.scho.pro" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+>>>>>>> Stashed changes
       <section className="row my-5 justify-content-center">
         <div className="col-12 text-center">
           <div className="home-contact">
@@ -265,11 +436,6 @@ export default function Home() {
                 hello@scho.pro
               </a>
             </p>
-            {/* <p>
-                More general design work can be found in my downloadable
-                portfolio on the About page.
-              </p>
-              <p>And I can be found around the web at:</p> */}
             <div className="social-icons pt-3">
               <a
                 href="#"
