@@ -150,14 +150,6 @@ export default function Navbar(props) {
                               The Odd Dystrict
                             </NavLink>
                           </li>
-                          <li className="sub-li">
-                            <NavLink
-                              className="nav-link g1 sub-link"
-                              to="/work/juno"
-                            >
-                              Juno Bakeshop
-                            </NavLink>
-                          </li>
                         </ul>
                       </div>
                     </div>

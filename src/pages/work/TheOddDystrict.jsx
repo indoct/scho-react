@@ -1,126 +1,156 @@
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import BackButton from "../../components/BackButton";
 
-import tod3 from "../../images/project/tod-03-min.jpg";
-import tod1 from "../../images/project/tod-01.jpg";
-import tod2 from "../../images/project/tod-02.jpg";
-import tod4 from "../../images/project/tod-04-min.jpg";
-
 export default function TheOddDystrict() {
-  const [lightboxController, setLightboxController] = useState({
-    toggler: false,
-    slide: 1,
-  });
-
-  function openLightboxOnSlide(number) {
-    setLightboxController({
-      toggler: !lightboxController.toggler,
-      slide: number,
-    });
-  }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <>
-      <FsLightbox
-        toggler={lightboxController.toggler}
-        sources={[tod3, tod1, tod2, tod4]}
-        slide={lightboxController.slide}
-        type="image"
-      />
-      <div className="container mt-md-5 pt-4">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: "easeInOut", duration: 0.6 }}
+    >
+      <div className="container d-flex flex-column pt-4 pt-lg-5 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
             <p className="categories">
-              <span className="p-cat">Identity Design</span>/
-              <span className="p-cat">Branding</span>/{" "}
               <span className="p-cat">UX & UI</span>/
-              <span className="p-cat">Frontend</span>
+              <span className="p-cat">Information Architecture</span>/
+              <span className="p-cat">Web Design & Dev</span>/
+              <span className="p-cat">CMS</span>
             </p>
             <h1 className="mb-3">
               <span className="gradient">The Odd Dystrict</span>
             </h1>
-            <p className="intro">
-              The Odd Dystrict is an art NFT project on the Ethereum network.
-              The team needed a brand and aesthetic to match the high quality
-              art by the artist Derog from New Zealand. It also needed to
-              represent the rich lore of the project that makes it stand out.
-              For this I was inspired by the colours of warning signs that
-              humans have borrowed from nature, such as the black and yellow
-              wasp. Texture and grunge were added to most elements to expand on
-              the post-apocalyptic theme.
+            <p className="proj-tagline">
+              A fresh, dynamic face for the ESF - Hong Kong's largest provider
+              of English-medium education.
             </p>
-            <p>
-              <span className="plink-cont">
-                <i className="fa-solid fa-up-right-from-square link-icon"></i>
-                <a
-                  href="https://the-odd-dystrict.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="proj-link"
-                >
-                  Live Website
-                </a>
-              </span>
+            <p className="intro">
+              The English Schools Foundation (est. 1967) approached me to add a
+              few pages to their existing website for a summer student
+              recruitment drive for their 22 schools. After discussions it
+              became clear that our visions were aligned and that a complete
+              redesign and separate site for the campaign would be better suited
+              to achieve the project goals.
+            </p>
+            <p className="plink-cont">
+              <i className="fa-solid fa-up-right-from-square link-icon"></i>
+              <a
+                href="https://join-us.esf.edu.hk"
+                target="_blank"
+                rel="noreferrer"
+                className="proj-url"
+              >
+                Visit ESF Website
+              </a>
+              <br />
             </p>
           </div>
         </div>
-        <div className="row pb-2 pb-lg-3">
-          <div className="col-lg-6">
+        <div className="row pb-2 py-lg-3 project-images justify-content-center">
+          <div className="col-12">
             <img
-              src={tod3}
-              onClick={() => openLightboxOnSlide(1)}
-              alt="The Odd Dystrict Screens"
+              src="../../src/images/tod/tod-01.jpg"
+              alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-          <div className="col-lg-6 mb-xs-2">
+          <div className="col-6 cs-caption">
+            <p>
+              Trying to take down a rogue Spectre and his army of synthetics?
+              No, they didn't cover this in Basic. And I would again. But I also
+              know what it is to leave everything behind and fight.
+            </p>
+          </div>
+          <div className="col-12">
             <img
-              src={tod1}
-              onClick={() => openLightboxOnSlide(2)}
-              alt="The Odd Dystrict Screens"
+              src="../../src/images/tod/tod-02.jpg"
+              alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
           </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 pb-lg-2">
+          <div className="col-12">
             <img
-              src={tod2}
-              onClick={() => openLightboxOnSlide(3)}
-              alt="The Odd Dystrict Screens"
+              src="../../src/images/tod/tod-03.jpg"
+              alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-          <div className="col-lg-6">
+          <div className="col-12">
             <img
-              src={tod4}
-              onClick={() => openLightboxOnSlide(4)}
-              alt="The Odd Dystrict Screens"
+              src="../../src/images/tod/tod-04.jpg"
+              alt="ESF Join Us School Map Static"
+              className="proj-img img-fluid"
+            />
+          </div>
+          <div className="col-6 cs-caption">
+            <p>
+              SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
+              his army of synthetics? No, they didn't cover this in Basic. And I
+              would again. But I also know what it is to leave everything behind
+              and fight.
+            </p>
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/tod/tod-05.jpg"
+              alt="ESF Join Us Culture Highlights"
+              className="proj-img img-fluid mb-2 mb-md-0"
+            />
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/tod/tod-06.jpg"
+              alt="ESF Join Us School Map Static"
+              className="proj-img img-fluid"
+            />
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/tod/tod-07.jpg"
+              alt="ESF Join Us Culture Highlights"
+              className="proj-img img-fluid mb-2 mb-md-0"
+            />
+          </div>
+          <div className="col-6 cs-caption">
+            <p>
+              INFO ARCHITECTURE / ADMISSIONS. Trying to take down a rogue
+              Spectre and his army of synthetics? No, they didn't cover this in
+              Basic. And I would again. But I also know what it is to leave
+              everything behind and fight.
+            </p>
+          </div>
+          <div className="col-12">
+            <img
+              src="../../src/images/tod/tod-08.jpg"
+              alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
           </div>
         </div>
         <div className="row mt-3">
           <BackButton />
-          <div className="col col-lg-6 text-end">
+          <div className="col col-sm-6 text-end">
             <div className="d-flex flex-column justify-content-end">
               <div>
-                <Link to="../work/juno">
+                <Link to="../work/scho">
                   <button className="back-link next-link">
                     Next Project<i className="fa-solid fa-arrow-right-long"></i>
                   </button>
                 </Link>
               </div>
-              <div className="next-proj">Juno Bakeshop</div>
+              <div className="next-proj">Personal Identity Design</div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

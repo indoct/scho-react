@@ -9,6 +9,7 @@ import gsscreen from "../images/project/project-cover-gs.jpg";
 import todscreen from "../images/project/project-cover-tod.jpg";
 import n7iscreen from "../images/project/project-cover-n7i.jpg";
 import schoscreen from "../images/project/project-cover-scho.png";
+import quizscreen from "../images/project/project-cover-quiz.jpg";
 
 export default function Home() {
   useEffect(() => {
@@ -84,7 +85,7 @@ export default function Home() {
           </div>
           <ul className="proj-links">
             <li>
-              <Link to="work/esfjoinus">
+              <Link to="work/getsetsports">
                 case study
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
@@ -113,7 +114,7 @@ export default function Home() {
           </div>
           <ul className="proj-links">
             <li>
-              <Link to="work/esfjoinus">
+              <Link to="work/bg3setcreator">
                 case study
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
@@ -128,22 +129,22 @@ export default function Home() {
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="card-img">
-            <img src={todscreen} alt="The Odd Dystrict project cover image" />
+            <img src={quizscreen} alt="Beyond Bitesize Screen 1" />
           </div>
-          <h2 className="p-title">The Odd Dystrict</h2>
+          <h2 className="p-title">Quizzical</h2>
           <p className="p-desc">
-            Website and web3 interface where users could mint an art NFT and
-            interact with their portfolio.
+            An interactive quiz web app, built with React and utilising the TMDb
+            database.
           </p>
           <ul className="proj-links">
             <li>
-              <Link to="work/esfjoinus">
-                case study
+              <Link to="work/quizzical">
+                project
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </li>
             <li>
-              <a href="https://the-odd-dystrict.com" target="_blank">
+              <a href="https://quizzical.scho.pro" target="_blank">
                 website
                 <i className="fa fa-external-link" aria-hidden="true"></i>
               </a>
@@ -176,6 +177,30 @@ export default function Home() {
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="card-img">
+            <img src={todscreen} alt="The Odd Dystrict project cover image" />
+          </div>
+          <h2 className="p-title">The Odd Dystrict</h2>
+          <p className="p-desc">
+            Website and web3 interface where users could mint an art NFT and
+            interact with their portfolio.
+          </p>
+          <ul className="proj-links">
+            <li>
+              <Link to="work/theodddystrict">
+                case study
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            <li>
+              <a href="https://the-odd-dystrict.com" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
             <img src={n7iscreen} alt="Beyond Bitesize Screen 1" />
           </div>
           <h2 className="p-title">N7 Ipsum</h2>
@@ -185,7 +210,7 @@ export default function Home() {
           </p>
           <ul className="proj-links">
             <li>
-              <Link to="work/esfjoinus">
+              <Link to="work/n7ipsum">
                 project
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>

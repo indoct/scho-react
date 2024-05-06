@@ -10,10 +10,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import BeyondBitesize from "./pages/work/BeyondBitesize";
 import BG3SetCreator from "./pages/work/BG3SetCreator";
 import Scho from "./pages/work/Scho";
-import GrowBuddy from "./pages/work/GrowBuddy";
 import TheOddDystrict from "./pages/work/TheOddDystrict";
 import Quizzical from "./pages/work/Quizzical";
 import "./App.css";
@@ -43,7 +41,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
             <Route path="/work/bg3setcreator" element={<BG3SetCreator />} />
-            <Route path="/work/beyondbitesize" element={<BeyondBitesize />} />
             <Route path="/work/scho" element={<Scho />} />
             <Route path="/work/getsetsports" element={<GetSetSports />} />
             <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
