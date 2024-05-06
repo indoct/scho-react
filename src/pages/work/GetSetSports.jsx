@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import BackButton from "../../components/BackButton";
 
 export default function GetSetSports() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <motion.div
       initial={{ opacity: 0 }}
