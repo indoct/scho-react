@@ -11,12 +11,14 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BeyondBitesize from "./pages/work/BeyondBitesize";
+import BG3SetCreator from "./pages/work/BG3SetCreator";
 import Scho from "./pages/work/Scho";
 import GrowBuddy from "./pages/work/GrowBuddy";
 import TheOddDystrict from "./pages/work/TheOddDystrict";
-import Juno from "./pages/work/Juno";
+import Quizzical from "./pages/work/Quizzical";
 import "./App.css";
 import ESFJoinUs from "./pages/work/ESFJoinUs";
+import GetSetSports from "./pages/work/GetSetSports";
 
 function App() {
   const location = useLocation();
@@ -40,11 +42,12 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
+            <Route path="/work/bg3setcreator" element={<BG3SetCreator />} />
             <Route path="/work/beyondbitesize" element={<BeyondBitesize />} />
             <Route path="/work/scho" element={<Scho />} />
-            <Route path="/work/growbuddy" element={<GrowBuddy />} />
+            <Route path="/work/getsetsports" element={<GetSetSports />} />
             <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
-            <Route path="/work/juno" element={<Juno />} />
+            <Route path="/work/quizzical" element={<Quizzical />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>

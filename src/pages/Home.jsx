@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import bbscreen from "../images/project/grid-bb-screen.png";
 import esfscreen from "../images/project/project-cover-esf.jpg";
 import prcscreen from "../images/project/project-cover-prc.jpg";
 import gsscreen from "../images/project/project-cover-gs.jpg";
