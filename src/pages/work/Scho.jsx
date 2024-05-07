@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// import scho01 from "../../images/project/scho-01-min.jpg";
-// import scho02 from "../../images/project/scho-02-min.jpg";
-// import scho03 from "../../images/project/scho-03-min.jpg";
-// import scho04 from "../../images/project/scho-04-min.jpg";
+// import scho01 from "../../assets/images/project/scho-01-min.jpg";
+// import scho02 from "../../assets/images/project/scho-02-min.jpg";
+// import scho03 from "../../assets/images/project/scho-03-min.jpg";
+// import scho04 from "../../assets/images/project/scho-04-min.jpg";
 
 import BackButton from "../../components/BackButton";
 

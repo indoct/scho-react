@@ -55,7 +55,7 @@ export default function BG3SetCreator() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <img
-              src="../../src/images/prc/piercings-01.jpg"
+              src="../../src/assets/images/prc/piercings-01.jpg"
               alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
@@ -69,21 +69,21 @@ export default function BG3SetCreator() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/prc/piercings-02.jpg"
+              src="../../src/assets/images/prc/piercings-02.jpg"
               alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/prc/piercings-03.jpg"
+              src="../../src/assets/images/prc/piercings-03.jpg"
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/prc/piercings-04.jpg"
+              src="../../src/assets/images/prc/piercings-04.jpg"
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
@@ -98,7 +98,7 @@ export default function BG3SetCreator() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/prc/piercings-06.jpg"
+              src="../../src/assets/images/prc/piercings-06.jpg"
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />

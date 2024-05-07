@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import esfscreen from "../images/project/project-cover-esf.jpg";
-import prcscreen from "../images/project/project-cover-prc.jpg";
-import gsscreen from "../images/project/project-cover-gs.jpg";
-import todscreen from "../images/project/project-cover-tod.jpg";
-import n7iscreen from "../images/project/project-cover-n7i.jpg";
-import schoscreen from "../images/project/project-cover-scho.png";
-import quizscreen from "../images/project/project-cover-quiz.jpg";
+import esfscreen from "../assets/images/project/project-cover-esf.jpg";
+import prcscreen from "../assets/images/project/project-cover-prc.jpg";
+import gsscreen from "../assets/images/project/project-cover-gs.jpg";
+import todscreen from "../assets/images/project/project-cover-tod.jpg";
+import n7iscreen from "../assets/images/project/project-cover-n7i.jpg";
+import schoscreen from "../assets/images/project/project-cover-scho.png";
+import quizscreen from "../assets/images/project/project-cover-quiz.jpg";
 
 export default function Home() {
   useEffect(() => {

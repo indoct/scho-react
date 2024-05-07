@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
 
@@ -53,7 +53,7 @@ export default function ESFJoinUs() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-01.jpg"
+              src={assets.joinus01}
               alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
@@ -67,21 +67,21 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-02.jpg"
+              src={assets.joinus02}
               alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-03.jpg"
+              src={assets.joinus03}
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-04.jpg"
+              src={assets.joinus04}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
@@ -96,21 +96,21 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-05.jpg"
+              src={assets.joinus05}
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-06.jpg"
+              src={assets.joinus06}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-07.jpg"
+              src={assets.joinus07}
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
@@ -125,35 +125,35 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-08.jpg"
+              src="../../src/assets/images/esf/assets.joinus-08.jpg"
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-09.jpg"
+              src={assets.joinus09}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-10.jpg"
+              src={assets.joinus10}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-11.jpg"
+              src={assets.joinus11}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/images/esf/joinus-12.jpg"
+              src={assets.joinus12}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />

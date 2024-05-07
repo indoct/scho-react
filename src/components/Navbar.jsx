@@ -1,7 +1,6 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../images/schogo.svg";
-import LogoLM from "../images/schogo-light.svg";
+import Logo from "../assets/images/schogo.svg";
+import LogoLM from "../assets/images/schogo-light.svg";
 import "@theme-toggles/react/css/Within.css";
 import { Within } from "@theme-toggles/react";
 import { useState } from "react";
