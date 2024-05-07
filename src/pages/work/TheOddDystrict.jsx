@@ -22,9 +22,9 @@ export default function TheOddDystrict() {
           <div className="col-md-8">
             <p className="categories">
               <span className="p-cat">UX & UI</span>/
-              <span className="p-cat">Information Architecture</span>/
-              <span className="p-cat">Web Design & Dev</span>/
-              <span className="p-cat">CMS</span>
+              <span className="p-cat">Identity Design</span>/
+              <span className="p-cat">Web3</span>/
+              <span className="p-cat">React</span>
             </p>
             <h1 className="mb-3">
               <span className="gradient">The Odd Dystrict</span>
@@ -44,12 +44,24 @@ export default function TheOddDystrict() {
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>
               <a
-                href="https://join-us.esf.edu.hk"
+                href="https://the-odd-dystrict.com/home.html"
                 target="_blank"
                 rel="noreferrer"
                 className="proj-url"
               >
-                Visit ESF Website
+                Visit The Odd Dystrict Website
+              </a>
+              <br />
+            </p>
+            <p className="plink-cont">
+              <i className="fa-solid fa-up-right-from-square link-icon"></i>
+              <a
+                href="https://portal.the-odd-dystrict.com"
+                target="_blank"
+                rel="noreferrer"
+                className="proj-url"
+              >
+                Visit Web3 Portal
               </a>
               <br />
             </p>

@@ -39,18 +39,23 @@ export default function BG3SetCreator() {
               redesign and separate site for the campaign would be better suited
               to achieve the project goals.
             </p>
-            <p className="plink-cont">
-              <i className="fa-solid fa-up-right-from-square link-icon"></i>
-              <a
-                href="https://join-us.esf.edu.hk"
-                target="_blank"
-                rel="noreferrer"
-                className="proj-url"
-              >
-                Visit ESF Website
-              </a>
-              <br />
-            </p>
+            <div className="pp-info">
+              <p className="plink-cont">
+                <span className="tech">URL: </span>
+                <a
+                  href="https://piercings.indoc.dev"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="proj-url"
+                >
+                  https://piercings.indoc.dev{" "}
+                  <i className="fa-solid fa-up-right-from-square"></i>
+                </a>
+                <br />
+              </p>
+              {/* <p className="tech">Built with: </p>{" "}
+              <p className="plink-cont">ReactJS, React Router</p> */}
+            </div>
           </div>
         </div>
         <div className="row pb-2 py-lg-3 project-images justify-content-center">

@@ -107,11 +107,11 @@ export default function About() {
             <p className="mb-4 d-flex">
               <span className="item">HTML</span>
               <span className="item">CSS</span>
-              <span className="item">Javascript</span>
+              <span className="item">Vanilla Javascript</span>
               <span className="item">React</span>
-              <span className="item">React Router</span>
-              <span className="item">Wordpress</span>
+              <span className="item">Typescript</span>
               <span className="item">Bootstrap</span>
+              <span className="item">Wordpress</span>
             </p>
           </div>
         </div>

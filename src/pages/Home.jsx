@@ -57,7 +57,7 @@ export default function Home() {
           <ul className="proj-links">
             <li>
               <Link to="work/esfjoinus">
-                case study
+                project
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </li>
@@ -86,7 +86,7 @@ export default function Home() {
           <ul className="proj-links">
             <li>
               <Link to="work/getsetsports">
-                case study
+                project
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </li>
@@ -115,7 +115,7 @@ export default function Home() {
           <ul className="proj-links">
             <li>
               <Link to="work/bg3setcreator">
-                case study
+                project
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </li>
@@ -163,7 +163,7 @@ export default function Home() {
           <ul className="proj-links">
             <li>
               <Link to="work/esfjoinus">
-                case study
+                project
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </li>
@@ -187,7 +187,7 @@ export default function Home() {
           <ul className="proj-links">
             <li>
               <Link to="work/theodddystrict">
-                case study
+                project
                 <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </Link>
             </li>
@@ -205,16 +205,10 @@ export default function Home() {
           </div>
           <h2 className="p-title">N7 Ipsum</h2>
           <p className="p-desc">
-            A Mass Effect lorem ipsum dummy text generator. Does what it says on
-            the tin.
+            A Mass Effect lorem ipsum dummy text generator built with vanilla
+            JS. Does what it says on the tin.
           </p>
           <ul className="proj-links">
-            <li>
-              <Link to="work/n7ipsum">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
             <li>
               <a href="https://n7-ipsum.scho.pro" target="_blank">
                 website

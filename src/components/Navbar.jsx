@@ -67,7 +67,7 @@ export default function Navbar(props) {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <NavLink to="/" className="nav-link g1 ml">
+                  <NavLink to="/" className="nav-link g2 ml">
                     Home
                   </NavLink>
                 </li>
@@ -104,23 +104,7 @@ export default function Navbar(props) {
                           </li>
                           <li className="sub-li">
                             <NavLink
-                              className="nav-link g1 sub-link"
-                              to="/work/bg3setcreator"
-                            >
-                              BG3 Set Creator
-                            </NavLink>
-                          </li>
-                          <li className="sub-li">
-                            <NavLink
                               className="nav-link g2 sub-link"
-                              to="/work/scho"
-                            >
-                              Personal Identity
-                            </NavLink>
-                          </li>
-                          <li className="sub-li">
-                            <NavLink
-                              className="nav-link g3 sub-link"
                               to="/work/getsetsports"
                             >
                               Get Set Sports
@@ -129,6 +113,14 @@ export default function Navbar(props) {
                           <li className="sub-li">
                             <NavLink
                               className="nav-link g3 sub-link"
+                              to="/work/bg3setcreator"
+                            >
+                              BG3 Set Creator
+                            </NavLink>
+                          </li>
+                          <li className="sub-li">
+                            <NavLink
+                              className="nav-link g4 sub-link"
                               to="/work/quizzical"
                             >
                               Quizzical
@@ -136,7 +128,15 @@ export default function Navbar(props) {
                           </li>
                           <li className="sub-li">
                             <NavLink
-                              className="nav-link g4 sub-link"
+                              className="nav-link g1 sub-link"
+                              to="/work/scho"
+                            >
+                              SCHO. Portfolio
+                            </NavLink>
+                          </li>
+                          <li className="sub-li">
+                            <NavLink
+                              className="nav-link g2 sub-link"
                               to="/work/theodddystrict"
                             >
                               The Odd Dystrict
