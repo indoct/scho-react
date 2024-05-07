@@ -1,12 +1,10 @@
 {
   "name": "scho-react",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/dom": "^10.1.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^15.0.2",
     "@testing-library/user-event": "^14.5.2",
@@ -15,9 +13,7 @@
     "@vitejs/plugin-react-swc": "^3.6.0",
     "aos": "^3.0.0-beta.6",
     "eslint": "^9.0.0",
-    "eslint-config-react-app": "^7.0.1",
     "framer-motion": "^11.1.7",
-    "fslightbox-react": "^1.7.4",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -32,16 +28,6 @@
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off"
-    }
   },
   "browserslist": {
     "production": [
