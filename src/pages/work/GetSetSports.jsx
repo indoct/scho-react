@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
 
@@ -55,7 +56,7 @@ export default function GetSetSports() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <img
-              src="../../src/assets/images/gs/get-set-01.jpg"
+              src={assets.getset01}
               alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
@@ -69,21 +70,21 @@ export default function GetSetSports() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/gs/get-set-02.jpg"
+              src={assets.getset02}
               alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/gs/get-set-03.jpg"
+              src={assets.getset03}
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/gs/get-set-04.jpg"
+              src={assets.getset04}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
@@ -98,14 +99,14 @@ export default function GetSetSports() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/gs/get-set-06.jpg"
+              src={assets.getset06}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/gs/get-set-07.jpg"
+              src={assets.getset07}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />

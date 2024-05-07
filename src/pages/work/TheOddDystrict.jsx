@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
 
@@ -57,7 +58,7 @@ export default function TheOddDystrict() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <img
-              src="../../src/assets/images/tod/tod-01.jpg"
+              src={assets.tod01}
               alt="ESF Join Us Hero"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
@@ -71,21 +72,21 @@ export default function TheOddDystrict() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/tod/tod-02.jpg"
+              src={assets.tod02}
               alt="ESF Join Us Intro"
               className="proj-img img-fluid"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/tod/tod-03.jpg"
+              src={assets.tod03}
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/tod/tod-04.jpg"
+              src={assets.tod04}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />
@@ -100,23 +101,16 @@ export default function TheOddDystrict() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/tod/tod-05.jpg"
+              src={assets.tod05}
               alt="ESF Join Us Culture Highlights"
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/tod/tod-06.jpg"
+              src={assets.tod06}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
-            />
-          </div>
-          <div className="col-12">
-            <img
-              src="../../src/assets/images/tod/tod-07.jpg"
-              alt="ESF Join Us Culture Highlights"
-              className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
           <div className="col-6 cs-caption">
@@ -129,7 +123,7 @@ export default function TheOddDystrict() {
           </div>
           <div className="col-12">
             <img
-              src="../../src/assets/images/tod/tod-08.jpg"
+              src={assets.tod07}
               alt="ESF Join Us School Map Static"
               className="proj-img img-fluid"
             />

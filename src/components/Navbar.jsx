@@ -10,14 +10,6 @@ export default function Navbar(props) {
   const [isOpen, setOpen] = useState(false);
   const { toggleDarkMode, isDarkMode } = props;
 
-  // const collapseMenu = (e) => {
-  //   if (e.target.classList.contains("ml")) {
-  //     e.currentTarget.classList.remove("show");
-  //     e.stopPropagation();
-  //     setOpen(!isOpen);
-  //   } else console.log(`not a nav-link`);
-  // };
-
   return (
     <nav className="navbar pt-4 navbar-dark fixed-top" id="menu">
       <div className="container">
