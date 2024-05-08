@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
 import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
 
 export default function BG3SetCreator() {
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,6 +22,19 @@ export default function BG3SetCreator() {
       <div className="container d-flex flex-column pt-4 pt-lg-5 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
+            <button type="button" onClick={() => setOpen(true)}>
+              Open Lightbox
+            </button>
+            <Lightbox
+              open={open}
+              close={() => setOpen(false)}
+              index={2}
+              slides={[
+                { src: assets.prc01 },
+                { src: assets.prc02 },
+                { src: "/image3.jpg" },
+              ]}
+            />
             <p className="categories">
               <span className="p-cat">Web Application</span>/
               <span className="p-cat">React</span>/

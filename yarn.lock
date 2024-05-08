@@ -3122,6 +3122,7 @@ __metadata:
     vite-plugin-svgr: "npm:^4.2.0"
     vite-tsconfig-paths: "npm:^4.3.2"
     web-vitals: "npm:^3.5.2"
+    yet-another-react-lightbox: "npm:^3.18.0"
   languageName: unknown
   linkType: soft
 
@@ -3554,6 +3555,16 @@ __metadata:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 10c0/2286b5e8dbfe22204ab66e2ef5cc9bbb1e55dfc873bbe0d568aa943eb255d131890dfd5bf243637273d31119b870f49c18fcde2c6ffbb7a7a092b870dc90625a
+  languageName: node
+  linkType: hard
+
+"yet-another-react-lightbox@npm:^3.18.0":
+  version: 3.18.0
+  resolution: "yet-another-react-lightbox@npm:3.18.0"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 10c0/fbbd72adf1c42efe230c7c3b65f4864c905f0d5ba8faa4fef05abf0bcd1073a6e0d83e9f1cd4bb69be58e6f559515fe08d264c9e49c267c8b0e1cdb07ae99676
   languageName: node
   linkType: hard
 
