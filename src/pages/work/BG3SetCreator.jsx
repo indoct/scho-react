@@ -4,16 +4,20 @@ import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
 
 export default function BG3SetCreator() {
   const [index, setIndex] = useState(-1);
+  // const [maxZoomPixelRatio, setMaxZoomPixelRatio] = useState(1.1);
+  // const [zoomInMultiplier, setZoomInMultiplier] = useState(5);
   const [slides, setSlides] = useState([
-    { src: assets.prc01, alt: "image 1", caption: "blahblah" },
+    {
+      src: assets.prc01,
+      alt: "image 1",
+      title: "recruitment drive for their 22 schools",
+    },
     { src: assets.prc02 },
     { src: assets.prc03 },
     { src: assets.prc04 },
@@ -39,8 +43,7 @@ export default function BG3SetCreator() {
               close={() => setIndex(-1)}
               index={index}
               slides={slides}
-              plugins={[Fullscreen, Captions, Thumbnails, Zoom]}
-              thumbnails={{ showToggle: true }}
+              plugins={[Fullscreen, Captions]}
             />
             <p className="categories">
               <span className="p-cat">Web Application</span>/
@@ -74,10 +77,11 @@ export default function BG3SetCreator() {
                   https://piercings.indoc.dev{" "}
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
-                <br />
               </p>
-              {/* <p className="tech">Built with: </p>{" "}
-              <p className="plink-cont">ReactJS, React Router</p> */}
+              <p className="plink-cont">
+                <span className="tech">BUILT WITH: </span>
+                ReactJS, React Router
+              </p>
             </div>
           </div>
         </div>
@@ -99,25 +103,31 @@ export default function BG3SetCreator() {
             </p>
           </div>
           <div className="col-12">
-            <img
-              src={assets.prc02}
-              alt="ESF Join Us Intro"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(1)}>
+              <img
+                src={assets.prc02}
+                alt="ESF Join Us Intro"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12">
-            <img
-              src={assets.prc03}
-              alt="ESF Join Us Culture Highlights"
-              className="proj-img img-fluid mb-2 mb-md-0"
-            />
+            <a href="#" onClick={() => setIndex(2)}>
+              <img
+                src={assets.prc03}
+                alt="ESF Join Us Culture Highlights"
+                className="proj-img img-fluid mb-2 mb-md-0"
+              />
+            </a>
           </div>
           <div className="col-12">
-            <img
-              src={assets.prc04}
-              alt="ESF Join Us School Map Static"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(3)}>
+              <img
+                src={assets.prc04}
+                alt="ESF Join Us School Map Static"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-6 cs-caption">
             <p>
@@ -128,11 +138,13 @@ export default function BG3SetCreator() {
             </p>
           </div>
           <div className="col-12">
-            <img
-              src={assets.prc06}
-              alt="ESF Join Us School Map Static"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(5)}>
+              <img
+                src={assets.prc06}
+                alt="ESF Join Us School Map Static"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
         </div>
         <div className="row mt-3">

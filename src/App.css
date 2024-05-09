@@ -1152,12 +1152,23 @@ p.intro {
   display: inline-block;
   padding: 12px 18px;
   border: 1.5px solid var(--schogrey);
+  font-size: 16px;
+}
+
+.plink-cont a {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.light-mode .plink-cont {
+  color: var(--schoash);
+  border-color: var(--schoclay);
 }
 
 .tech {
   font-family: "forma-djr-mono";
-  font-size: medium;
-  letter-spacing: 1px;
+  font-size: 0.86rem;
+  letter-spacing: 0.0125rem;
   color: var(--schoaccent);
 }
 
