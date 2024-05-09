@@ -7,8 +7,9 @@ import { useState } from "react";
 import Hamburger from "hamburger-react";
 
 export default function Navbar(props) {
-  const [isOpen, setOpen] = useState(false);
+  const [menuIsOpen, setMenuOpen] = useState(false);
   const { toggleDarkMode, isDarkMode } = props;
+  console.log(menuIsOpen);
 
   return (
     <nav className="navbar pt-4 navbar-dark fixed-top" id="menu">
@@ -38,7 +39,7 @@ export default function Navbar(props) {
                   isDarkMode ? "Dark" : "Light"
                 } Mode)`}
               />
-              <button
+              {/* <button
                 className="navbar-toggler collapsed"
                 type="button"
                 data-bs-toggle="collapse"
@@ -46,22 +47,36 @@ export default function Navbar(props) {
                 aria-controls="navbarNav"
                 aria-expanded="false"
                 aria-label={`Toggle navigation menu open or closed (currently ${
-                  isOpen ? "open" : "closed"
+                  menuIsOpen ? "open" : "closed"
                 })`}
                 title={`Toggle navigation menu open or closed (currently ${
-                  isOpen ? "open" : "closed"
+                  menuIsOpen ? "open" : "closed"
                 })`}
-              >
-                <Hamburger
-                  toggled={isOpen}
-                  toggle={setOpen}
-                  color={isDarkMode ? "var(--scholight)" : "var(--schogrey)"}
-                  rounded
-                />
-              </button>
+              > */}
+              <Hamburger
+                // className="navbar-toggler collapsed"
+                // type="button"
+                // data-bs-toggle="collapse"
+                // data-bs-target="#navbarNav"
+                // aria-controls="navbarNav"
+                // aria-expanded="false"
+                hideOutline={false}
+                label={`Toggle navigation menu open or closed (currently ${
+                  menuIsOpen ? "open" : "closed"
+                })`}
+                toggled={menuIsOpen}
+                toggle={setMenuOpen}
+                color={isDarkMode ? "var(--scholight)" : "var(--schogrey)"}
+                rounded
+              />
+              {/* </button> */}
             </div>
             <div
-              className="collapse navbar-collapse"
+              className={
+                !menuIsOpen
+                  ? "navbar-collapse collapse"
+                  : "navbar-collapse collapse show"
+              }
               id="navbarNav"
               // onClick={collapseMenu}
             >
