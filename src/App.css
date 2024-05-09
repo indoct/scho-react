@@ -108,6 +108,7 @@ a:hover {
 .navbar-brand {
   padding: 0;
   pointer-events: initial;
+  margin-right: 0;
 }
 
 .navbar-right {
@@ -230,25 +231,6 @@ button.g2:hover,
 .nav-link.active.g4:hover {
   color: var(--scholime);
 }
-/* 
-.light-mode .nav-link.g1:hover,
-.light-mode .nav-link.active.g1:hover {
-  color: var(--schoiris);
-}
-
-.light-mode .nav-link.g2:hover,
-.light-mode .nav-link.active.g2:hover,
-.light-mode button.g2:hover,
-.light-mode .accordion-button:hover {
-  color: var(--scholapis);
-}
-
-.light-mode .nav-link.g3:hover,
-.light-mode .nav-link.active.g3:hover {
-  color: var(--schopearl);
-  /* border-right: 4px solid var(--schoteal); */
-/* margin-right: 5px; 
-}*/
 
 figure {
   margin: 0;

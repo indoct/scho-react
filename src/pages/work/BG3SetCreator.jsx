@@ -2,12 +2,24 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
 
 export default function BG3SetCreator() {
-  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(-1);
+  const [slides, setSlides] = useState([
+    { src: assets.prc01, alt: "image 1", caption: "blahblah" },
+    { src: assets.prc02 },
+    { src: assets.prc03 },
+    { src: assets.prc04 },
+    { src: assets.prc05 },
+    { src: assets.prc06 },
+  ]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,18 +34,13 @@ export default function BG3SetCreator() {
       <div className="container d-flex flex-column pt-4 pt-lg-5 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
-            <button type="button" onClick={() => setOpen(true)}>
-              Open Lightbox
-            </button>
             <Lightbox
-              open={open}
-              close={() => setOpen(false)}
-              index={2}
-              slides={[
-                { src: assets.prc01 },
-                { src: assets.prc02 },
-                { src: "/image3.jpg" },
-              ]}
+              open={index >= 0}
+              close={() => setIndex(-1)}
+              index={index}
+              slides={slides}
+              plugins={[Fullscreen, Captions, Thumbnails, Zoom]}
+              thumbnails={{ showToggle: true }}
             />
             <p className="categories">
               <span className="p-cat">Web Application</span>/
@@ -76,11 +83,13 @@ export default function BG3SetCreator() {
         </div>
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
-            <img
-              src={assets.prc01}
-              alt="ESF Join Us Hero"
-              className="proj-img img-fluid mb-2 mb-md-0"
-            />
+            <a href="#" onClick={() => setIndex(0)}>
+              <img
+                src={assets.prc01}
+                alt="ESF Join Us Hero"
+                className="proj-img img-fluid mb-2 mb-md-0"
+              />
+            </a>
           </div>
           <div className="col-6 cs-caption">
             <p>
