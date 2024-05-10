@@ -114,10 +114,6 @@ a:hover {
   align-items: flex-start;
 }
 
-/* .light-mode .navbar {
-  background-color: var(--schostone);
-} */
-
 .navbar {
   pointer-events: none;
 }
@@ -132,13 +128,13 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  pointer-events: initial;
 }
 
 .nav-cont {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  pointer-events: initial;
 }
 
 .navbar-nav {
@@ -151,6 +147,10 @@ a:hover {
   flex-direction: row;
 }
 
+.navbar-nav.closed {
+  pointer-events: none;
+}
+
 .mode-switch {
   padding-right: 1em;
 }
@@ -158,10 +158,6 @@ a:hover {
 .light-mode .theme-toggle__within {
   fill: var(--schodark);
 }
-
-/* .hamburger-react div {
-  height: 0.19rem !important;
-} */
 
 .theme-toggle__within {
   fill: var(--scholight);
@@ -175,7 +171,7 @@ a:hover {
   margin-right: 10px;
 }
 
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+/* .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
   transition: all 0.4s ease;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='2 2 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='0.6' stroke-linecap='round' stroke-miterlimit='10' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
 }
@@ -188,31 +184,7 @@ a:hover {
 nav .navbar-toggler {
   border: 0;
   padding: 0;
-  /* height: 40px;
-  width: 40px;
-  background: #c582ff;
-  background: -webkit-linear-gradient(
-    to right,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
-  background: linear-gradient(
-    100deg,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  ); */
-}
+} */
 
 .nav-link {
   color: var(--scholight);
@@ -224,7 +196,7 @@ nav .navbar-toggler {
 
 .nav-item .nav-link:not(.sub-link),
 .navbar-nav button {
-  font-size: 1.2rem;
+  font-size: 1.14rem;
 }
 
 .navbar-collapse {
@@ -395,25 +367,27 @@ figcaption .p-title {
 }
 
 #menu .navbar-nav .nav-link {
-  padding: 0 5px;
+  padding: 4px 8px;
   text-align: right;
   text-decoration: none;
+  margin-top: 1px;
 }
 
 .proj-nav-body {
   font-size: 0.9rem;
-  padding: 5px 0;
+  padding: 4px 0;
   list-style: none;
-  margin: 4px 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .light-mode .proj-nav-body {
   background-color: var(--schostone);
 }
 
-#menu .sub-li .sub-link {
-  padding: 0 8px;
-}
+/* #menu .sub-li .sub-link {
+  padding: 4px 8px;
+} */
 
 .nav-link i {
   font-size: 1.5rem;
@@ -449,9 +423,9 @@ figcaption .p-title {
   color: var(--schopurp);
 }
 
-.sub-li {
-  padding: 2px 0;
-}
+/* .sub-li {
+  padding: 4px 0;
+} */
 
 .sub-li a {
   color: var(--schopale);
@@ -1051,10 +1025,6 @@ a.email-big {
   margin-right: 34px;
 }
 
-.cs-caption {
-  padding: 1.5rem 0;
-}
-
 .cs-caption p {
   margin-bottom: 0;
 }
@@ -1247,6 +1217,11 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
+  h1.mb-3 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin-bottom: 12px !important;
+  }
   .navbar {
     background-color: #212326;
   }
@@ -1257,8 +1232,8 @@ footer {
     background-color: #d1cbc7;
   }
   .navbar.py-3 {
-    padding-top: 12px !important;
-    padding-bottom: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   #menu .navbar-nav .nav-link:not(.sub-link) {
     padding: 6px;
@@ -1266,11 +1241,23 @@ footer {
   .proj-nav-body {
     font-size: 1rem;
   }
-  .sub-li {
-    padding: 4px 0;
-  }
   .header {
     padding: 1rem 0.75rem 1.3rem;
+  }
+  p.intro,
+  .cs-caption {
+    line-height: 1.4;
+    font-size: 0.95rem;
+  }
+  .proj-tagline {
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+  .pp-info {
+    gap: 5px;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0.5rem;
   }
   .home .intro {
     font-size: 1.1rem;
@@ -1315,7 +1302,7 @@ footer {
   }
   .plink-cont {
     font-size: 0.92rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
   }
   .p-cat {
     font-size: 0.8rem;

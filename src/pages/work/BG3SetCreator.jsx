@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
@@ -33,7 +34,7 @@ export default function BG3SetCreator() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column pt-4 pt-lg-5 justify-content-center">
+      <div className="container d-flex flex-column page pt-5 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
             <Lightbox
@@ -41,7 +42,7 @@ export default function BG3SetCreator() {
               close={() => setIndex(-1)}
               index={index}
               slides={slides}
-              plugins={[Fullscreen, Captions]}
+              plugins={[Fullscreen, Captions, Zoom]}
             />
             <p className="categories">
               <span className="p-cat">Web Application</span>/
@@ -49,11 +50,11 @@ export default function BG3SetCreator() {
               <span className="p-cat">QOL</span>
             </p>
             <h1 className="mb-3">
-              <span className="gradient">BG3 Piercing Set Creator</span>
+              <span className="gradient">BG3 Set Creator</span>
             </h1>
             <p className="proj-tagline">
-              Making modding more accessible and adding customisability for
-              modders and players alike.
+              Making modding more accessible & adding customisability for
+              modders & players alike.
             </p>
             <p className="intro">
               The English Schools Foundation (est. 1967) approached me to add a
@@ -89,11 +90,11 @@ export default function BG3SetCreator() {
               <img
                 src={assets.prc01}
                 alt="ESF Join Us Hero"
-                className="proj-img img-fluid mb-2 mb-md-0"
+                className="proj-img img-fluid"
               />
             </a>
           </div>
-          <div className="col-6 cs-caption">
+          <div className="col-12 col-sm-6 cs-caption">
             <p>
               Trying to take down a rogue Spectre and his army of synthetics?
               No, they didn't cover this in Basic. And I would again. But I also
@@ -114,7 +115,7 @@ export default function BG3SetCreator() {
               <img
                 src={assets.prc03}
                 alt="ESF Join Us Culture Highlights"
-                className="proj-img img-fluid mb-2 mb-md-0"
+                className="proj-img img-fluid"
               />
             </a>
           </div>
@@ -127,7 +128,7 @@ export default function BG3SetCreator() {
               />
             </a>
           </div>
-          <div className="col-6 cs-caption">
+          <div className="col-12 col-sm-6 cs-caption">
             <p>
               SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
               his army of synthetics? No, they didn't cover this in Basic. And I

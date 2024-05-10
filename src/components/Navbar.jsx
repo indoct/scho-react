@@ -62,7 +62,7 @@ export default function Navbar(props) {
             </div>
             <motion.ul
               key="expanded"
-              className="navbar-nav"
+              className={menuIsOpen ? "navbar-nav" : "navbar-nav closed"}
               initial={false}
               animate={menuIsOpen ? "open" : "closed"}
               variants={variants}
