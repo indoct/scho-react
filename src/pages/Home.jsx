@@ -16,7 +16,7 @@ export default function Home() {
     AOS.init();
   }, []);
   return (
-    <div className="container">
+    <div className="container page">
       <section className="header home row">
         <div className="col col-xl-7">
           <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
@@ -28,9 +28,9 @@ export default function Home() {
             data-aos-duration="1200"
             data-aos-delay="200"
           >
-            Hi there! I'm SC Houlihan, but 'scho' is easier to spell ;)
-            <br />
-            I'm a Frontend Developer and UX/UI Designer based in London.
+            Hi there! I'm SC Houlihan, but 'scho' is easier to spell{" "}
+            <i class="fa-regular fa-face-smile-wink"></i>. I'm a Frontend
+            Developer and UX/UI Designer based in London.
           </p>
         </div>
       </section>
@@ -218,7 +218,7 @@ export default function Home() {
           </ul>
         </li>
       </ul>
-      <section className="row my-5 justify-content-center">
+      <section className="row mt-5 mb-1 my-sm-5 justify-content-center">
         <div className="col-12 text-center">
           <div className="home-contact">
             <p>

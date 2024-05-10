@@ -53,8 +53,8 @@ export default function BG3SetCreator() {
               <span className="gradient">BG3 Set Creator</span>
             </h1>
             <p className="proj-tagline">
-              Making modding more accessible & adding customisability for
-              modders & players alike.
+              Making modding more accessible and customisable for modders &
+              players alike.
             </p>
             <p className="intro">
               The English Schools Foundation (est. 1967) approached me to add a

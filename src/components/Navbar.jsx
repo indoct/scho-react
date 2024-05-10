@@ -69,7 +69,11 @@ export default function Navbar(props) {
               id="navbarNav"
             >
               <li className="nav-item">
-                <NavLink to="/" className="nav-link g2 ml">
+                <NavLink
+                  to="/"
+                  className="nav-link g2 ml"
+                  onClick={() => setMenuOpen(false)}
+                >
                   Home
                 </NavLink>
               </li>
@@ -100,6 +104,7 @@ export default function Navbar(props) {
                           <NavLink
                             className="nav-link g1 sub-link"
                             to="/work/esfjoinus"
+                            onClick={() => setMenuOpen(false)}
                           >
                             Join Us (ESF)
                           </NavLink>
@@ -108,6 +113,7 @@ export default function Navbar(props) {
                           <NavLink
                             className="nav-link g2 sub-link"
                             to="/work/getsetsports"
+                            onClick={() => setMenuOpen(false)}
                           >
                             Get Set Sports
                           </NavLink>
@@ -116,6 +122,7 @@ export default function Navbar(props) {
                           <NavLink
                             className="nav-link g3 sub-link"
                             to="/work/bg3setcreator"
+                            onClick={() => setMenuOpen(false)}
                           >
                             BG3 Set Creator
                           </NavLink>
@@ -124,6 +131,7 @@ export default function Navbar(props) {
                           <NavLink
                             className="nav-link g4 sub-link"
                             to="/work/quizzical"
+                            onClick={() => setMenuOpen(false)}
                           >
                             Quizzical
                           </NavLink>
@@ -132,6 +140,7 @@ export default function Navbar(props) {
                           <NavLink
                             className="nav-link g1 sub-link"
                             to="/work/scho"
+                            onClick={() => setMenuOpen(false)}
                           >
                             SCHO. Portfolio
                           </NavLink>
@@ -140,6 +149,7 @@ export default function Navbar(props) {
                           <NavLink
                             className="nav-link g2 sub-link"
                             to="/work/theodddystrict"
+                            onClick={() => setMenuOpen(false)}
                           >
                             The Odd Dystrict
                           </NavLink>
@@ -150,12 +160,20 @@ export default function Navbar(props) {
                 </div>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link g3 ml" to="/about">
+                <NavLink
+                  className="nav-link g3 ml"
+                  to="/about"
+                  onClick={() => setMenuOpen(false)}
+                >
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link g4 ml" to="/contact">
+                <NavLink
+                  className="nav-link g4 ml"
+                  to="/contact"
+                  onClick={() => setMenuOpen(false)}
+                >
                   Contact
                 </NavLink>
               </li>
