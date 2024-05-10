@@ -10,8 +10,6 @@ import BackButton from "../../components/BackButton";
 
 export default function BG3SetCreator() {
   const [index, setIndex] = useState(-1);
-  // const [maxZoomPixelRatio, setMaxZoomPixelRatio] = useState(1.1);
-  // const [zoomInMultiplier, setZoomInMultiplier] = useState(5);
   const [slides, setSlides] = useState([
     {
       src: assets.prc01,
@@ -80,7 +78,7 @@ export default function BG3SetCreator() {
               </p>
               <p className="plink-cont">
                 <span className="tech">BUILT WITH: </span>
-                ReactJS, React Router
+                React, React Router, Prism.js
               </p>
             </div>
           </div>
