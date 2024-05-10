@@ -30,7 +30,7 @@ export default function Home() {
           >
             Hi there! I'm SC Houlihan, but 'scho' is easier to spell{" "}
             <i class="fa-regular fa-face-smile-wink"></i>. I'm a Frontend
-            Developer and UX/UI Designer based in London.
+            Developer and UX/UI Designer in London.
           </p>
         </div>
       </section>

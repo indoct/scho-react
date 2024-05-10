@@ -1288,18 +1288,24 @@ footer {
     justify-content: space-between;
     gap: 20px;
   }
+  .proj-links {
+    margin-top: 1rem;
+  }
   .home .project {
     padding: 2rem 0 0.5rem;
     margin-bottom: 1.5rem;
   }
   .p-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 0.35rem;
   }
-  /* .p-desc {
-    color: #b8bdbf;
-    line-height: 1.5;
-  } */
+  .p-desc {
+    font-size: 1rem;
+    line-height: 1.36;
+  }
+  .light-mode .p-desc {
+    color: #453e38;
+  }
   .profile {
     padding-top: 3rem;
   }
