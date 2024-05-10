@@ -28,25 +28,30 @@ export default function ESFJoinUs() {
               English-medium education.
             </p>
             <p className="intro">
-              The English Schools Foundation (est. 1967) approached me to add a
-              few pages to their existing website for a summer student
-              recruitment drive for their 22 schools. After discussions it
-              became clear that our visions were aligned and that a complete
-              redesign and separate site for the campaign would be better suited
-              to achieve the project goals.
+              The English Schools Foundation approached me to extend their
+              current website for a summer student recruitment drive for their
+              22 schools. After discussions it became clear that our visions
+              were aligned and that a complete redesign and separate site for
+              the campaign would better achieve the project goals.
             </p>
-            <p className="plink-cont">
-              <i className="fa-solid fa-up-right-from-square link-icon"></i>
-              <a
-                href="https://join-us.esf.edu.hk"
-                target="_blank"
-                rel="noreferrer"
-                className="proj-url"
-              >
-                Visit ESF Website
-              </a>
-              <br />
-            </p>
+            <div className="pp-info">
+              <p className="plink-cont">
+                <span className="tech">URL: </span>
+                <a
+                  href="https://join-us.esf.edu.hk"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="proj-url"
+                >
+                  https://join-us.esf.edu.hk{" "}
+                  <i className="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </p>
+              <p className="plink-cont">
+                <span className="tech">BUILT WITH: </span>
+                Wordpress, CSS, JS
+              </p>
+            </div>
           </div>
         </div>
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
@@ -57,7 +62,7 @@ export default function ESFJoinUs() {
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-          <div className="col-6 cs-caption">
+          <div className="col-12 col-sm-6 cs-caption">
             <p>
               Trying to take down a rogue Spectre and his army of synthetics?
               No, they didn't cover this in Basic. And I would again. But I also
@@ -85,7 +90,7 @@ export default function ESFJoinUs() {
               className="proj-img img-fluid"
             />
           </div>
-          <div className="col-6 cs-caption">
+          <div className="col-12 col-sm-6 cs-caption">
             <p>
               SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
               his army of synthetics? No, they didn't cover this in Basic. And I
@@ -114,7 +119,7 @@ export default function ESFJoinUs() {
               className="proj-img img-fluid mb-2 mb-md-0"
             />
           </div>
-          <div className="col-6 cs-caption">
+          <div className="col-12 col-sm-6 cs-caption">
             <p>
               INFO ARCHITECTURE / ADMISSIONS. Trying to take down a rogue
               Spectre and his army of synthetics? No, they didn't cover this in
