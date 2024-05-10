@@ -9,14 +9,20 @@ import Hamburger from "hamburger-react";
 
 export default function Navbar(props) {
   const [menuIsOpen, setMenuOpen] = useState(false);
-  const { toggleDarkMode, isDarkMode } = props;
+  const { isDarkMode, toggleDarkMode } = props;
   const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: 0 },
+    open: {
+      opacity: 1,
+      x: 0,
+      height: "auto",
+      paddingTop: "1rem",
+      paddingBottom: "0.5rem",
+    },
+    closed: { opacity: 0, x: 0, height: 0, paddingTop: 0, paddingBottom: 0 },
   };
 
   return (
-    <nav className="navbar pt-5 navbar-dark fixed-top" id="menu">
+    <nav className="navbar py-3 pt-sm-5 navbar-dark fixed-top" id="menu">
       <div className="container">
         <div className="logo-cont">
           <NavLink to="/">

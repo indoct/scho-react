@@ -13,7 +13,6 @@ body {
     padding-right: 60px;
   }
   .navbar-nav {
-    margin-top: 1rem;
     align-items: flex-end;
   }
 }
@@ -115,6 +114,10 @@ a:hover {
   align-items: flex-start;
 }
 
+/* .light-mode .navbar {
+  background-color: var(--schostone);
+} */
+
 .navbar {
   pointer-events: none;
 }
@@ -136,6 +139,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.navbar-nav {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .toggles {
@@ -1239,20 +1247,27 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
-  /* .navbar-nav {
-    position: absolute;
-    left: 0;
-    width: 100% !important;
-    height: 100vh;
-    background-color: #212326;
-    justify-content: center;
-    align-items: center;
-  } */
   .navbar {
     background-color: #212326;
   }
   .light-mode .navbar {
-    background-color: var(--schopearl);
+    background-color: var(--schostone);
+  }
+  .light-mode .proj-nav-body {
+    background-color: #d1cbc7;
+  }
+  .navbar.py-3 {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  #menu .navbar-nav .nav-link:not(.sub-link) {
+    padding: 6px;
+  }
+  .proj-nav-body {
+    font-size: 1rem;
+  }
+  .sub-li {
+    padding: 4px 0;
   }
   .header {
     padding: 1rem 0.75rem 1.3rem;
