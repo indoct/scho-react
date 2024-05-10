@@ -1223,7 +1223,7 @@ footer {
     margin-bottom: 12px !important;
   }
   .navbar {
-    background-color: #212326;
+    background-color: #2c2f32;
   }
   .light-mode .navbar {
     background-color: var(--schostone);
@@ -1232,8 +1232,8 @@ footer {
     background-color: #d1cbc7;
   }
   .navbar.py-3 {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
   }
   #menu .navbar-nav .nav-link:not(.sub-link) {
     padding: 6px;
@@ -1243,6 +1243,9 @@ footer {
   }
   .header {
     padding: 1rem 0.75rem 1.3rem;
+  }
+  .categories {
+    margin-bottom: 0.7rem;
   }
   p.intro,
   .cs-caption {
@@ -1254,10 +1257,13 @@ footer {
     margin-bottom: 0.75rem;
   }
   .pp-info {
-    gap: 5px;
+    gap: 6px;
     flex-direction: column;
     align-items: stretch;
     margin-bottom: 0.5rem;
+  }
+  .plink-cont {
+    padding: 9px 18px;
   }
   .home .intro {
     font-size: 1.1rem;
@@ -1305,10 +1311,13 @@ footer {
     margin-bottom: 0;
   }
   .p-cat {
-    font-size: 0.8rem;
+    font-size: 0.81rem;
   }
   .navbar-brand img {
     max-width: 50px;
     height: auto;
+  }
+  .page.pt-sm-5 {
+    margin-top: 82px;
   }
 }

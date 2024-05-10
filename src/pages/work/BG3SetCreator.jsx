@@ -34,7 +34,7 @@ export default function BG3SetCreator() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column page pt-5 justify-content-center">
+      <div className="container d-flex flex-column page pt-sm-5 justify-content-center">
         <div className="row pb-2">
           <div className="col-md-8">
             <Lightbox
