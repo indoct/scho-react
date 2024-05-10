@@ -24,7 +24,7 @@ export default function ESFJoinUs() {
               <span className="gradient">English Schools Foundation</span>
             </h1>
             <p className="proj-tagline">
-              A fresh, dynamic face for ESF - Hong Kong's largest provider of
+              A fresh, dynamic face for ESF: Hong Kong's largest provider of
               English-medium education.
             </p>
             <p className="intro">
