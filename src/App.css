@@ -839,7 +839,6 @@ h6 {
   color: #b8bdbf;
   margin-bottom: 0;
   line-height: 1.4;
-  font-size: 0.98rem;
 }
 
 .light-mode .p-desc {
@@ -1113,11 +1112,11 @@ p.intro {
 }
 
 .p-cat {
-  color: var(--schoaccent);
+  color: var(--schopale);
 }
 
 .light-mode .p-cat {
-  color: #8e7d71;
+  color: var(--schoash);
 }
 
 .nl {
@@ -1146,6 +1145,10 @@ p.intro {
   font-size: 0.86rem;
   letter-spacing: 0.0125rem;
   color: var(--schoaccent);
+}
+
+.light-mode .tech {
+  color: #76665b;
 }
 
 .plink-cont i {
@@ -1228,7 +1231,7 @@ footer {
 
 @media only screen and (max-width: 599px) {
   h1.mb-3 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     line-height: 1.1;
     margin-bottom: 12px !important;
   }
@@ -1263,6 +1266,7 @@ footer {
     font-size: 0.95rem;
   }
   .proj-tagline {
+    font-size: 1.05rem;
     line-height: 1.4;
     margin-bottom: 0.75rem;
   }
