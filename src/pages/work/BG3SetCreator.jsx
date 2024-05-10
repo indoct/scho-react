@@ -105,7 +105,7 @@ export default function BG3SetCreator() {
             <a href="#" onClick={() => setIndex(0)}>
               <img
                 src={assets.prc01}
-                alt="ESF Join Us Hero"
+                alt="Set Creator Web App Interface"
                 className="proj-img img-fluid"
               />
             </a>
@@ -121,7 +121,7 @@ export default function BG3SetCreator() {
             <a href="#" onClick={() => setIndex(1)}>
               <img
                 src={assets.prc02}
-                alt="ESF Join Us Intro"
+                alt="Set Creator Instructions Modal"
                 className="proj-img img-fluid"
               />
             </a>
@@ -130,7 +130,7 @@ export default function BG3SetCreator() {
             <a href="#" onClick={() => setIndex(2)}>
               <img
                 src={assets.prc03}
-                alt="ESF Join Us Culture Highlights"
+                alt="Set Creator User Selections + Filters"
                 className="proj-img img-fluid"
               />
             </a>
@@ -139,7 +139,7 @@ export default function BG3SetCreator() {
             <a href="#" onClick={() => setIndex(3)}>
               <img
                 src={assets.prc04}
-                alt="ESF Join Us School Map Static"
+                alt="Current Piercing Set Config UI"
                 className="proj-img img-fluid"
               />
             </a>
@@ -156,7 +156,7 @@ export default function BG3SetCreator() {
             <a href="#" onClick={() => setIndex(5)}>
               <img
                 src={assets.prc06}
-                alt="ESF Join Us School Map Static"
+                alt="Custom Code Generation - Copied to Clipboard"
                 className="proj-img img-fluid"
               />
             </a>

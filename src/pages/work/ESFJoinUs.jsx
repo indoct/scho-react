@@ -18,8 +18,8 @@ export default function ESFJoinUs() {
   const [slides, setSlides] = useState([
     {
       src: assets.joinus01,
-      alt: "ESF Homepage HeroHero",
-      description: "ESF Homepage HeroHero",
+      alt: "ESF Homepage Hero",
+      description: "ESF Homepage Hero",
     },
     {
       src: assets.joinus02,
@@ -139,7 +139,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(0)}>
               <img
                 src={assets.joinus01}
-                alt="ESF Join Us Hero"
+                alt="ESF Homepage Hero"
                 className="proj-img img-fluid mb-2 mb-md-0"
               />
             </a>
@@ -155,7 +155,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(1)}>
               <img
                 src={assets.joinus02}
-                alt="ESF Join Us Intro"
+                alt="ESF Intro and Welcome"
                 className="proj-img img-fluid"
               />
             </a>
@@ -164,7 +164,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(2)}>
               <img
                 src={assets.joinus03}
-                alt="ESF Join Us Culture Highlights"
+                alt="ESF Culture Highlights"
                 className="proj-img img-fluid mb-2 mb-md-0"
               />
             </a>
@@ -173,7 +173,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(3)}>
               <img
                 src={assets.joinus04}
-                alt="ESF Join Us School Map Static"
+                alt="ESF School Map Static"
                 className="proj-img img-fluid"
               />
             </a>
@@ -190,7 +190,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(4)}>
               <img
                 src={assets.joinus05}
-                alt="ESF Join Us Culture Highlights"
+                alt="ESF Culture Highlights"
                 className="proj-img img-fluid mb-2 mb-md-0"
               />
             </a>
@@ -199,7 +199,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(5)}>
               <img
                 src={assets.joinus06}
-                alt="ESF Join Us School Map Static"
+                alt="ESF School Map Dynamic Filters"
                 className="proj-img img-fluid"
               />
             </a>
@@ -208,7 +208,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(6)}>
               <img
                 src={assets.joinus07}
-                alt="ESF Join Us Culture Highlights"
+                alt="ESF School Modal"
                 className="proj-img img-fluid mb-2 mb-md-0"
               />
             </a>
@@ -225,7 +225,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(7)}>
               <img
                 src={assets.joinus08}
-                alt="ESF Join Us School Map Static"
+                alt="ESF Admissions Video & Highlights"
                 className="proj-img img-fluid"
               />
             </a>
@@ -234,7 +234,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(8)}>
               <img
                 src={assets.joinus09}
-                alt="ESF Join Us School Map Static"
+                alt="ESF Admissions Landing Page"
                 className="proj-img img-fluid"
               />
             </a>
@@ -243,7 +243,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(9)}>
               <img
                 src={assets.joinus10}
-                alt="ESF Join Us School Map Static"
+                alt="ESF Admissions / Enquiry Form"
                 className="proj-img img-fluid"
               />
             </a>
@@ -252,7 +252,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(10)}>
               <img
                 src={assets.joinus11}
-                alt="ESF Join Us School Map Static"
+                alt="ESF Admissions Information Accordion"
                 className="proj-img img-fluid"
               />
             </a>
@@ -261,7 +261,7 @@ export default function ESFJoinUs() {
             <a href="#" onClick={() => setIndex(11)}>
               <img
                 src={assets.joinus12}
-                alt="ESF Join Us School Map Static"
+                alt="ESF Frequently Asked Questions"
                 className="proj-img img-fluid"
               />
             </a>

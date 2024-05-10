@@ -34,7 +34,7 @@ export default function Quizzical() {
     {
       src: assets.quiz04,
       alt: "Quizzical Confetti - All Correct Answers",
-      description: "Quizzical Confetti - All Correct Answers",
+      description: "Quizzical Options (API)",
     },
   ]);
 
@@ -97,7 +97,7 @@ export default function Quizzical() {
             <a href="#" onClick={() => setIndex(0)}>
               <img
                 src={assets.quiz01}
-                alt="ESF Join Us Hero"
+                alt="Quizzical Options (API)"
                 className="proj-img img-fluid"
               />
             </a>
@@ -113,7 +113,7 @@ export default function Quizzical() {
             <a href="#" onClick={() => setIndex(1)}>
               <img
                 src={assets.quiz02}
-                alt="ESF Join Us Intro"
+                alt="Quizzical Answer Choices"
                 className="proj-img img-fluid"
               />
             </a>
@@ -122,7 +122,7 @@ export default function Quizzical() {
             <a href="#" onClick={() => setIndex(2)}>
               <img
                 src={assets.quiz03}
-                alt="ESF Join Us Culture Highlights"
+                alt="Quizzical Answer UI Feedback"
                 className="proj-img img-fluid"
               />
             </a>

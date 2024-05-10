@@ -122,7 +122,7 @@ export default function TheOddDystrict() {
             <a href="#" onClick={() => setIndex(0)}>
               <img
                 src={assets.tod01}
-                alt="ESF Join Us Hero"
+                alt="TOD Website Hero"
                 className="proj-img img-fluid"
               />
             </a>
@@ -138,7 +138,7 @@ export default function TheOddDystrict() {
             <a href="#" onClick={() => setIndex(1)}>
               <img
                 src={assets.tod02}
-                alt="ESF Join Us Intro"
+                alt="TOD Website Intro + Discord Link"
                 className="proj-img img-fluid"
               />
             </a>
@@ -147,7 +147,7 @@ export default function TheOddDystrict() {
             <a href="#" onClick={() => setIndex(2)}>
               <img
                 src={assets.tod03}
-                alt="ESF Join Us Culture Highlights"
+                alt="TOD Website NFT Technology Block"
                 className="proj-img img-fluid"
               />
             </a>
@@ -156,7 +156,7 @@ export default function TheOddDystrict() {
             <a href="#" onClick={() => setIndex(3)}>
               <img
                 src={assets.tod04}
-                alt="ESF Join Us School Map Static"
+                alt="TOD Website Team Bio Cards"
                 className="proj-img img-fluid"
               />
             </a>
@@ -173,7 +173,7 @@ export default function TheOddDystrict() {
             <a href="#" onClick={() => setIndex(4)}>
               <img
                 src={assets.tod05}
-                alt="ESF Join Us Culture Highlights"
+                alt="TOD Portal - Web3 Wallet Connect UI"
                 className="proj-img img-fluid"
               />
             </a>
@@ -182,7 +182,7 @@ export default function TheOddDystrict() {
             <a href="#" onClick={() => setIndex(5)}>
               <img
                 src={assets.tod06}
-                alt="ESF Join Us School Map Static"
+                alt="TOD Portal - NFT Display + Contract Interaction"
                 className="proj-img img-fluid"
               />
             </a>
@@ -199,7 +199,7 @@ export default function TheOddDystrict() {
             <a href="#" onClick={() => setIndex(6)}>
               <img
                 src={assets.tod07}
-                alt="ESF Join Us School Map Static"
+                alt="TOD Portal NFT Checker"
                 className="proj-img img-fluid"
               />
             </a>

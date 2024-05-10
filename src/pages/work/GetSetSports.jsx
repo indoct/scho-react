@@ -43,6 +43,11 @@ export default function GetSetSports() {
     },
     {
       src: assets.getset06,
+      alt: "Weather and Leave Policy",
+      description: "Weather and Leave Policy",
+    },
+    {
+      src: assets.getset07,
       alt: "Frequently Asked Questions",
       description: "Frequently Asked Questions",
     },
@@ -107,7 +112,7 @@ export default function GetSetSports() {
             <a href="#" onClick={() => setIndex(0)}>
               <img
                 src={assets.getset01}
-                alt="ESF Join Us Hero"
+                alt="Homepage Hero Slider"
                 className="proj-img img-fluid"
               />
             </a>
@@ -123,7 +128,7 @@ export default function GetSetSports() {
             <a href="#" onClick={() => setIndex(1)}>
               <img
                 src={assets.getset02}
-                alt="ESF Join Us Intro"
+                alt="Get Set Course Blocks"
                 className="proj-img img-fluid"
               />
             </a>
@@ -132,7 +137,7 @@ export default function GetSetSports() {
             <a href="#" onClick={() => setIndex(2)}>
               <img
                 src={assets.getset03}
-                alt="ESF Join Us Culture Highlights"
+                alt="Get Set Coach Carousel"
                 className="proj-img img-fluid"
               />
             </a>
@@ -141,7 +146,7 @@ export default function GetSetSports() {
             <a href="#" onClick={() => setIndex(3)}>
               <img
                 src={assets.getset04}
-                alt="ESF Join Us School Map Static"
+                alt="Course Venues and Schedules"
                 className="proj-img img-fluid"
               />
             </a>
@@ -158,7 +163,7 @@ export default function GetSetSports() {
             <a href="#" onClick={() => setIndex(4)}>
               <img
                 src={assets.getset05}
-                alt="ESF Join Us School Map Static"
+                alt="Package Fees & Discounts"
                 className="proj-img img-fluid"
               />
             </a>
@@ -167,7 +172,7 @@ export default function GetSetSports() {
             <a href="#" onClick={() => setIndex(5)}>
               <img
                 src={assets.getset06}
-                alt="ESF Join Us School Map Static"
+                alt="Weather and Leave Policy"
                 className="proj-img img-fluid"
               />
             </a>
@@ -176,7 +181,7 @@ export default function GetSetSports() {
             <a href="#" onClick={() => setIndex(6)}>
               <img
                 src={assets.getset07}
-                alt="ESF Join Us School Map Static"
+                alt="Frequently Asked Questions"
                 className="proj-img img-fluid"
               />
             </a>
