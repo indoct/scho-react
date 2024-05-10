@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
 
@@ -8,6 +13,31 @@ export default function Quizzical() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [index, setIndex] = useState(-1);
+  const [slides, setSlides] = useState([
+    {
+      src: assets.quiz01,
+      alt: "Quizzical Options (API)",
+      description: "Quizzical Options (API)",
+    },
+    {
+      src: assets.quiz02,
+      alt: "Quizzical Answer Choices",
+      description: "Quizzical Answer Choices",
+    },
+    {
+      src: assets.quiz03,
+      alt: "Quizzical Answer UI Feedback",
+      description: "Quizzical Answer UI Feedback",
+    },
+    {
+      src: assets.quiz04,
+      alt: "Quizzical Confetti - All Correct Answers",
+      description: "Quizzical Confetti - All Correct Answers",
+    },
+  ]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,6 +48,13 @@ export default function Quizzical() {
       <div className="container d-flex flex-column pt-sm-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-md-8">
+            <Lightbox
+              open={index >= 0}
+              close={() => setIndex(-1)}
+              index={index}
+              slides={slides}
+              plugins={[Fullscreen, Captions, Zoom]}
+            />
             <p className="categories">
               <span className="p-cat">Web Application</span>/
               <span className="p-cat">React</span>/
@@ -57,11 +94,13 @@ export default function Quizzical() {
         </div>
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
-            <img
-              src="../../src/assets/images/quiz/quizzical-01.jpg"
-              alt="ESF Join Us Hero"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(0)}>
+              <img
+                src={assets.quiz01}
+                alt="ESF Join Us Hero"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
@@ -71,18 +110,22 @@ export default function Quizzical() {
             </p>
           </div>
           <div className="col-12">
-            <img
-              src="../../src/assets/images/quiz/quizzical-02.jpg"
-              alt="ESF Join Us Intro"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(1)}>
+              <img
+                src={assets.quiz02}
+                alt="ESF Join Us Intro"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12">
-            <img
-              src="../../src/assets/images/quiz/quizzical-03.jpg"
-              alt="ESF Join Us Culture Highlights"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(2)}>
+              <img
+                src={assets.quiz03}
+                alt="ESF Join Us Culture Highlights"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>

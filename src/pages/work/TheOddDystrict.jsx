@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import assets from "../../images";
 
 import BackButton from "../../components/BackButton";
@@ -9,6 +13,45 @@ export default function TheOddDystrict() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [index, setIndex] = useState(-1);
+  const [slides, setSlides] = useState([
+    {
+      src: assets.tod01,
+      alt: "TOD Website Hero",
+      description: "TOD Website Hero",
+    },
+    {
+      src: assets.tod02,
+      alt: "TOD Website Intro + Discord Link",
+      description: "TOD Website Intro + Discord Link",
+    },
+    {
+      src: assets.tod03,
+      alt: "TOD Website NFT Technology Block",
+      description: "TOD Website NFT Technology Block",
+    },
+    {
+      src: assets.tod04,
+      alt: "TOD Website Team Bio Cards",
+      description: "TOD Website Team Bio Cards",
+    },
+    {
+      src: assets.tod05,
+      alt: "TOD Portal - Web3 Wallet Connect UI",
+      description: "TOD Portal - Web3 Wallet Connect UI",
+    },
+    {
+      src: assets.tod06,
+      alt: "TOD Portal - NFT Display + Contract Interaction",
+      description: "TOD Portal - NFT Display + Contract Interaction",
+    },
+    {
+      src: assets.tod07,
+      alt: "TOD Portal NFT Checker",
+      description: "TOD Portal NFT Checker",
+    },
+  ]);
 
   return (
     <motion.div
@@ -20,6 +63,13 @@ export default function TheOddDystrict() {
       <div className="container d-flex flex-column pt-sm-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-md-8">
+            <Lightbox
+              open={index >= 0}
+              close={() => setIndex(-1)}
+              index={index}
+              slides={slides}
+              plugins={[Fullscreen, Captions, Zoom]}
+            />
             <p className="categories">
               <span className="p-cat">UX & UI</span>/
               <span className="p-cat">Identity Design</span>/
@@ -69,11 +119,13 @@ export default function TheOddDystrict() {
         </div>
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
-            <img
-              src={assets.tod01}
-              alt="ESF Join Us Hero"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(0)}>
+              <img
+                src={assets.tod01}
+                alt="ESF Join Us Hero"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
@@ -83,25 +135,31 @@ export default function TheOddDystrict() {
             </p>
           </div>
           <div className="col-12">
-            <img
-              src={assets.tod02}
-              alt="ESF Join Us Intro"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(1)}>
+              <img
+                src={assets.tod02}
+                alt="ESF Join Us Intro"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12">
-            <img
-              src={assets.tod03}
-              alt="ESF Join Us Culture Highlights"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(2)}>
+              <img
+                src={assets.tod03}
+                alt="ESF Join Us Culture Highlights"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12">
-            <img
-              src={assets.tod04}
-              alt="ESF Join Us School Map Static"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(3)}>
+              <img
+                src={assets.tod04}
+                alt="ESF Join Us School Map Static"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
@@ -112,18 +170,22 @@ export default function TheOddDystrict() {
             </p>
           </div>
           <div className="col-12">
-            <img
-              src={assets.tod05}
-              alt="ESF Join Us Culture Highlights"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(4)}>
+              <img
+                src={assets.tod05}
+                alt="ESF Join Us Culture Highlights"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12">
-            <img
-              src={assets.tod06}
-              alt="ESF Join Us School Map Static"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(5)}>
+              <img
+                src={assets.tod06}
+                alt="ESF Join Us School Map Static"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
@@ -134,11 +196,13 @@ export default function TheOddDystrict() {
             </p>
           </div>
           <div className="col-12">
-            <img
-              src={assets.tod07}
-              alt="ESF Join Us School Map Static"
-              className="proj-img img-fluid"
-            />
+            <a href="#" onClick={() => setIndex(6)}>
+              <img
+                src={assets.tod07}
+                alt="ESF Join Us School Map Static"
+                className="proj-img img-fluid"
+              />
+            </a>
           </div>
         </div>
         <div className="row mt-3">

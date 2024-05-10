@@ -14,19 +14,35 @@ export default function BG3SetCreator() {
   const [slides, setSlides] = useState([
     {
       src: assets.prc01,
-      alt: "image 1",
-      title: "recruitment drive for their 22 schools",
+      alt: "Set Creator Web App Interface",
+      description: "Set Creator Web App Interface",
     },
-    { src: assets.prc02 },
-    { src: assets.prc03 },
-    { src: assets.prc04 },
-    { src: assets.prc05 },
-    { src: assets.prc06 },
+    {
+      src: assets.prc02,
+      alt: "Set Creator Instructions Modal",
+      description: "Set Creator Instructions Modal",
+    },
+    {
+      src: assets.prc03,
+      alt: "Set Creator User Selections + Filters",
+      description: "Set Creator User Selections + Filters",
+    },
+    {
+      src: assets.prc04,
+      alt: "Current Piercing Set Config UI",
+      description: "Current Piercing Set Config UI",
+    },
+    {
+      src: assets.prc06,
+      alt: "Custom Code Generation - Copied to Clipboard",
+      description: "Custom Code Generation - Copied to Clipboard",
+    },
   ]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
