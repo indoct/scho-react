@@ -12,21 +12,20 @@ export default function ESFJoinUs() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column pt-4 pt-lg-5 justify-content-center">
+      <div className="container d-flex flex-column pt-sm-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-md-8">
             <p className="categories">
-              <span className="p-cat">UX & UI</span>/
-              <span className="p-cat">Information Architecture</span>/
-              <span className="p-cat">Web Design & Dev</span>/
+              <span className="p-cat">UX & UI Design</span>/
+              <span className="p-cat">Front-end Development</span>/
               <span className="p-cat">CMS</span>
             </p>
             <h1 className="mb-3">
               <span className="gradient">English Schools Foundation</span>
             </h1>
             <p className="proj-tagline">
-              A fresh, dynamic face for the ESF - Hong Kong's largest provider
-              of English-medium education.
+              A fresh, dynamic face for ESF - Hong Kong's largest provider of
+              English-medium education.
             </p>
             <p className="intro">
               The English Schools Foundation (est. 1967) approached me to add a
