@@ -20,8 +20,8 @@ export default function GetSetSports() {
         <div className="row pb-2">
           <div className="col-md-8">
             <p className="categories">
-              <span className="p-cat">UX & UI</span>/
-              <span className="p-cat">Web Design & Dev</span>/
+              <span className="p-cat">UX & UI Design</span>/
+              <span className="p-cat">Front-end Development</span>/
               <span className="p-cat">CMS</span>
             </p>
             <h1 className="mb-3">
@@ -34,10 +34,7 @@ export default function GetSetSports() {
             <p className="intro">
               The English Schools Foundation (est. 1967) approached me to add a
               few pages to their existing website for a summer student
-              recruitment drive for their 22 schools. After discussions it
-              became clear that our visions were aligned and that a complete
-              redesign and separate site for the campaign would be better suited
-              to achieve the project goals.
+              recruitment drive for their 22 schools.
             </p>
             <p className="plink-cont">
               <i className="fa-solid fa-up-right-from-square link-icon"></i>

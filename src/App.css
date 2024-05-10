@@ -1340,8 +1340,11 @@ footer {
     font-size: 0.92rem;
     margin-bottom: 0;
   }
+  .categories {
+    letter-spacing: normal;
+  }
   .p-cat {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
   }
   .navbar-brand img {
     max-width: 50px;
@@ -1354,6 +1357,6 @@ footer {
     font-size: 1.7rem;
   }
   .page {
-    margin-top: 82px;
+    margin-top: 88px;
   }
 }
