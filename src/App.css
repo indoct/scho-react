@@ -1227,6 +1227,10 @@ footer {
     padding: 2rem 10%;
     border: 2px solid var(--schogrey);
   }
+
+  .cs-caption {
+    padding: 2rem 0;
+  }
 }
 
 @media only screen and (max-width: 599px) {

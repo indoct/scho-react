@@ -146,9 +146,10 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
-              Trying to take down a rogue Spectre and his army of synthetics?
-              No, they didn't cover this in Basic. And I would again. But I also
-              know what it is to leave everything behind and fight.
+              An important part of the refresh was a much greater focus on media
+              as opposed to static text. I designed the landing page with space
+              for large, high-quality videos and images, and sections for
+              featuring all the cool things ESF students are achieving.
             </p>
           </div>
           <div className="col-12">
@@ -169,6 +170,13 @@ export default function ESFJoinUs() {
               />
             </a>
           </div>
+          <div className="col-12 col-sm-6 cs-caption">
+            <p>
+              Each landing page block is a call to action, leading to its own
+              section on the website. I wanted to bring people in and entice
+              them - and make it easy - to explore further.
+            </p>
+          </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(3)}>
               <img
@@ -180,10 +188,10 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
-              SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
-              his army of synthetics? No, they didn't cover this in Basic. And I
-              would again. But I also know what it is to leave everything behind
-              and fight.
+              One of the most important features of the ESF is their 22 schools.
+              While having a dynamic, filterable way to spotlight each school
+              (below) was paramount, for performance reasons I went with a
+              static display for the homepage.
             </p>
           </div>
           <div className="col-12">
@@ -204,6 +212,16 @@ export default function ESFJoinUs() {
               />
             </a>
           </div>
+          <div className="col-12 col-sm-6 cs-caption">
+            <p>
+              The organisation were clear in their desire for a better user
+              experience to display the schools, different from the static pages
+              on their existing site. I created this live map and school
+              database, and designed it so that each school's key
+              characteristics - such as location, age group and school type -
+              were visible and accessible to prospective parents.
+            </p>
+          </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(6)}>
               <img
@@ -215,10 +233,13 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
-              INFO ARCHITECTURE / ADMISSIONS. Trying to take down a rogue
-              Spectre and his army of synthetics? No, they didn't cover this in
-              Basic. And I would again. But I also know what it is to leave
-              everything behind and fight.
+              The other main goal of the project was to organise and display the
+              huge amount of admissions information on the current website. With
+              some information architecture and techniques such as user flows,
+              breadcrumbs, keyword filters, in-page scrolling navigation and
+              accordions, I created a site map and structure that was much less
+              overwhelming and guides the user towards the information they're
+              looking for.
             </p>
           </div>
           <div className="col-12">
@@ -240,15 +261,6 @@ export default function ESFJoinUs() {
             </a>
           </div>
           <div className="col-12">
-            <a href="#" onClick={() => setIndex(9)}>
-              <img
-                src={assets.joinus10}
-                alt="ESF Admissions / Enquiry Form"
-                className="proj-img img-fluid"
-              />
-            </a>
-          </div>
-          <div className="col-12">
             <a href="#" onClick={() => setIndex(10)}>
               <img
                 src={assets.joinus11}
@@ -262,6 +274,26 @@ export default function ESFJoinUs() {
               <img
                 src={assets.joinus12}
                 alt="ESF Frequently Asked Questions"
+                className="proj-img img-fluid"
+              />
+            </a>
+          </div>
+          <div className="col-12 col-sm-6 cs-caption">
+            <p>
+              Another goal was to guide people towards the enquiry form for
+              admissions. As it was requested that we not remove any of the
+              questions on the form, I decided to make it multi-page and
+              separate it into sections with clear headings and indicators of
+              how much is left to fill out, rather than one long page full of
+              questions. The new design is also more friendly with colourful,
+              concise instructions, less formal text copy, and a cleaner UI.
+            </p>
+          </div>
+          <div className="col-12">
+            <a href="#" onClick={() => setIndex(9)}>
+              <img
+                src={assets.joinus10}
+                alt="ESF Admissions / Enquiry Form"
                 className="proj-img img-fluid"
               />
             </a>

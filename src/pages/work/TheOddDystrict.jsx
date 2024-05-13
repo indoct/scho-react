@@ -73,20 +73,19 @@ export default function TheOddDystrict() {
             <p className="categories">
               <span className="p-cat">UX & UI</span>/
               <span className="p-cat">Identity Design</span>/
-              <span className="p-cat">Front-End</span>/
+              <span className="p-cat">Front End</span>/
               <span className="p-cat">React</span>
             </p>
             <h1 className="mb-3">
               <span className="gradient">The Odd Dystrict</span>
             </h1>
             <p className="proj-tagline">
-              A fresh, dynamic face for Hong Kong's largest provider of
-              English-medium education.
+              Website and web3 interface where users could mint an art NFT and
+              interact with their portfolio.
             </p>
             <p className="intro">
-              The English Schools Foundation (est. 1967) approached me to add a
-              few pages to their existing website for a summer student
-              recruitment drive for their 22 schools.
+              Website and web3 interface where users could mint an art NFT and
+              interact with their portfolio.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
