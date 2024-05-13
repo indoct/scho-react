@@ -64,13 +64,14 @@ export default function Quizzical() {
               <span className="gradient">Quizzical</span>
             </h1>
             <p className="proj-tagline">
-              Making modding more accessible and adding customisability for
-              modders and players alike.
+              A quiz web app that sources random questions from the TMDb API
             </p>
             <p className="intro">
-              The English Schools Foundation (est. 1967) approached me to add a
-              few pages to their existing website for a summer student
-              recruitment drive for their 22 schools.
+              A practice personal project for me, although I am a bit of a
+              quizzer in general! Displays 5 questions, with some features added
+              to improve it such as UI feedback for instructions, a page to
+              customise the settings for the API call, light and dark mode, and
+              confetti (if you get everything right).
             </p>
             <div className="pp-info">
               <p className="plink-cont">
@@ -102,13 +103,6 @@ export default function Quizzical() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
-            <p>
-              Trying to take down a rogue Spectre and his army of synthetics?
-              No, they didn't cover this in Basic. And I would again. But I also
-              know what it is to leave everything behind and fight.
-            </p>
-          </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
               <img
@@ -126,14 +120,6 @@ export default function Quizzical() {
                 className="proj-img img-fluid"
               />
             </a>
-          </div>
-          <div className="col-12 col-sm-6 cs-caption">
-            <p>
-              SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
-              his army of synthetics? No, they didn't cover this in Basic. And I
-              would again. But I also know what it is to leave everything behind
-              and fight.
-            </p>
           </div>
         </div>
         <div className="row mt-3">
