@@ -73,12 +73,15 @@ export default function BG3SetCreator() {
               players alike.
             </p>
             <p className="intro">
-              The English Schools Foundation (est. 1967) approached me to add a
-              few pages to their existing website for a summer student
-              recruitment drive for their 22 schools. After discussions it
-              became clear that our visions were aligned and that a complete
-              redesign and separate site for the campaign would be better suited
-              to achieve the project goals.
+              In BG3, you can create your own piercing 'sets' by editing an XML
+              file that overrides the game's file. I noticed that non-modders
+              were sometimes breaking the game trying this, usually with code
+              bugs, and well as being difficult because each piercing node is an
+              uncommented, random string. Each mod also has its own separate
+              version of this file, making mixing and matching incredibly time
+              consuming. I built this app to solve these issues and asked
+              modders to add to the piercing database, meaning it's now easy to
+              create and add your own sets to the game.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
@@ -110,13 +113,6 @@ export default function BG3SetCreator() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
-            <p>
-              Trying to take down a rogue Spectre and his army of synthetics?
-              No, they didn't cover this in Basic. And I would again. But I also
-              know what it is to leave everything behind and fight.
-            </p>
-          </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
               <img
@@ -125,6 +121,13 @@ export default function BG3SetCreator() {
                 className="proj-img img-fluid"
               />
             </a>
+          </div>
+          <div className="col-12 col-sm-6 cs-caption">
+            <p>
+              React state is used here to disable the piercings in the same
+              location as a piercing the user has already selected. React Router
+              provides the dynamic URL filters for piercing locations and type.
+            </p>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(2)}>
@@ -135,6 +138,13 @@ export default function BG3SetCreator() {
               />
             </a>
           </div>
+          <div className="col-12 col-sm-6 cs-caption">
+            <p>
+              The current set config is visible from any part of the app as long
+              as it's not empty, and each piercing's key stats are clearly
+              indicated in the UI.
+            </p>
+          </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(3)}>
               <img
@@ -144,14 +154,6 @@ export default function BG3SetCreator() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
-            <p>
-              SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
-              his army of synthetics? No, they didn't cover this in Basic. And I
-              would again. But I also know what it is to leave everything behind
-              and fight.
-            </p>
-          </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(5)}>
               <img
@@ -160,6 +162,17 @@ export default function BG3SetCreator() {
                 className="proj-img img-fluid"
               />
             </a>
+          </div>
+          <div className="col-12 col-sm-6 cs-caption">
+            <p>
+              Once the user has finished making their set, they can click the
+              button to generate the code. Using Prism.js for syntax formatting,
+              this code can be copied using the button and pasted directly into
+              the game file and works out of the box. The piercing database also
+              contains the mod page's URL / information and the generated code
+              is commented dynamically, so the user knows exactly what each node
+              is.
+            </p>
           </div>
         </div>
         <div className="row mt-3">
