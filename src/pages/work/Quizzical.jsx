@@ -64,14 +64,14 @@ export default function Quizzical() {
               <span className="gradient">Quizzical</span>
             </h1>
             <p className="proj-tagline">
-              A quiz web app that sources random questions from the TMDb API
+              A quiz web app that sources random questions from the Open Trivia
+              DB API
             </p>
             <p className="intro">
-              A practice personal project for me, although I am a bit of a
-              quizzer in general! Displays 5 questions, with some features added
-              to improve it such as UI feedback for instructions, a page to
-              customise the settings for the API call, light and dark mode, and
-              confetti (if you get everything right).
+              Displays 5 questions, with some features added to improve it such
+              as UI feedback for instructions, a page to customise the settings
+              for the API call, light and dark mode, and confetti (if you get
+              everything right).
             </p>
             <div className="pp-info">
               <p className="plink-cont">
@@ -88,7 +88,7 @@ export default function Quizzical() {
               </p>
               <p className="plink-cont">
                 <span className="tech">BUILT WITH: </span>
-                React, TMDb API
+                React, OpenTDb API
               </p>
             </div>
           </div>
