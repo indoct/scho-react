@@ -84,8 +84,15 @@ export default function TheOddDystrict() {
               interact with their portfolio.
             </p>
             <p className="intro">
-              Website and web3 interface where users could mint an art NFT and
-              interact with their portfolio.
+              This project consisted of full identity and UI design for the
+              brand, as well as the build for the website and interactive web3
+              front end. The main website was both a shop front to provide
+              static information and an interface for users to 'mint' their
+              NFTs. Once the initial art had been released, I collaborated with
+              the other developer to build the portal. The Portal was more
+              feature-heavy - utilising web3 and React to display users'
+              wallets, interact with the contract to use their Oddies to mint a
+              2nd collection, and check which NFTs were still available.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
@@ -128,9 +135,10 @@ export default function TheOddDystrict() {
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
-              Trying to take down a rogue Spectre and his army of synthetics?
-              No, they didn't cover this in Basic. And I would again. But I also
-              know what it is to leave everything behind and fight.
+              It was important to the team that every aspect of the project was
+              high-quality and cohesive, design-wise, all the way from the art
+              itself to the UI and social media to the merchandise and other
+              collateral.
             </p>
           </div>
           <div className="col-12">
@@ -162,10 +170,9 @@ export default function TheOddDystrict() {
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
-              SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
-              his army of synthetics? No, they didn't cover this in Basic. And I
-              would again. But I also know what it is to leave everything behind
-              and fight.
+              React and web3 work together well, providing a dynamic library
+              that allows users to see the contents of their wallets & an easy
+              interface for interacting with the NFT's contract.
             </p>
           </div>
           <div className="col-12">
@@ -185,14 +192,6 @@ export default function TheOddDystrict() {
                 className="proj-img img-fluid"
               />
             </a>
-          </div>
-          <div className="col-12 col-sm-6 cs-caption">
-            <p>
-              INFO ARCHITECTURE / ADMISSIONS. Trying to take down a rogue
-              Spectre and his army of synthetics? No, they didn't cover this in
-              Basic. And I would again. But I also know what it is to leave
-              everything behind and fight.
-            </p>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(6)}>
