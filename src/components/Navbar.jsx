@@ -111,20 +111,20 @@ export default function Navbar(props) {
                         </li>
                         <li className="sub-li">
                           <NavLink
-                            className="nav-link g2 sub-link"
-                            to="/work/getsetsports"
-                            onClick={() => setMenuOpen(false)}
-                          >
-                            Get Set Sports
-                          </NavLink>
-                        </li>
-                        <li className="sub-li">
-                          <NavLink
                             className="nav-link g3 sub-link"
                             to="/work/bg3setcreator"
                             onClick={() => setMenuOpen(false)}
                           >
                             BG3 Set Creator
+                          </NavLink>
+                        </li>
+                        <li className="sub-li">
+                          <NavLink
+                            className="nav-link g2 sub-link"
+                            to="/work/getsetsports"
+                            onClick={() => setMenuOpen(false)}
+                          >
+                            Get Set Sports
                           </NavLink>
                         </li>
                         <li className="sub-li">

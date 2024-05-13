@@ -3,37 +3,37 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="container about page pt-sm-4">
+    <section className="container about page pt-sm-5">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ ease: "easeInOut", duration: 0.6 }}
-        className="row pt-4 pt-lg-5"
+        className="row"
       >
         <div className="col-12 col-lg-6 bio pe-md-5">
-          <h1 className="mb-4">
+          <h1 className="mb-3">
             <span className="gradient">About Me</span>
           </h1>
-          <p className="about-copy">
+          <p className="intro">
             Hi there, my name is Siobhan. I'm a frontend developer and designer
             based in London, UK. My focus is on digital experiences and UX/UI
             but I also design for print and physical media.
           </p>
-          <p className="about-copy">
+          <p className="intro">
             I recently graduated with a first in Graphic Design from the
             University of Hertfordshire, and I previously acquired a certificate
             in UX/UI Design from General Assembly. I've worked for many years in
             graphic and web design and I have experience both working solo and
             in teams both small and large.
           </p>
-          <p className="about-copy">
+          <p className="intro">
             I love to create, no matter the format, and I pride myself on
             crafting design that looks great but is also a joy to use
             (accessibility is key!) When I'm not designing, I enjoy coding,
             making gifs, gaming, football, and occasionally video editing.
           </p>
-          <div className="about-copy">
+          <div className="intro">
             For more projects & examples of my work:
             <ul>
               <li>
@@ -66,7 +66,7 @@ export default function About() {
           </p>
         </div>
         <div className="col-12 col-lg-5 profile ps-md-5">
-          <h2 className="mb-4">
+          <h2 className="mb-3">
             <span className="gradient">Quick Profile</span>
           </h2>
           <h6>Skills:</h6>

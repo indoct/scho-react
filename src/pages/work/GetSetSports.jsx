@@ -75,13 +75,15 @@ export default function GetSetSports() {
               <span className="gradient">Get Set Sports</span>
             </h1>
             <p className="proj-tagline">
-              Making modding more accessible and adding customisability for
-              modders and players alike.
+              Building an attractive and easily maintainable web presence for a
+              leading athletics academy.
             </p>
             <p className="intro">
-              The English Schools Foundation (est. 1967) approached me to add a
-              few pages to their existing website for a summer student
-              recruitment drive for their 22 schools.
+              Get Set Sports Academy are a popular provider of athletics
+              training. They approached me to redesign and build a new website
+              for them, as they had outgrown their previous platform. I opted to
+              build on Wordpress as it's easy to use, maintain and customise -
+              allowing clients to run their own site after the project ends.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
@@ -113,13 +115,6 @@ export default function GetSetSports() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
-            <p>
-              Trying to take down a rogue Spectre and his army of synthetics?
-              No, they didn't cover this in Basic. And I would again. But I also
-              know what it is to leave everything behind and fight.
-            </p>
-          </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
               <img
@@ -149,10 +144,10 @@ export default function GetSetSports() {
           </div>
           <div className="col-12 col-sm-6 cs-caption">
             <p>
-              SCHOOL MAP / DYNAMIC INFO. Trying to take down a rogue Spectre and
-              his army of synthetics? No, they didn't cover this in Basic. And I
-              would again. But I also know what it is to leave everything behind
-              and fight.
+              I implemented more cohesive typography and overall design
+              aesthetic to help keep the information organised and easy to read.
+              I also designed UI elements for information that was previously in
+              images, such as schedule flyers, for better accessibility and SEO.
             </p>
           </div>
           <div className="col-12">

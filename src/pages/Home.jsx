@@ -72,35 +72,6 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="card-img">
             <img
-              src={gsscreen}
-              alt="Get Set Sports Academy project cover image"
-            />
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">Get Set Sports Academy</h2>
-            <p className="p-desc">
-              Building an attractive and easily maintainable web presence for a
-              leading athletics academy.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <Link to="work/getsetsports">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <a href="https://getsetsportsacademy.com" target="_blank">
-                website
-                <i className="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
-            <img
               src={prcscreen}
               alt="BG3 Piercing Set Creator project cover image"
             />
@@ -121,6 +92,35 @@ export default function Home() {
             </li>
             <li>
               <a href="https://piercings.indoc.dev" target="_blank">
+                website
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className="col-12 col-md-6 col-xl-4 proj-card">
+          <div className="card-img">
+            <img
+              src={gsscreen}
+              alt="Get Set Sports Academy project cover image"
+            />
+          </div>
+          <div className="card-text">
+            <h2 className="p-title">Get Set Sports Academy</h2>
+            <p className="p-desc">
+              Building an attractive and easily maintainable web presence for a
+              leading athletics academy.
+            </p>
+          </div>
+          <ul className="proj-links">
+            <li>
+              <Link to="work/getsetsports">
+                project
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </li>
+            <li>
+              <a href="https://getsetsportsacademy.com" target="_blank">
                 website
                 <i className="fa fa-external-link" aria-hidden="true"></i>
               </a>
