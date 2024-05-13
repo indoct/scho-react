@@ -205,13 +205,14 @@ export default function TheOddDystrict() {
           <div className="col col-sm-6 text-end">
             <div className="d-flex flex-column justify-content-end">
               <div>
-                <Link to="../work/scho">
+                <Link to="../work/esfjoinus">
                   <button className="back-link next-link">
-                    Next Project<i className="fa-solid fa-arrow-right-long"></i>
+                    Return to Start
+                    <i className="fa-solid fa-arrow-right-long"></i>
                   </button>
                 </Link>
               </div>
-              <div className="next-proj">Personal Identity Design</div>
+              <div className="next-proj">English Schools Foundation</div>
             </div>
           </div>
         </div>

@@ -129,7 +129,7 @@ export default function Quizzical() {
                   </button>
                 </Link>
               </div>
-              <div className="next-proj">Personal Identity Design</div>
+              <div className="next-proj">SCHO. Portfolio</div>
             </div>
           </div>
         </div>

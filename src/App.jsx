@@ -23,19 +23,6 @@ import GetSetSports from "./pages/work/GetSetSports";
 
 function App() {
   const location = useLocation();
-  // useEffect(() => {
-  //   const clearSessionStorageOnUnload = () => {
-  //     // Clear sessionStorage when the page is unloaded (user leaves the website)
-  //     sessionStorage.clear();
-  //   };
-
-  //   window.addEventListener("beforeunload", clearSessionStorageOnUnload);
-
-  //   return () => {
-  //     // Cleanup: Remove the event listener when the component is unmounted
-  //     window.removeEventListener("beforeunload", clearSessionStorageOnUnload);
-  //   };
-  // }, []);
 
   const [isDarkMode, setIsDarkMode] = useState(
     JSON.parse(localStorage.getItem("isDarkMode"))

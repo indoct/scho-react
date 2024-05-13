@@ -183,13 +183,13 @@ export default function GetSetSports() {
           <div className="col col-sm-6 text-end">
             <div className="d-flex flex-column justify-content-end">
               <div>
-                <Link to="../work/scho">
+                <Link to="../work/quizzical">
                   <button className="back-link next-link">
                     Next Project<i className="fa-solid fa-arrow-right-long"></i>
                   </button>
                 </Link>
               </div>
-              <div className="next-proj">Personal Identity Design</div>
+              <div className="next-proj">Quizzical App</div>
             </div>
           </div>
         </div>
