@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
@@ -10,10 +10,6 @@ import assets from "../../images";
 import BackButton from "../../components/BackButton";
 
 export default function Quizzical() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const [index, setIndex] = useState(-1);
   const [slides, setSlides] = useState([
     {

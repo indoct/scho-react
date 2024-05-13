@@ -5,11 +5,13 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import ScrollTopHook from "./ScrollTopHook";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+      <ScrollTopHook />
       <App />
     </Router>
   </React.StrictMode>

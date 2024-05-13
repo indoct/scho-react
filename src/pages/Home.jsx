@@ -29,7 +29,7 @@ export default function Home() {
             data-aos-delay="200"
           >
             Hi there! I'm SC Houlihan, but 'scho' is easier to spell{" "}
-            <i class="fa-regular fa-face-smile-wink"></i>. I'm a Front-end
+            <i className="fa-regular fa-face-smile-wink"></i>. I'm a Front-end
             Developer & UX/UI Designer in London.
           </p>
         </div>
