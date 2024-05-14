@@ -23,7 +23,7 @@ export default function Navbar(props) {
 
   return (
     <nav className="navbar py-3 pt-sm-5 navbar-dark fixed-top" id="menu">
-      <div className="container">
+      <div className="container-fluid">
         <div className="logo-cont">
           <NavLink to="/">
             <img

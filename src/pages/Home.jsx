@@ -42,7 +42,7 @@ export default function Home() {
         className="row work-row mb-2 g-4"
       >
         <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
+          <div className="p-card-img">
             <img src={esfscreen} alt="ESF Join Us cover image" />
           </div>
           <div className="card-text">
@@ -70,7 +70,7 @@ export default function Home() {
           </ul>
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
+          <div className="p-card-img">
             <img
               src={prcscreen}
               alt="BG3 Piercing Set Creator project cover image"
@@ -99,7 +99,7 @@ export default function Home() {
           </ul>
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
+          <div className="p-card-img">
             <img
               src={gsscreen}
               alt="Get Set Sports Academy project cover image"
@@ -128,7 +128,7 @@ export default function Home() {
           </ul>
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
+          <div className="p-card-img">
             <img src={quizscreen} alt="Beyond Bitesize Screen 1" />
           </div>
           <h2 className="p-title">Quizzical</h2>
@@ -152,7 +152,7 @@ export default function Home() {
           </ul>
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
+          <div className="p-card-img">
             <img src={schoscreen} alt="scho " />
           </div>
           <h2 className="p-title">SCHO. Portfolio Website</h2>
@@ -176,7 +176,7 @@ export default function Home() {
           </ul>
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
+          <div className="p-card-img">
             <img src={todscreen} alt="The Odd Dystrict project cover image" />
           </div>
           <h2 className="p-title">The Odd Dystrict</h2>
@@ -200,7 +200,7 @@ export default function Home() {
           </ul>
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="card-img">
+          <div className="p-card-img">
             <img src={n7iscreen} alt="Beyond Bitesize Screen 1" />
           </div>
           <h2 className="p-title">N7 Ipsum</h2>
