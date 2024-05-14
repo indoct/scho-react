@@ -112,7 +112,7 @@ export default function ESFJoinUs() {
             </p>
             <div className="pp-info">
               <p className="plink-cont">
-                <span className="tech">URL: </span>
+                <span className="tech">url:</span>
                 <a
                   href="https://join-us.esf.edu.hk"
                   target="_blank"
@@ -124,7 +124,7 @@ export default function ESFJoinUs() {
                 </a>
               </p>
               <p className="plink-cont">
-                <span className="tech">BUILT WITH: </span>
+                <span className="tech">built with:</span>
                 Wordpress, CSS, JS
               </p>
             </div>
@@ -136,11 +136,11 @@ export default function ESFJoinUs() {
               <img
                 src={assets.joinus01}
                 alt="ESF Homepage Hero"
-                className="proj-img img-fluid mb-2 mb-md-0"
+                className="proj-img img-fluid"
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               An important part of the refresh was a much greater focus on media
               as opposed to static text. I designed the landing page with space
@@ -162,11 +162,11 @@ export default function ESFJoinUs() {
               <img
                 src={assets.joinus03}
                 alt="ESF Culture Highlights"
-                className="proj-img img-fluid mb-2 mb-md-0"
+                className="proj-img img-fluid"
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               Each landing page block is a call to action, leading to its own
               section on the website. I wanted to bring people in and entice
@@ -182,7 +182,7 @@ export default function ESFJoinUs() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               One of the most important features of the ESF is their 22 schools.
               While having a dynamic, filterable way to spotlight each school
@@ -195,7 +195,7 @@ export default function ESFJoinUs() {
               <img
                 src={assets.joinus05}
                 alt="ESF Culture Highlights"
-                className="proj-img img-fluid mb-2 mb-md-0"
+                className="proj-img img-fluid"
               />
             </a>
           </div>
@@ -208,7 +208,7 @@ export default function ESFJoinUs() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               The organisation were clear in their desire for a better user
               experience to display the schools, different from the static pages
@@ -223,19 +223,18 @@ export default function ESFJoinUs() {
               <img
                 src={assets.joinus07}
                 alt="ESF School Modal"
-                className="proj-img img-fluid mb-2 mb-md-0"
+                className="proj-img img-fluid"
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
-              The other main goal of the project was to organise and display the
-              huge amount of admissions information on the current website. With
-              some information architecture and techniques such as user flows,
+              Another key objective was to organise and display the huge amount
+              of admissions information on the current website. Using
+              information architecture techniques such as user flows,
               breadcrumbs, keyword filters, in-page scrolling navigation and
-              accordions, I created a site map and structure that was much less
-              overwhelming and guides the user towards the information they're
-              looking for.
+              accordions, I created a site map that was much less overwhelming
+              and guides the user towards the information they're looking for.
             </p>
           </div>
           <div className="col-12">
@@ -274,15 +273,13 @@ export default function ESFJoinUs() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
-              Another goal was to guide people towards the enquiry form for
-              admissions. As it was requested that we not remove any of the
-              questions on the form, I decided to make it multi-page and
-              separate it into sections with clear headings and indicators of
-              how much is left to fill out, rather than one long page full of
-              questions. The new design is also more friendly with colourful,
-              concise instructions, less formal text copy, and a cleaner UI.
+              I was asked to improve conversion rates for the enquiry form,
+              without removing questions from the long current form. With this
+              in mind, I redesigned it to be multi-step - with separate semantic
+              sections, clear headings and a visual progress bar. I used
+              concise, friendly language to make it less intimidating.
             </p>
           </div>
           <div className="col-12">

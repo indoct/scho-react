@@ -48,7 +48,7 @@ export default function BG3SetCreator() {
     >
       <div className="container d-flex flex-column page pt-sm-4 pt-xxl-5 justify-content-center">
         <div className="row pb-2">
-          <div className="col-md-8">
+          <div className="col-lg-10">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -66,22 +66,20 @@ export default function BG3SetCreator() {
             </h1>
             <p className="proj-tagline">
               Making modding more accessible and customisable for modders &
-              players alike.
+              players.
             </p>
             <p className="intro">
-              In BG3, you can create your own piercing 'sets' by editing an XML
-              file that overrides the game's file. I noticed that non-modders
-              were sometimes breaking the game trying this, usually with code
-              bugs, and well as being difficult because each piercing node is an
-              uncommented, random string. Each mod also has its own separate
-              version of this file, making mixing and matching incredibly time
-              consuming. I built this app to solve these issues and asked
-              modders to add to the piercing database, meaning it's now easy to
-              create and add your own sets to the game.
+              Baldur's Gate 3 is a video game that you can modify by editing XML
+              files. As these weren't intended to be editable, general users
+              were sometimes breaking their game with invalid code. Each mod
+              also has its own separate version of the file, making mixing and
+              matching incredibly time consuming. I built this app as a solution
+              and asked modders to add their assets to the database, making it
+              easy to create and add your own custom sets to the game.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
-                <span className="tech">URL: </span>
+                <span className="tech">url:</span>
                 <a
                   href="https://piercings.indoc.dev"
                   target="_blank"
@@ -93,7 +91,7 @@ export default function BG3SetCreator() {
                 </a>
               </p>
               <p className="plink-cont">
-                <span className="tech">BUILT WITH: </span>
+                <span className="tech">built with:</span>
                 React, React Router, Prism.js
               </p>
             </div>
@@ -118,11 +116,11 @@ export default function BG3SetCreator() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               React state is used here to disable the piercings in the same
               location as a piercing the user has already selected. React Router
-              provides the dynamic URL filters for piercing locations and type.
+              provides the dynamic URL filters for piercing locations/type.
             </p>
           </div>
           <div className="col-12">
@@ -134,11 +132,10 @@ export default function BG3SetCreator() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
-              The current set config is visible from any part of the app as long
-              as it's not empty, and each piercing's key stats are clearly
-              indicated in the UI.
+              The current set config is accessible anywhere as long as it's not
+              empty. Each piercing's key stats are clearly indicated in the UI.
             </p>
           </div>
           <div className="col-12">
@@ -159,15 +156,14 @@ export default function BG3SetCreator() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
-              Once the user has finished making their set, they can click the
-              button to generate the code. Using Prism.js for syntax formatting,
-              this code can be copied using the button and pasted directly into
-              the game file and works out of the box. The piercing database also
-              contains the mod page's URL / information and the generated code
-              is commented dynamically, so the user knows exactly what each node
-              is.
+              Once the user is done, they can generate the code. Using Prism.js
+              for syntax formatting, this code can be copied using the button
+              and pasted directly into the game file and works out of the box.
+              The piercing database also contains the mod page's URL /
+              information and the generated code is commented dynamically, so
+              the user knows exactly what each node is.
             </p>
           </div>
         </div>

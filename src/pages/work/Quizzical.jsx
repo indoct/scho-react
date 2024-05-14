@@ -43,7 +43,7 @@ export default function Quizzical() {
     >
       <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
-          <div className="col-md-8">
+          <div className="col-lg-10">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -66,12 +66,12 @@ export default function Quizzical() {
             <p className="intro">
               Displays 5 questions, with some features added to improve it such
               as UI feedback for instructions, a page to customise the settings
-              for the API call, light and dark mode, and confetti (if you get
-              everything right).
+              for the API call, light/dark mode, and confetti - if you get
+              everything right.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
-                <span className="tech">URL: </span>
+                <span className="tech">url:</span>
                 <a
                   href="https://quizzical.scho.pro"
                   target="_blank"
@@ -83,7 +83,7 @@ export default function Quizzical() {
                 </a>
               </p>
               <p className="plink-cont">
-                <span className="tech">BUILT WITH: </span>
+                <span className="tech">built with:</span>
                 React, OpenTDb API
               </p>
             </div>

@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="container page">
       <section className="header home row">
-        <div className="col col-xl-7">
+        <div className="col-12 col-sm-10 col-xl-8 col-xxl-7">
           <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
             <span className="underline gradient">scho.</span>
           </h1>
@@ -39,7 +39,7 @@ export default function Home() {
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-duration="1000"
-        className="row work-row mb-2 g-4"
+        className="row mb-2 gy-4 gx-3"
       >
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">

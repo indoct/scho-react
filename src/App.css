@@ -634,7 +634,6 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 288px;
   border-radius: 8px;
   background-color: var(--schogrey);
   margin-bottom: 0.75rem;
@@ -844,20 +843,13 @@ a.email-big {
 }
 
 .next-proj {
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   color: var(--schoaccent);
   margin-right: 34px;
 }
 
 .cs-caption p {
   margin-bottom: 0;
-}
-
-.pp-info {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
-  align-items: center;
 }
 
 .back-link {
@@ -951,9 +943,16 @@ p.intro {
   padding-left: 0;
 }
 
+.pp-info {
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
 .plink-cont {
   display: inline-block;
-  padding: 12px 18px;
+  padding: 12px 16px;
   border: 1.5px solid var(--schogrey);
   font-size: 16px;
 }
@@ -973,6 +972,8 @@ p.intro {
   font-size: 0.86rem;
   letter-spacing: 0.0125rem;
   color: var(--schoaccent);
+  padding-right: 6px;
+  text-transform: uppercase;
 }
 
 .light-mode .tech {
@@ -1011,6 +1012,7 @@ footer {
   align-self: center;
   margin: 0;
   letter-spacing: 0.025rem;
+  padding: 0;
 }
 
 .social-icons {
@@ -1044,6 +1046,28 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 760px) {
+  .pp-info {
+    gap: 6px;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 94%;
+  }
+  .footer-text {
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #case-studies.gx-3 {
+    --bs-gutter-x: 1.5rem;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 991px) {
   .header {
     padding-top: 2rem;
@@ -1081,6 +1105,9 @@ footer {
   .navbar {
     background-color: #2c2f32;
   }
+  nav.fixed-top {
+    position: absolute;
+  }
   .light-mode .navbar {
     background-color: var(--schostone);
   }
@@ -1100,6 +1127,19 @@ footer {
 }
 
 @media only screen and (max-width: 599px) {
+  footer .copyright {
+    text-align: left;
+  }
+  footer .footer-soc {
+    justify-content: flex-start;
+  }
+  .cs-caption p {
+    line-height: 1.4rem;
+    font-size: 16px;
+  }
+  #btn-back-to-top {
+    bottom: 18px;
+  }
   h1.mb-3 {
     font-size: 2.3rem;
     line-height: 1.1;
@@ -1112,7 +1152,7 @@ footer {
     padding: 0 0 1rem;
   }
   .categories {
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
   }
   p.intro,
   .cs-caption {
@@ -1124,14 +1164,11 @@ footer {
     line-height: 1.4;
     margin-bottom: 0.75rem;
   }
-  .pp-info {
-    gap: 6px;
-    flex-direction: column;
-    align-items: stretch;
-    margin-bottom: 0.5rem;
-  }
   .plink-cont {
-    padding: 9px 18px;
+    padding: 9px 12px;
+  }
+  .plink-cont a {
+    font-size: 16px;
   }
   .home .intro {
     font-size: 1.2rem;

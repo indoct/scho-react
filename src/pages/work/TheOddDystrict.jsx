@@ -59,7 +59,7 @@ export default function TheOddDystrict() {
     >
       <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
-          <div className="col-md-8">
+          <div className="col-lg-10">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -82,18 +82,18 @@ export default function TheOddDystrict() {
             </p>
             <p className="intro">
               This project consisted of full identity and UI design for the
-              brand, as well as the build for the website and interactive web3
-              front end. The main website was both a shop front to provide
-              static information and an interface for users to 'mint' their
-              NFTs. Once the initial art had been released, I collaborated with
-              the other developer to build the portal. The Portal was more
-              feature-heavy - utilising web3 and React to display users'
-              wallets, interact with the contract to use their Oddies to mint a
-              2nd collection, and check which NFTs were still available.
+              brand, as well as the build for the website and interactive front
+              end. The main site was both a shopfront to provide static
+              information and an interface for users to 'mint' their NFTs. For
+              the 2nd collection, I collaborated with the other developer to
+              build the Portal. This was more feature-heavy - utilising web3 and
+              React to display users' wallets, interact with the contract to
+              mint a 2nd collection NFT, and check which NFTs were still
+              available.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
-                <span className="tech">URL: </span>
+                <span className="tech">url:</span>
                 <a
                   href="https://the-odd-dystrict.com/home.html"
                   target="_blank"
@@ -103,7 +103,7 @@ export default function TheOddDystrict() {
                   main website
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
-                <span className="tech ps-4">URL2: </span>
+                <span className="tech ps-4">URL2:</span>
                 <a
                   href="https://portal.the-odd-dystrict.com"
                   target="_blank"
@@ -114,7 +114,7 @@ export default function TheOddDystrict() {
                 </a>
               </p>
               <p className="plink-cont">
-                <span className="tech">BUILT WITH: </span>
+                <span className="tech">built with:</span>
                 Bootstrap, JS, Web3, React
               </p>
             </div>
@@ -130,12 +130,11 @@ export default function TheOddDystrict() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               It was important to the team that every aspect of the project was
-              high-quality and cohesive, design-wise, all the way from the art
-              itself to the UI and social media to the merchandise and other
-              collateral.
+              high-quality and cohesive, design-wise: from the art itself, to
+              the digital design, and to physical collateral.
             </p>
           </div>
           <div className="col-12">
@@ -165,7 +164,7 @@ export default function TheOddDystrict() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               React and web3 work together well, providing a dynamic library
               that allows users to see the contents of their wallets & an easy

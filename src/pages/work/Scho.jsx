@@ -34,7 +34,7 @@ export default function Scho() {
 
     //     <div className="container mt-md-5 pt-4">
     //       <div className="row pb-2">
-    //         <div className="col-md-8">
+    //         <div className="col-lg-10">
     //           <p className="categories">
     //             <span className="p-cat">Identity Design</span>/
     //             <span className="p-cat">Branding</span>/
@@ -61,7 +61,7 @@ export default function Scho() {
     //             src={scho01}
     //             onClick={() => openLightboxOnSlide(1)}
     //             alt="scho personal branding"
-    //             className="proj-img img-fluid mb-2 mb-md-0"
+    //             className="proj-img img-fluid"
     //           />
     //         </div>
     //         <div className="col-lg-6 mb-xs-2">
@@ -81,7 +81,7 @@ export default function Scho() {
     //             src={scho03}
     //             onClick={() => openLightboxOnSlide(3)}
     //             alt="scho personal branding"
-    //             className="proj-img img-fluid mb-2 mb-md-0"
+    //             className="proj-img img-fluid"
     //           />
     //         </div>
     //         <div className="col-lg-6">

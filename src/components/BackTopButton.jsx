@@ -22,13 +22,16 @@ export default function BackTopButton() {
   return (
     <>
       {visible && (
-        <button
-          className="btn btn-floating btn-lg grad-bg"
-          id="btn-back-to-top"
-          onClick={backToTop}
-        >
-          <i className="fas fa-arrow-up"></i>
-        </button>
+        <div className="container">
+          {" "}
+          <button
+            className="btn btn-floating btn-lg grad-bg"
+            id="btn-back-to-top"
+            onClick={backToTop}
+          >
+            <i className="fas fa-arrow-up"></i>
+          </button>
+        </div>
       )}
     </>
   );

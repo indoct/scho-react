@@ -11,6 +11,9 @@ import BackButton from "../../components/BackButton";
 
 export default function GetSetSports() {
   const [index, setIndex] = useState(-1);
+  const [xsTag, setXsTag] = useState(
+    "Building an attractive & maintainable website for a leading athletics academy."
+  );
   const [slides, setSlides] = useState([
     {
       src: assets.getset01,
@@ -58,7 +61,7 @@ export default function GetSetSports() {
     >
       <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
-          <div className="col-md-8">
+          <div className="col-lg-10">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -87,7 +90,7 @@ export default function GetSetSports() {
             </p>
             <div className="pp-info">
               <p className="plink-cont">
-                <span className="tech">URL: </span>
+                <span className="tech">url:</span>
                 <a
                   href="https://getsetsportsacademy.com"
                   target="_blank"
@@ -99,7 +102,7 @@ export default function GetSetSports() {
                 </a>
               </p>
               <p className="plink-cont">
-                <span className="tech">BUILT WITH: </span>
+                <span className="tech">built with:</span>
                 Wordpress, CSS, JS
               </p>
             </div>
@@ -142,7 +145,7 @@ export default function GetSetSports() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-6 cs-caption">
+          <div className="col-12 col-sm-8 cs-caption">
             <p>
               I implemented more cohesive typography and overall design
               aesthetic to help keep the information organised and easy to read.
