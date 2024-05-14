@@ -145,7 +145,7 @@ export default function ESFJoinUs() {
               An important part of the refresh was a much greater focus on media
               as opposed to static text. I designed the landing page with space
               for large, high-quality videos and images, and sections for
-              featuring all the cool things ESF students are achieving.
+              featuring all of the cool things ESF students are achieving.
             </p>
           </div>
           <div className="col-12">
@@ -169,8 +169,8 @@ export default function ESFJoinUs() {
           <div className="col-12 col-sm-8 cs-caption">
             <p>
               Each landing page block is a call to action, leading to its own
-              section on the website. I wanted to bring people in and entice
-              them - and make it easy - to explore further.
+              section on the website. I wanted to entice people and make it easy
+              to explore further.
             </p>
           </div>
           <div className="col-12">
@@ -210,12 +210,11 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12 col-sm-8 cs-caption">
             <p>
-              The organisation were clear in their desire for a better user
-              experience to display the schools, different from the static pages
-              on their existing site. I created this live map and school
-              database, and designed it so that each school's key
-              characteristics - such as location, age group and school type -
-              were visible and accessible to prospective parents.
+              The organisation made clear their desire for a better user
+              experience when searching for a school. I created this live map &
+              database, so that each school's key characteristics, such as
+              location, age group and type, are visible and accessible to
+              prospective parents.
             </p>
           </div>
           <div className="col-12">
@@ -229,12 +228,11 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12 col-sm-8 cs-caption">
             <p>
-              Another key objective was to organise and display the huge amount
-              of admissions information on the current website. Using
-              information architecture techniques such as user flows,
-              breadcrumbs, keyword filters, in-page scrolling navigation and
-              accordions, I created a site map that was much less overwhelming
-              and guides the user towards the information they're looking for.
+              Another key objective was to organise and display the large amount
+              of text information on the current website. I used information
+              architecture techniques such as user flows, breadcrumbs, keyword
+              filters and in-page scrolling navigation to create a better site
+              map.
             </p>
           </div>
           <div className="col-12">
@@ -276,10 +274,9 @@ export default function ESFJoinUs() {
           <div className="col-12 col-sm-8 cs-caption">
             <p>
               I was asked to improve conversion rates for the enquiry form,
-              without removing questions from the long current form. With this
-              in mind, I redesigned it to be multi-step - with separate semantic
-              sections, clear headings and a visual progress bar. I used
-              concise, friendly language to make it less intimidating.
+              without removing questions from the current form. To this end, I
+              redesigned it as multi-step with semantic sections, friendly,
+              informal language, and a visual progress bar.
             </p>
           </div>
           <div className="col-12">

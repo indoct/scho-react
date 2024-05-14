@@ -118,9 +118,9 @@ export default function BG3SetCreator() {
           </div>
           <div className="col-12 col-sm-8 cs-caption">
             <p>
-              React state is used here to disable the piercings in the same
-              location as a piercing the user has already selected. React Router
-              provides the dynamic URL filters for piercing locations/type.
+              State is used here to disable the piercings in the same location
+              as another in the set. React Router provides the dynamic URL
+              filters for piercing locations/type.
             </p>
           </div>
           <div className="col-12">
@@ -134,7 +134,7 @@ export default function BG3SetCreator() {
           </div>
           <div className="col-12 col-sm-8 cs-caption">
             <p>
-              The current set config is accessible anywhere as long as it's not
+              The current set config is accessible to view as long as it's not
               empty. Each piercing's key stats are clearly indicated in the UI.
             </p>
           </div>
