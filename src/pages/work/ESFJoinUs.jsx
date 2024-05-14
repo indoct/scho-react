@@ -81,9 +81,9 @@ export default function ESFJoinUs() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column pt-sm-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
-          <div className="col-md-10 col-xxl-8">
+          <div className="col-lg-10 col-xxl-8">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -119,7 +119,7 @@ export default function ESFJoinUs() {
                   rel="noreferrer"
                   className="proj-url"
                 >
-                  https://join-us.esf.edu.hk{" "}
+                  https://join-us.esf.edu.hk
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
               </p>

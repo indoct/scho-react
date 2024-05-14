@@ -41,7 +41,7 @@ export default function Quizzical() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column pt-sm-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-md-8">
             <Lightbox
@@ -78,7 +78,7 @@ export default function Quizzical() {
                   rel="noreferrer"
                   className="proj-url"
                 >
-                  https://quizzical.scho.pro{" "}
+                  https://quizzical.scho.pro
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
               </p>

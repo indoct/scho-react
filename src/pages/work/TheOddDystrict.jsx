@@ -57,7 +57,7 @@ export default function TheOddDystrict() {
       transition={{ ease: "easeInOut", duration: 0.6 }}
       style={{ overflowY: "scroll" }}
     >
-      <div className="container d-flex flex-column pt-sm-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-md-8">
             <Lightbox
@@ -100,7 +100,7 @@ export default function TheOddDystrict() {
                   rel="noreferrer"
                   className="proj-url"
                 >
-                  main website{" "}
+                  main website
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
                 <span className="tech ps-4">URL2: </span>
