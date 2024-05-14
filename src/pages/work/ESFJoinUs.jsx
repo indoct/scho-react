@@ -83,7 +83,7 @@ export default function ESFJoinUs() {
     >
       <div className="container d-flex flex-column pt-sm-5 justify-content-center page">
         <div className="row pb-2">
-          <div className="col-md-8">
+          <div className="col-md-10 col-xxl-8">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -107,8 +107,8 @@ export default function ESFJoinUs() {
               The English Schools Foundation approached me to extend their
               current website for a summer student recruitment drive for their
               22 schools. After discussions it became clear that our visions
-              were aligned and that a complete redesign and separate site for
-              the campaign would better achieve the project goals.
+              were aligned, and a complete redesign and separate site for the
+              campaign would better achieve the project goals.
             </p>
             <div className="pp-info">
               <p className="plink-cont">
