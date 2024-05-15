@@ -59,7 +59,7 @@ export default function GetSetSports() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-md-3 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-lg-10">
             <Lightbox
@@ -145,7 +145,7 @@ export default function GetSetSports() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-8 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
             <p>
               I implemented more cohesive typography and overall design
               aesthetic to help keep the information organised and easy to read.

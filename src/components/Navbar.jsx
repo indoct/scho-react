@@ -23,7 +23,7 @@ export default function Navbar(props) {
 
   return (
     <nav
-      className="navbar py-3 pt-sm-4 pt-xxl-5 navbar-dark fixed-top"
+      className="navbar py-3 pt-sm-4 pt-md-3 pt-xxl-5 navbar-dark fixed-top"
       id="menu"
     >
       <div className="container-xxl">

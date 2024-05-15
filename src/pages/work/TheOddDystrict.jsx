@@ -57,7 +57,7 @@ export default function TheOddDystrict() {
       transition={{ ease: "easeInOut", duration: 0.6 }}
       style={{ overflowY: "scroll" }}
     >
-      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-md-3 pt-xxl-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-lg-10">
             <Lightbox
@@ -130,7 +130,7 @@ export default function TheOddDystrict() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-8 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
             <p>
               It was important to the team that every aspect of the project was
               high-quality and cohesive, design-wise: from the art itself, to
@@ -164,7 +164,7 @@ export default function TheOddDystrict() {
               />
             </a>
           </div>
-          <div className="col-12 col-sm-8 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
             <p>
               React and web3 work together well, providing a dynamic library
               that allows users to see the contents of their wallets & an easy
