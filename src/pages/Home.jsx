@@ -130,13 +130,13 @@ export default function Home() {
           <div className="p-card-img">
             <img src={quizscreen} alt="Beyond Bitesize Screen 1" />
           </div>
-          <p className="card-text">
+          <div className="card-text">
             <h2 className="p-title">Quizzical</h2>
             <p className="p-desc">
               An interactive quiz web app, built with React and utilising the
               TMDb database.
             </p>
-          </p>
+          </div>
           <ul className="proj-links">
             <li>
               <Link to="work/quizzical">
@@ -156,13 +156,13 @@ export default function Home() {
           <div className="p-card-img">
             <img src={schoscreen} alt="scho " />
           </div>
-          <p className="card-text">
+          <div className="card-text">
             <h2 className="p-title">SCHO. Portfolio Website</h2>
             <p className="p-desc">
               Personal identity design and web dev portfolio, handcrafted to
               display my work.
             </p>
-          </p>
+          </div>
           <ul className="proj-links">
             <li>
               <Link to="work/esfjoinus">
@@ -176,13 +176,13 @@ export default function Home() {
           <div className="p-card-img">
             <img src={todscreen} alt="The Odd Dystrict project cover image" />
           </div>
-          <p className="card-text">
+          <div className="card-text">
             <h2 className="p-title">The Odd Dystrict</h2>
             <p className="p-desc">
               Website and web3 interface where users could mint an art NFT and
               interact with their portfolio.
             </p>
-          </p>
+          </div>
           <ul className="proj-links">
             <li>
               <Link to="work/theodddystrict">
@@ -202,13 +202,13 @@ export default function Home() {
           <div className="p-card-img">
             <img src={n7iscreen} alt="Beyond Bitesize Screen 1" />
           </div>
-          <p className="card-text">
+          <div className="card-text">
             <h2 className="p-title">N7 Ipsum</h2>
             <p className="p-desc">
               A Mass Effect lorem ipsum dummy text generator built with vanilla
               JS. Does what it says on the tin.
             </p>
-          </p>
+          </div>
           <ul className="proj-links">
             <li>
               <a href="https://n7-ipsum.scho.pro" target="_blank">
