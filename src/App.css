@@ -549,10 +549,6 @@ h6 {
   font-size: 1.3rem;
 }
 
-.home .intro:first-child {
-  margin-bottom: 0;
-}
-
 .header {
   padding: 1rem 0;
 }
@@ -895,7 +891,7 @@ h2.mb-3 {
   font-size: 2.6rem;
 }
 
-p.intro {
+.intro {
   line-height: 1.5;
 }
 
@@ -1056,7 +1052,11 @@ footer {
     font-size: 17px;
   }
 }
-
+@media (min-width: 670px) {
+  .intro-2 {
+    display: block;
+  }
+}
 @media (max-width: 760px) {
   .pp-info {
     gap: 6px;
@@ -1089,6 +1089,16 @@ footer {
     margin-top: 88px;
   }
 }
+@media (min-width: 576px) {
+  .pt-sm-4 {
+    padding-top: 2rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .container-xxl {
+    max-width: 540px;
+  }
+}
 @media (min-width: 577px) {
   .container,
   .container-sm {
@@ -1108,6 +1118,9 @@ footer {
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 991px) {
+  .container-xxl {
+    max-width: 94%;
+  }
   .header {
     padding-top: 2rem;
   }
@@ -1186,7 +1199,7 @@ footer {
   .categories {
     margin-bottom: 1.2rem;
   }
-  p.intro,
+  .intro,
   .cs-caption {
     line-height: 1.36;
     font-size: 1.01rem;
@@ -1203,7 +1216,7 @@ footer {
     font-size: 16px;
   }
   .home .intro {
-    font-size: 1.2rem;
+    font-size: 1.12rem;
   }
   .home h1 {
     font-size: 5rem;

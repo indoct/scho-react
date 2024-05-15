@@ -26,9 +26,9 @@ export default function Home() {
             <p className="intro">
               Hi there! I'm SC Houlihan, but 'scho' is easier to spell
               <i className="fa-regular fa-face-smile-wink ps-1"></i>.{" "}
-            </p>
-            <p className="intro">
-              I'm a Front-end Developer & UX/UI Designer in London.
+              <span className="intro-2">
+                I'm a Front-end Developer & UX/UI Designer in London.
+              </span>
             </p>
           </div>
         </div>
