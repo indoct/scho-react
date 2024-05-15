@@ -72,7 +72,7 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        <div className="col-12 col-md-8 col-xl-6 text-center contact-block">
+        <div className="col-12 col-md-8 col-xl-6 text-center mt-4 mt-xl-0 contact-block">
           <p>
             Or, you can email me at: <br />
           </p>

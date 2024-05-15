@@ -668,6 +668,7 @@ h6 {
   color: #bfc3c5;
   margin-bottom: 0;
   line-height: 1.4;
+  font-size: 16px;
 }
 
 .light-mode .p-desc {
@@ -1156,10 +1157,10 @@ footer {
     max-width: 1400px;
   }
   .header {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
   .home-contact {
-    max-width: 64%;
+    max-width: 60%;
   }
 }
 
