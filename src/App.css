@@ -551,8 +551,7 @@ h6 {
 }
 
 .header {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 1rem 0;
 }
 
 #btn-back-to-top {
@@ -677,10 +676,6 @@ h6 {
 }
 
 /* ABOUT PAGE */
-
-.bio {
-  border-right: 2px solid #32353a;
-}
 
 .about .row {
   justify-content: flex-start;
@@ -1046,6 +1041,12 @@ footer {
 }
 
 /* Media Queries */
+@media only screen and (min-width: 1200px) {
+  .bio {
+    border-right: 2px solid #32353a;
+  }
+}
+
 @media (max-width: 760px) {
   .pp-info {
     gap: 6px;
@@ -1078,6 +1079,9 @@ footer {
   .container {
     width: 80%;
     max-width: 1400px;
+  }
+  .header {
+    padding: 5rem 0;
   }
 }
 

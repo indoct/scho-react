@@ -109,7 +109,7 @@ export default function Navbar(props) {
                             to="/work/esfjoinus"
                             onClick={() => setMenuOpen(false)}
                           >
-                            Join Us (ESF)
+                            ESF - Join Us
                           </NavLink>
                         </li>
                         <li className="sub-li">

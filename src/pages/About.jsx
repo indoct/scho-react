@@ -11,7 +11,7 @@ export default function About() {
         transition={{ ease: "easeInOut", duration: 0.6 }}
         className="row"
       >
-        <div className="col-12 col-lg-6 bio pe-md-5">
+        <div className="col-12 col-xl-6 bio pe-md-5">
           <h1 className="mb-3">
             <span className="gradient">About Me</span>
           </h1>
@@ -65,7 +65,7 @@ export default function About() {
             !
           </p>
         </div>
-        <div className="col-12 col-lg-5 profile ps-md-5">
+        <div className="col-12 col-xl-5 profile m-xl-0 ps-xl-5">
           <h2 className="mb-3">
             <span className="gradient">Quick Profile</span>
           </h2>
