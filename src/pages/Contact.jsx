@@ -11,7 +11,7 @@ export default function Contact() {
       className="container pt-sm-4 pt-xxl-5 page"
     >
       <div className="row">
-        <div className="col-12 col-xl-6">
+        <div className="col-12 col-md-8 col-xl-6">
           <h1 className="mb-3 smallerh1">
             <span className="gradient">Get in Touch</span>
           </h1>
@@ -72,7 +72,7 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        <div className="col-12 col-xl-6 text-center contact-block">
+        <div className="col-12 col-md-8 col-xl-6 text-center contact-block">
           <p>
             Or, you can email me at: <br />
           </p>
