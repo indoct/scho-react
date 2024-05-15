@@ -48,8 +48,8 @@ export default function Home() {
           <div className="card-text">
             <h2 className="p-title">English Schools Foundation</h2>
             <p className="p-desc">
-              A fresh, dynamic face for the ESF - Hong Kong's largest provider
-              of English-medium education.
+              A fresh, dynamic face for the ESF, Hong Kong's largest provider of
+              English-medium education.
             </p>
           </div>
 
