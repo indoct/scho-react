@@ -64,7 +64,7 @@ body {
 main {
   background: var(--schodark);
   color: var(--scholight);
-  transition: all 0.4s ease;
+  /* transition: all 0.4s ease; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -75,13 +75,13 @@ main {
 main.light-mode {
   background: var(--schopearl);
   color: var(--schoonyx);
-  transition: all 0.4s ease;
+  /* transition: all 0.4s ease; */
 }
 
 a {
   color: var(--scholime);
   text-decoration: underline var(--scholime);
-  transition: all 0.3s ease;
+  /* transition: all 0.3s; */
   text-underline-offset: 3px;
 }
 
@@ -322,9 +322,9 @@ button.g2:hover,
   cursor: pointer;
 }
 
-.nav-link {
+/* .nav-link {
   transition: all 0.4s;
-}
+} */
 
 .nav-link:hover {
   color: var(--schopurp);
@@ -559,7 +559,7 @@ h6 {
   bottom: 65px;
   right: 10px;
   color: var(--schodark);
-  transition: all 0.4s;
+  /* transition: all 0.4s; */
 }
 
 .light-mode #btn-back-to-top {
@@ -855,7 +855,7 @@ a.email-big {
   color: var(--scholime);
   background-color: transparent;
   border: none;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   text-underline-offset: 3px;
 }
 
