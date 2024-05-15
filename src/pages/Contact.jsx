@@ -8,7 +8,7 @@ export default function Contact() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
-      className="container pt-sm-4 pt-md-3 pt-xxl-5 page"
+      className="container pt-sm-4 pt-lg-5 page"
     >
       <div className="row">
         <div className="col-12 col-xl-6">

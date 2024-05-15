@@ -22,16 +22,15 @@ export default function Home() {
           <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
             <span className="underline gradient">scho.</span>
           </h1>
-          <p
-            className="intro"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="200"
-          >
-            Hi there! I'm SC Houlihan, but 'scho' is easier to spell
-            <i className="fa-regular fa-face-smile-wink ps-1"></i>. I'm a
-            Front-end Developer & UX/UI Designer in London.
-          </p>
+          <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <p className="intro">
+              Hi there! I'm SC Houlihan, but 'scho' is easier to spell
+              <i className="fa-regular fa-face-smile-wink ps-1"></i>.{" "}
+            </p>
+            <p className="intro">
+              I'm a Front-end Developer & UX/UI Designer in London.
+            </p>
+          </div>
         </div>
       </section>
       <ul

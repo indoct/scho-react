@@ -57,7 +57,7 @@ export default function TheOddDystrict() {
       transition={{ ease: "easeInOut", duration: 0.6 }}
       style={{ overflowY: "scroll" }}
     >
-      <div className="container d-flex flex-column pt-sm-4 pt-md-3 pt-xxl-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-lg-5 justify-content-center page">
         <div className="row pb-2">
           <div className="col-lg-10">
             <Lightbox
