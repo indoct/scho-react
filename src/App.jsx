@@ -22,11 +22,10 @@ import ESFJoinUs from "./pages/work/ESFJoinUs";
 import GetSetSports from "./pages/work/GetSetSports";
 
 function App() {
+  console.log(JSON.parse(localStorage.getItem("isDarkMode")));
   const location = useLocation();
 
-  const [isDarkMode, setIsDarkMode] = useState(
-    JSON.parse(localStorage.getItem("isDarkMode"))
-  );
+  const [isDarkMode, setIsDarkMode] = useState(JSON.parse(localStorage.getItem("isDarkMode")));
 
   const toggleDarkMode = (checked) => {
     setIsDarkMode(!isDarkMode);
