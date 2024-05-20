@@ -441,27 +441,9 @@ h6 {
 
 .gradient {
   background: #c582ff;
-  background: -webkit-linear-gradient(
-    to right,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
-  background: linear-gradient(
-    100deg,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
+  background: -webkit-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
+  background: -moz-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
+  background: linear-gradient(100deg, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -469,13 +451,7 @@ h6 {
 
 .light-mode .gradient {
   background: #713c7c;
-  background: linear-gradient(
-    100deg,
-    #7c498b 0%,
-    #1476b3 33%,
-    #2ca58d 66%,
-    #a2bd4a 100%
-  );
+  background: linear-gradient(100deg, #7c498b 0%, #1476b3 33%, #2ca58d 66%, #a2bd4a 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -483,54 +459,18 @@ h6 {
 
 .grad-bg {
   background: #c582ff;
-  background: -webkit-linear-gradient(
-    to right,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
-  background: linear-gradient(
-    100deg,
-    #c582ff 0%,
-    #62e8e8 33%,
-    #93f0a3 66%,
-    #dbf093 100%
-  );
+  background: -webkit-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
+  background: -moz-linear-gradient(to right, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
+  background: linear-gradient(100deg, #c582ff 0%, #62e8e8 33%, #93f0a3 66%, #dbf093 100%);
   color: var(--schodark);
   border: 0;
 }
 
 .light-mode .grad-bg {
   background: #c582ff;
-  background: -webkit-linear-gradient(
-    to right,
-    #7c498b 0%,
-    #1476b3 33%,
-    #2ca58d 66%,
-    #a2bd4a 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #7c498b 0%,
-    #1476b3 33%,
-    #2ca58d 66%,
-    #a2bd4a 100%
-  );
-  background: linear-gradient(
-    100deg,
-    #7c498b 0%,
-    #1476b3 33%,
-    #2ca58d 66%,
-    #a2bd4a 100%
-  );
+  background: -webkit-linear-gradient(to right, #7c498b 0%, #1476b3 33%, #2ca58d 66%, #a2bd4a 100%);
+  background: -moz-linear-gradient(to right, #7c498b 0%, #1476b3 33%, #2ca58d 66%, #a2bd4a 100%);
+  background: linear-gradient(100deg, #7c498b 0%, #1476b3 33%, #2ca58d 66%, #a2bd4a 100%);
   color: var(--schodark);
   border: 0;
 }
@@ -652,7 +592,7 @@ h6 {
 }
 
 .p-title {
-  font-size: 1.2rem;
+  font-size: 1.12rem;
   font-weight: 500;
   margin-bottom: 0.23rem;
   color: var(--scholight);
@@ -1048,6 +988,9 @@ footer {
   }
   .bio {
     border-right: 2px solid #32353a;
+  }
+  .light-mode .bio {
+    border-right: 2px solid #b5afaa;
   }
   .cs-caption {
     font-size: 17px;

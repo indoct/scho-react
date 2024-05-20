@@ -4,45 +4,30 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section className="container about page pt-sm-4 pt-xxl-5">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ ease: "easeInOut", duration: 0.6 }}
-        className="row"
-      >
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ ease: "easeInOut", duration: 0.6 }} className="row">
         <div className="col-12 col-xl-6 bio pe-md-5">
           <h1 className="mb-3">
             <span className="gradient">About Me</span>
           </h1>
           <p className="intro">
-            Hi there, my name is Siobhan. I'm a frontend developer and designer
-            based in London, UK. My focus is on digital experiences and UX/UI
-            but I also design for print and physical media.
+            Hi there, my name is Siobhan. I'm a frontend developer and designer based in London, UK. My focus is on digital experiences and UX/UI but I also
+            design for print and physical media.
           </p>
           <p className="intro">
-            I recently graduated with a first in Graphic Design from the
-            University of Hertfordshire, and I previously acquired a certificate
-            in UX/UI Design from General Assembly. I've worked for many years in
-            graphic and web design and I have experience both working solo and
-            in teams both small and large.
+            I recently graduated with a first in Graphic Design from the University of Hertfordshire, and I previously acquired a certificate in UX/UI Design
+            from General Assembly. I've worked for many years in graphic and web design and I have experience both working solo and in teams both small and
+            large.
           </p>
           <p className="intro">
-            I love to create, no matter the format, and I pride myself on
-            crafting design that looks great but is also a joy to use
-            (accessibility is key!) When I'm not designing, I enjoy coding,
-            making gifs, gaming, football, and occasionally video editing.
+            I love to create, no matter the format, and I pride myself on crafting design that looks great but is also a joy to use (accessibility is key!) When
+            I'm not designing, I enjoy coding, making gifs, gaming, football, and occasionally video editing.
           </p>
           <div className="intro">
             For more projects & examples of my work:
             <ul>
               <li>
                 <strong>
-                  <a
-                    href="scho-portfolio-2023.pdf"
-                    className="gradient"
-                    download
-                  >
+                  <a href="scho-portfolio-2023.pdf" className="gradient" download>
                     download my portfolio
                   </a>
                 </strong>
@@ -59,13 +44,11 @@ export default function About() {
           </div>
           <p className="about-copy">
             I'm currently
-            <strong> available for freelance opportunities</strong>, so please
-            &nbsp;
-            <Link to="/contact">head to the contact page</Link> to get in touch
-            !
+            <strong> available for freelance opportunities</strong>, so please &nbsp;
+            <Link to="/contact">head to the contact page</Link> to get in touch !
           </p>
         </div>
-        <div className="col-12 col-xl-5 profile m-xl-0 ps-xl-5">
+        <div className="col-12 col-xl-6 profile m-xl-0 ps-xl-4">
           <h2 className="mb-3">
             <span className="gradient">Quick Profile</span>
           </h2>
@@ -83,9 +66,7 @@ export default function About() {
             <p>
               BA(Hons) Graphic Design [<span className="grade">First</span>]
               <br />
-              <span className="p-desc">
-                University of Hertfordshire, 2019-2023
-              </span>
+              <span className="p-desc">University of Hertfordshire, 2019-2023</span>
             </p>
             <p className="mb-0">
               Certificate in UX/UI Design
