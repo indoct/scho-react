@@ -40,11 +40,7 @@ export default function About() {
             <ul>
               <li>
                 <strong>
-                  <a
-                    href="scho-portfolio-2023.pdf"
-                    className="gradient"
-                    download
-                  >
+                  <a href="scho-portfolio-2023.pdf" className="gradient" download>
                     download my portfolio
                   </a>
                 </strong>
