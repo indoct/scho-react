@@ -321,9 +321,9 @@ button.g2:hover,
   cursor: pointer;
 }
 
-/* .nav-link {
-  transition: all 0.4s;
-} */
+.nav-link {
+  transition: background-color 0.4s, color 0.4s;
+}
 
 .nav-link:hover {
   color: var(--schopurp);
@@ -653,7 +653,7 @@ h6 {
 }
 
 .p-title {
-  font-size: 1.12rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.23rem;
   color: var(--scholight);
@@ -707,6 +707,9 @@ h6 {
 
 .grade {
   color: var(--schopurp);
+}
+.light-mode .grade {
+  color: var(--schoiris);
 }
 .item {
   padding: 0.5rem 0.8rem;
