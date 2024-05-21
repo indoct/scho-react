@@ -139,7 +139,7 @@ export default function Navbar(props) {
                             Quizzical
                           </NavLink>
                         </li>
-                        <li className="sub-li">
+                        {/* <li className="sub-li">
                           <NavLink
                             className="nav-link g1 sub-link"
                             to="/work/scho"
@@ -147,7 +147,7 @@ export default function Navbar(props) {
                           >
                             SCHO. Portfolio
                           </NavLink>
-                        </li>
+                        </li> */}
                         <li className="sub-li">
                           <NavLink
                             className="nav-link g2 sub-link"

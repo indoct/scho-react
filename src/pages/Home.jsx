@@ -151,7 +151,7 @@ export default function Home() {
             </li>
           </ul>
         </li>
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
+        {/* <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <img src={schoscreen} alt="scho " />
           </div>
@@ -170,7 +170,7 @@ export default function Home() {
               </Link>
             </li>
           </ul>
-        </li>
+        </li> */}
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <img src={todscreen} alt="The Odd Dystrict project cover image" />
