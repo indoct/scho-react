@@ -11,29 +11,31 @@ export default function About() {
         transition={{ ease: "easeInOut", duration: 0.6 }}
         className="row"
       >
-        <div className="col-12 col-xl-6 bio pe-md-5">
+        <div className="col-12 col-md-7 col-xxl-6 bio pe-md-5">
           <h1 className="mb-3">
-            <span className="gradient">About Me</span>
+            <span className="gradient">About</span>
           </h1>
           <p className="intro">
-            Hi there, my name is Siobhan. I'm a frontend developer and designer
-            based in London, UK. My focus is on digital experiences and UX/UI
-            but I also design for print and physical media.
+            Hi there, my name is Siobhan. I'm a front end developer & designer
+            based in London, UK. My focus is on digital experiences and UX/UI,
+            and I love to build with the flexibility that React provides.
           </p>
           <p className="intro">
             I recently graduated with a first in Graphic Design from the
             University of Hertfordshire, and I previously acquired a certificate
-            in UX/UI Design from General Assembly. I've worked for many years in
-            graphic and web design and I have experience both working solo and
-            in teams both small and large.
+            in UX/UI Design from General Assembly. I also have a BSc as I love
+            to learn and I'm constantly challenging myself to improve my
+            skillset. I've worked for many years in development and design and I
+            have experience working solo, in teams of a few people, and in
+            organisations with over 2000 staff.
           </p>
           <p className="intro">
             I love to create, no matter the format, and I pride myself on
-            crafting design that looks great but is also a joy to use
-            (accessibility is key!) When I'm not designing, I enjoy coding,
-            making gifs, gaming, football, and occasionally video editing.
+            crafting products that not only look great but are also accessible
+            and a joy to use. When I'm not working, I enjoy building personal
+            projects, gaming, modding, football (KTBFFH!), and travelling.
           </p>
-          <div className="intro">
+          {/* <div className="intro">
             For more projects & examples of my work:
             <ul>
               <li>
@@ -56,30 +58,31 @@ export default function About() {
                 </strong>
               </li>
             </ul>
-          </div>
+          </div> */}
           <p className="about-copy">
             I'm currently
             <strong> available for freelance opportunities</strong>, so please
             &nbsp;
+            <br />
             <Link to="/contact">head to the contact page</Link> to get in touch
-            !
+            or email me at: <a href="mailto:hello@scho.pro">hello@scho.pro</a>
           </p>
         </div>
-        <div className="col-12 col-xl-5 profile m-xl-0 ps-xl-5">
+        <div className="col-12 col-xl-5 profile m-xl-0 ps-xl-4 ps-xxl-5">
           <h2 className="mb-3">
             <span className="gradient">Quick Profile</span>
           </h2>
           <h6>Skills:</h6>
-          <p className="mb-4 d-flex">
+          <p className="mb-3 mb-xxl-4 d-flex">
+            <span className="item">Front-End Dev</span>
+            <span className="item">React Dev</span>
+            <span className="item">Wordpress</span>
             <span className="item">User Experience (UX)</span>
             <span className="item">User Interface (UI)</span>
-            <span className="item">Branding</span>
             <span className="item">Web & App Design</span>
-            <span className="item">Print Marketing</span>
-            <span className="item">Collateral</span>
           </p>
           <h6>Education:</h6>
-          <div className="item mb-4">
+          <div className="item mb-3 mb-xxl-4">
             <p>
               BA(Hons) Graphic Design [<span className="grade">First</span>]
               <br />
@@ -93,24 +96,23 @@ export default function About() {
               <span className="p-desc">General Assembly, 2017</span>
             </p>
           </div>
+          <h6>Stack:</h6>
+          <p className="mb-3 mb-xxl-4 d-flex">
+            <span className="item">HTML</span>
+            <span className="item">CSS</span>
+            <span className="item">Javascript</span>
+            <span className="item">React</span>
+            <span className="item">Typescript</span>
+            <span className="item">Bootstrap</span>
+            <span className="item">Wordpress</span>
+          </p>
           <h6>Software:</h6>
-          <p className="mb-4 d-flex">
+          <p className="mb-3 mb-xxl-4 d-flex">
             <span className="item">Adobe Illustrator</span>
             <span className="item">Adobe Photoshop</span>
             <span className="item">Adobe XD</span>
             <span className="item">Figma</span>
             <span className="item">Adobe InDesign</span>
-            <span className="item">Adobe Premiere Pro</span>
-          </p>
-          <h6>Stack:</h6>
-          <p className="mb-4 d-flex">
-            <span className="item">HTML</span>
-            <span className="item">CSS</span>
-            <span className="item">Vanilla Javascript</span>
-            <span className="item">React</span>
-            <span className="item">Typescript</span>
-            <span className="item">Bootstrap</span>
-            <span className="item">Wordpress</span>
           </p>
         </div>
       </motion.div>

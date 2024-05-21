@@ -334,7 +334,8 @@ button.g2:hover,
   letter-spacing: 0.25px;
 }
 
-.proj-nav-body ul {
+.proj-nav-body ul,
+.contact-links {
   list-style-type: none;
 }
 
@@ -431,7 +432,7 @@ h3 {
 
 h6 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -689,10 +690,19 @@ h6 {
   font-size: 3rem;
 }
 
+/* .bio.pe-md-5 {
+  padding-right: 2rem !important;
+} */
 .profile p,
 .profile {
   font-size: 0.9rem;
   flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.profile h6 {
+  font-size: 0.96rem;
+  margin-bottom: 0.22rem;
 }
 
 .grade {
@@ -1048,6 +1058,9 @@ footer {
   }
   .bio {
     border-right: 2px solid #32353a;
+  }
+  .light-mode .bio {
+    border-right: 2px dotted var(--schostone);
   }
   .cs-caption {
     font-size: 17px;

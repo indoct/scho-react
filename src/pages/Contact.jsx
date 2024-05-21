@@ -10,8 +10,8 @@ export default function Contact() {
       transition={{ duration: 0.6 }}
       className="container pt-sm-4 pt-xxl-5 page"
     >
-      <div className="row">
-        <div className="col-12 col-md-8 col-xl-6">
+      <div className="row justify-content-between align-items-start">
+        <div className="col-12 col-md-8 col-xxl-6">
           <h1 className="mb-3 smallerh1">
             <span className="gradient">Get in Touch</span>
           </h1>
@@ -72,19 +72,19 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        <div className="col-12 col-md-8 col-xl-6 text-center mt-4 mt-xl-0 contact-block">
+        <div className="col-12 col-md-8 col-xxl-5 text-center ms-xxl-2 mt-4 mt-xl-3 mt-xxl-0 contact-block">
           <p>
             Or, you can email me at: <br />
           </p>
           <a href="mailto:hello@scho.pro" className="email-big gradient">
             hello@scho.pro
           </a>
-          <p>And I can be found around the web at:</p>
+          {/* <p>And I can be found around the web at:</p>
           <ul className="contact-links">
             <li>github</li>
             <li>linkedin</li>
             <li>messenger</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </motion.div>
