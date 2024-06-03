@@ -75,6 +75,7 @@ export default function Navbar(props) {
                 <NavLink
                   to="/"
                   className="nav-link g2 ml"
+                  tabIndex={menuIsOpen ? 0 : -1}
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
@@ -86,6 +87,7 @@ export default function Navbar(props) {
                     <p className="accordion-header align-items-end">
                       <button
                         className="accordion-button collapsed nav-link"
+                        tabIndex={menuIsOpen ? 0 : -1}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo"
@@ -166,6 +168,7 @@ export default function Navbar(props) {
                 <NavLink
                   className="nav-link g3 ml"
                   to="/about"
+                  tabIndex={menuIsOpen ? 0 : -1}
                   onClick={() => setMenuOpen(false)}
                 >
                   About
@@ -175,6 +178,7 @@ export default function Navbar(props) {
                 <NavLink
                   className="nav-link g4 ml"
                   to="/contact"
+                  tabIndex={menuIsOpen ? 0 : -1}
                   onClick={() => setMenuOpen(false)}
                 >
                   Contact
