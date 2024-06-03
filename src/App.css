@@ -1001,7 +1001,6 @@ footer {
   margin-top: 2rem;
   padding: 1rem 0;
   background-color: #1c1e20;
-  font-size: 0.86rem;
   color: #a6abad;
 }
 
@@ -1015,7 +1014,7 @@ footer {
 }
 .footer-soc {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: flex-end;
   list-style-type: none;
   align-self: center;
@@ -1109,6 +1108,9 @@ footer {
 @media (min-width: 576px) {
   .pt-sm-4 {
     padding-top: 2rem !important;
+  }
+  footer {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 576px) {

@@ -230,7 +230,7 @@ export default function Home() {
             </p>
             <div className="social-icons pt-3">
               <a
-                href="#"
+                href="https://github.com/indoct/"
                 target="_blank"
                 aria-label="github (opens in new tab)"
               >
@@ -240,18 +240,11 @@ export default function Home() {
                 ></i>
               </a>
               <a
-                href="#"
+                href="https://linkedin.com/in/shoul"
                 target="_blank"
                 aria-label="linkedin (opens in new tab)"
               >
                 <i className="fa-brands fa-linkedin" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                aria-label="contact form (opens in this tab)"
-              >
-                <i className="fa-solid fa-paper-plane"></i>
               </a>
             </div>
           </div>

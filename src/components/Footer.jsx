@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="col-12 col-sm-6 copyright">
             © 2023 <span className="dys">scho.</span> All rights reserved.
           </div>
-          <div className="col-12 col-sm-6 socials">
+          <div className="col-12 col-sm-6 socials pt-2 pt-s-0">
             <ul className="footer-soc">
               <li>
                 <a href="mailto:hello@scho.pro">email</a>
@@ -17,7 +17,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@scho.pro">linkedin</a>
+                <a href="https://www.linkedin.com/in/shoul" target="blank_">
+                  linkedin
+                </a>
               </li>
             </ul>
           </div>
