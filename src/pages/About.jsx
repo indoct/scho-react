@@ -18,7 +18,8 @@ export default function About() {
           <p className="intro">
             Hi there, my name is Siobhan. I'm a front end developer & designer
             based in London, UK. My focus is on digital experiences and UX/UI,
-            and I love to build with the flexibility that React provides.
+            and I love to build with the flexibility that React provides (this
+            site is built with React and Framer Motion, for example!).
           </p>
           <p className="intro">
             I recently graduated with a first in Graphic Design from the
