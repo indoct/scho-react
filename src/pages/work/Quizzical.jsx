@@ -123,13 +123,13 @@ export default function Quizzical() {
           <div className="col col-sm-6 text-end">
             <div className="d-flex flex-column justify-content-end">
               <div>
-                <Link to="../work/scho">
+                <Link to="../work/theodddystrict">
                   <button className="back-link next-link">
                     Next Project<i className="fa-solid fa-arrow-right-long"></i>
                   </button>
                 </Link>
               </div>
-              <div className="next-proj">SCHO. Portfolio</div>
+              <div className="next-proj">The Odd Dystrict</div>
             </div>
           </div>
         </div>
