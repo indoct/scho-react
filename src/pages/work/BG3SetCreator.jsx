@@ -92,7 +92,7 @@ export default function BG3SetCreator() {
               </p>
               <p className="plink-cont">
                 <span className="tech">built with:</span>
-                React, React Router, Context API, Bootstrap, Prism.js
+                React, Router, Typescript, Context API, Bootstrap, Prism.js
               </p>
             </div>
           </div>
