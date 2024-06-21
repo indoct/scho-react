@@ -33,6 +33,7 @@ export default function Contact() {
               </label>
               <input
                 type="text"
+                autocomplete="name"
                 className="form-control"
                 id="inputName"
                 name="name"
@@ -45,6 +46,7 @@ export default function Contact() {
               </label>
               <input
                 type="email"
+                autocomplete="email"
                 className="form-control"
                 name="email"
                 id="inputEmail"
@@ -79,12 +81,6 @@ export default function Contact() {
           <a href="mailto:hello@scho.pro" className="email-big gradient">
             hello@scho.pro
           </a>
-          {/* <p>And I can be found around the web at:</p>
-          <ul className="contact-links">
-            <li>github</li>
-            <li>linkedin</li>
-            <li>messenger</li>
-          </ul> */}
         </div>
       </div>
     </motion.div>
