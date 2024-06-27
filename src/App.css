@@ -611,11 +611,12 @@ h6 {
   line-height: 1.4;
   color: var(--scholime);
   border: 1px solid rgb(219 240 147 / 50%);
+  transition: all 0.4s;
 }
 
 .proj-links li a:hover {
   border-radius: 18px;
-  background: var(--schogrey);
+  background-color: var(--schogrey);
 }
 
 .light-mode .proj-links li a:hover {
