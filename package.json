@@ -7,7 +7,6 @@
     "@theme-toggles/react": "^4.1.0",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-react-swc": "^3.6.0",
-    "aos": "^3.0.0-beta.6",
     "eslint": "^9.0.0",
     "framer-motion": "^11.1.7",
     "hamburger-react": "^2.5.0",

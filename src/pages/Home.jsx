@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import esfscreen from "../assets/images/project/project-cover-esf.jpg";
 import prcscreen from "../assets/images/project/project-cover-prc.jpg";
@@ -11,18 +9,22 @@ import n7iscreen from "../assets/images/project/project-cover-n7i.jpg";
 import schoscreen from "../assets/images/project/project-cover-scho.png";
 import quizscreen from "../assets/images/project/project-cover-quiz.jpg";
 
+import esfwebp from "../assets/images/project/project-cover-esf.webp"
+import prcwebp from "../assets/images/project/project-cover-prc.webp"
+import gswebp from "../assets/images/project/project-cover-gs.webp"
+import todwebp from "../assets/images/project/project-cover-tod.webp"
+import n7iwebp from "../assets/images/project/project-cover-n7i.webp"
+import quizwebp from "../assets/images/project/project-cover-quiz.webp"
+
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div className="container page">
       <section className="header home row">
         <div className="col-12 col-sm-10 col-xl-8 col-xxl-7">
-          <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+          <h1>
             <span className="underline gradient">scho.</span>
           </h1>
-          <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <div>
             <p className="intro">
               Hi there! I'm SC Houlihan, but 'scho' is easier to spell
               <i className="fa-regular fa-face-smile-wink ps-1"></i>.{" "}
@@ -35,14 +37,14 @@ export default function Home() {
       </section>
       <ul
         id="case-studies"
-        data-aos="fade-up"
-        data-aos-delay="300"
-        data-aos-duration="1000"
         className="row mb-2 gy-4 gx-3"
       >
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
-            <img src={esfscreen} alt="ESF Join Us cover image" />
+            <picture>
+              <source srcSet={esfwebp}></source>
+              <img src={esfscreen} alt="ESF Join Us cover image" height="708" width="1076" />
+            </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">English Schools Foundation</h2>
@@ -51,7 +53,6 @@ export default function Home() {
               English-medium education.
             </p>
           </div>
-
           <ul className="proj-links">
             <li>
               <Link to="work/esfjoinus">
@@ -69,10 +70,13 @@ export default function Home() {
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
-            <img
-              src={prcscreen}
-              alt="BG3 Piercing Set Creator project cover image"
-            />
+            <picture>
+              <source srcSet={prcwebp}></source>
+              <img
+                src={prcscreen}
+                alt="BG3 Piercing Set Creator project cover image" height="708" width="1076"
+              />
+            </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">BG3 Piercing Set Creator</h2>
@@ -98,10 +102,13 @@ export default function Home() {
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
-            <img
-              src={gsscreen}
-              alt="Get Set Sports Academy project cover image"
-            />
+            <picture>
+              <source srcSet={gswebp}></source>
+              <img
+                src={gsscreen}
+                alt="Get Set Sports Academy project cover image" height="708" width="1076"
+              />
+            </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">Get Set Sports Academy</h2>
@@ -127,7 +134,10 @@ export default function Home() {
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
-            <img src={quizscreen} alt="Beyond Bitesize Screen 1" />
+            <picture>
+              <source srcSet={quizwebp}></source>
+              <img src={quizscreen} alt="Quizzical project cover image" height="708" width="1076" />
+            </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">Quizzical</h2>
@@ -173,7 +183,10 @@ export default function Home() {
         </li> */}
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
-            <img src={todscreen} alt="The Odd Dystrict project cover image" />
+            <picture>
+              <source srcSet={todwebp}></source>
+              <img src={todscreen} alt="The Odd Dystrict project cover image" height="708" width="1076" />
+            </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">The Odd Dystrict</h2>
@@ -199,7 +212,10 @@ export default function Home() {
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
-            <img src={n7iscreen} alt="Beyond Bitesize Screen 1" />
+            <picture>
+              <source srcSet={n7iwebp}></source>
+              <img src={n7iscreen} alt="N7 Ipsum Project cover image" height="708" width="1076" />
+            </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">N7 Ipsum</h2>
