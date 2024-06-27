@@ -1,20 +1,4 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
-import esfscreen from "../assets/images/project/project-cover-esf.jpg";
-import prcscreen from "../assets/images/project/project-cover-prc.jpg";
-import gsscreen from "../assets/images/project/project-cover-gs.jpg";
-import todscreen from "../assets/images/project/project-cover-tod.jpg";
-import n7iscreen from "../assets/images/project/project-cover-n7i.jpg";
-import schoscreen from "../assets/images/project/project-cover-scho.png";
-import quizscreen from "../assets/images/project/project-cover-quiz.jpg";
-
-import esfwebp from "../assets/images/project/project-cover-esf.webp"
-import prcwebp from "../assets/images/project/project-cover-prc.webp"
-import gswebp from "../assets/images/project/project-cover-gs.webp"
-import todwebp from "../assets/images/project/project-cover-tod.webp"
-import n7iwebp from "../assets/images/project/project-cover-n7i.webp"
-import quizwebp from "../assets/images/project/project-cover-quiz.webp"
 
 export default function Home() {
   return (
@@ -42,8 +26,8 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet={esfwebp}></source>
-              <img src={esfscreen} alt="ESF Join Us cover image" height="708" width="1076" />
+              <source srcSet="assets/images/project/comp/project-cover-esf.webp"></source>
+              <img src="assets/images/project/comp/project-cover-esf.jpg" alt="ESF Join Us cover image" height="354" width="538" />
             </picture>
           </div>
           <div className="card-text">
@@ -71,10 +55,10 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet={prcwebp}></source>
+              <source srcSet="assets/images/project/comp/project-cover-prc.webp"></source>
               <img
-                src={prcscreen}
-                alt="BG3 Piercing Set Creator project cover image" height="708" width="1076"
+                src="assets/images/project/comp/project-cover-prc.jpg"
+                alt="BG3 Piercing Set Creator project cover image" height="354" width="538"
               />
             </picture>
           </div>
@@ -103,10 +87,10 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet={gswebp}></source>
+              <source srcSet="assets/images/project/comp/project-cover-gs.webp"></source>
               <img
-                src={gsscreen}
-                alt="Get Set Sports Academy project cover image" height="708" width="1076"
+                src="assets/images/project/comp/project-cover-gs.jpg"
+                alt="Get Set Sports Academy project cover image" height="354" width="538"
               />
             </picture>
           </div>
@@ -135,8 +119,8 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet={quizwebp}></source>
-              <img src={quizscreen} alt="Quizzical project cover image" height="708" width="1076" />
+              <source srcSet="assets/images/project/comp/project-cover-quiz.webp"></source>
+              <img src="assets/images/project/comp/project-cover-quiz.jpg" alt="Quizzical project cover image" height="354" width="538" />
             </picture>
           </div>
           <div className="card-text">
@@ -161,31 +145,11 @@ export default function Home() {
             </li>
           </ul>
         </li>
-        {/* <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="p-card-img">
-            <img src={schoscreen} alt="scho " />
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">SCHO. Portfolio Website</h2>
-            <p className="p-desc">
-              Personal identity design and web dev portfolio, handcrafted to
-              display my work.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <Link to="work/esfjoinus">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
-          </ul>
-        </li> */}
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet={todwebp}></source>
-              <img src={todscreen} alt="The Odd Dystrict project cover image" height="708" width="1076" />
+              <source srcSet="assets/images/project/comp/project-cover-tod.webp"></source>
+              <img src="assets/images/project/comp/project-cover-tod.jpg" alt="The Odd Dystrict project cover image" height="354" width="538" />
             </picture>
           </div>
           <div className="card-text">
@@ -213,8 +177,8 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet={n7iwebp}></source>
-              <img src={n7iscreen} alt="N7 Ipsum Project cover image" height="708" width="1076" />
+              <source srcSet="assets/images/project/comp/project-cover-n7i.webp"></source>
+              <img src="assets/images/project/comp/project-cover-n7i.jpg" alt="N7 Ipsum Project cover image" height="354" width="538" />
             </picture>
           </div>
           <div className="card-text">
