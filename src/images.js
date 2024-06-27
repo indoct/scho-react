@@ -45,7 +45,6 @@ const assets = {
   joinus03,
   joinus04,
   joinus05,
-  joinus05,
   joinus06,
   joinus07,
   joinus08,
