@@ -12,29 +12,28 @@ export default function Home() {
             <p className="intro">
               Hi there! I'm SC Houlihan, but 'scho' is easier to spell
               <i className="fa-regular fa-face-smile-wink ps-1"></i>.{" "}
-              <span className="intro-2">
-                I'm a Front-end Developer & UX/UI Designer in London.
-              </span>
+              <span className="intro-2">I'm a Front-end Developer & UX/UI Designer in London.</span>
             </p>
           </div>
         </div>
       </section>
-      <ul
-        id="case-studies"
-        className="row mb-2 gy-4 gx-3"
-      >
+      <ul id="case-studies" className="row mb-2 gy-4 gx-3">
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet="assets/images/project/comp/project-cover-esf.webp"></source>
-              <img src="assets/images/project/comp/project-cover-esf.jpg" alt="ESF Join Us cover image" height="354" width="538" />
+              <source srcSet="assets/images/project/comp/project-cover-esf.webp" />
+              <img
+                src="assets/images/project/comp/project-cover-esf.jpg"
+                alt="ESF Join Us cover image"
+                height="354"
+                width="538"
+              />
             </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">English Schools Foundation</h2>
             <p className="p-desc">
-              A fresh, dynamic face for the ESF, Hong Kong's largest provider of
-              English-medium education.
+              A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.
             </p>
           </div>
           <ul className="proj-links">
@@ -54,19 +53,24 @@ export default function Home() {
         </li>
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
+            <div className="react">
+              <i class="fa-brands fa-react"></i>
+              <span>react</span>
+            </div>
             <picture>
-              <source srcSet="assets/images/project/comp/project-cover-prc.webp"></source>
+              <source srcSet="assets/images/project/comp/project-cover-prc.webp" />
               <img
                 src="assets/images/project/comp/project-cover-prc.jpg"
-                alt="BG3 Piercing Set Creator project cover image" height="354" width="538"
+                alt="BG3 Piercing Set Creator project cover image"
+                height="354"
+                width="538"
               />
             </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">BG3 Piercing Set Creator</h2>
             <p className="p-desc">
-              A web app for people to easily create their own custom Baldur's
-              Gate 3 piercing combinations.
+              A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.
             </p>
           </div>
           <ul className="proj-links">
@@ -87,18 +91,19 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet="assets/images/project/comp/project-cover-gs.webp"></source>
+              <source srcSet="assets/images/project/comp/project-cover-gs.webp" />
               <img
                 src="assets/images/project/comp/project-cover-gs.jpg"
-                alt="Get Set Sports Academy project cover image" height="354" width="538"
+                alt="Get Set Sports Academy project cover image"
+                height="354"
+                width="538"
               />
             </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">Get Set Sports Academy</h2>
             <p className="p-desc">
-              Building an attractive and easily maintainable web presence for a
-              leading athletics academy.
+              Building an attractive and easily maintainable web presence for a leading athletics academy.
             </p>
           </div>
           <ul className="proj-links">
@@ -119,16 +124,22 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet="assets/images/project/comp/project-cover-quiz.webp"></source>
-              <img src="assets/images/project/comp/project-cover-quiz.jpg" alt="Quizzical project cover image" height="354" width="538" />
+              <div className="react">
+                <i class="fa-brands fa-react"></i>
+                <span>react</span>
+              </div>
+              <source srcSet="assets/images/project/comp/project-cover-quiz.webp" />
+              <img
+                src="assets/images/project/comp/project-cover-quiz.jpg"
+                alt="Quizzical project cover image"
+                height="354"
+                width="538"
+              />
             </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">Quizzical</h2>
-            <p className="p-desc">
-              An interactive quiz web app, built with React and utilising the
-              TMDb database.
-            </p>
+            <p className="p-desc">An interactive quiz web app, built with React and utilising the TMDb database.</p>
           </div>
           <ul className="proj-links">
             <li>
@@ -148,15 +159,19 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet="assets/images/project/comp/project-cover-tod.webp"></source>
-              <img src="assets/images/project/comp/project-cover-tod.jpg" alt="The Odd Dystrict project cover image" height="354" width="538" />
+              <source srcSet="assets/images/project/comp/project-cover-tod.webp" />
+              <img
+                src="assets/images/project/comp/project-cover-tod.jpg"
+                alt="The Odd Dystrict project cover image"
+                height="354"
+                width="538"
+              />
             </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">The Odd Dystrict</h2>
             <p className="p-desc">
-              Website and web3 interface where users could mint an art NFT and
-              interact with their portfolio.
+              Website and web3 interface where users could mint an art NFT and interact with their portfolio.
             </p>
           </div>
           <ul className="proj-links">
@@ -177,15 +192,19 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <picture>
-              <source srcSet="assets/images/project/comp/project-cover-n7i.webp"></source>
-              <img src="assets/images/project/comp/project-cover-n7i.jpg" alt="N7 Ipsum Project cover image" height="354" width="538" />
+              <source srcSet="assets/images/project/comp/project-cover-n7i.webp" />
+              <img
+                src="assets/images/project/comp/project-cover-n7i.jpg"
+                alt="N7 Ipsum Project cover image"
+                height="354"
+                width="538"
+              />
             </picture>
           </div>
           <div className="card-text">
             <h2 className="p-title">N7 Ipsum</h2>
             <p className="p-desc">
-              A Mass Effect lorem ipsum dummy text generator built with vanilla
-              JS. Does what it says on the tin.
+              A Mass Effect lorem ipsum dummy text generator built with vanilla JS. Does what it says on the tin.
             </p>
           </div>
           <ul className="proj-links">
@@ -202,28 +221,17 @@ export default function Home() {
         <div className="col-12 text-center">
           <div className="home-contact">
             <p>
-              If you'd like to see more work or get in touch, please fill out
-              the <a href="/contact">contact form</a>, or you can email me at:
+              If you'd like to see more work or get in touch, please fill out the <a href="/contact">contact form</a>,
+              or you can email me at:
               <a href="mailto:hello@scho.pro" className="email-big gradient">
                 hello@scho.pro
               </a>
             </p>
             <div className="social-icons pt-3">
-              <a
-                href="https://github.com/indoct/"
-                target="_blank"
-                aria-label="github (opens in new tab)"
-              >
-                <i
-                  className="fa-brands fa-square-github"
-                  aria-hidden="true"
-                ></i>
+              <a href="https://github.com/indoct/" target="_blank" aria-label="github (opens in new tab)">
+                <i className="fa-brands fa-square-github" aria-hidden="true"></i>
               </a>
-              <a
-                href="https://linkedin.com/in/shoul"
-                target="_blank"
-                aria-label="linkedin (opens in new tab)"
-              >
+              <a href="https://linkedin.com/in/shoul" target="_blank" aria-label="linkedin (opens in new tab)">
                 <i className="fa-brands fa-linkedin" />
               </a>
             </div>
