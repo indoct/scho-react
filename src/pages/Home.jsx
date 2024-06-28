@@ -12,7 +12,9 @@ export default function Home() {
             <p className="intro">
               Hi there! I'm SC Houlihan, but 'scho' is easier to spell
               <i className="fa-regular fa-face-smile-wink ps-1"></i>.{" "}
-              <span className="intro-2">I'm a Front-end Developer & UX/UI Designer in London.</span>
+              <span className="intro-2">
+                I'm a Front-end Engineer & UX/UI Designer in London.
+              </span>
             </p>
           </div>
         </div>
@@ -33,7 +35,8 @@ export default function Home() {
           <div className="card-text">
             <h2 className="p-title">English Schools Foundation</h2>
             <p className="p-desc">
-              A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.
+              A fresh, dynamic face for the ESF, Hong Kong's largest provider of
+              English-medium education.
             </p>
           </div>
           <ul className="proj-links">
@@ -70,7 +73,8 @@ export default function Home() {
           <div className="card-text">
             <h2 className="p-title">BG3 Piercing Set Creator</h2>
             <p className="p-desc">
-              A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.
+              A web app for people to easily create their own custom Baldur's
+              Gate 3 piercing combinations.
             </p>
           </div>
           <ul className="proj-links">
@@ -103,7 +107,8 @@ export default function Home() {
           <div className="card-text">
             <h2 className="p-title">Get Set Sports Academy</h2>
             <p className="p-desc">
-              Building an attractive and easily maintainable web presence for a leading athletics academy.
+              Building an attractive and easily maintainable web presence for a
+              leading athletics academy.
             </p>
           </div>
           <ul className="proj-links">
@@ -139,7 +144,10 @@ export default function Home() {
           </div>
           <div className="card-text">
             <h2 className="p-title">Quizzical</h2>
-            <p className="p-desc">An interactive quiz web app, built with React and utilising the TMDb database.</p>
+            <p className="p-desc">
+              An interactive quiz web app, built with React and utilising the
+              TMDb database.
+            </p>
           </div>
           <ul className="proj-links">
             <li>
@@ -171,7 +179,8 @@ export default function Home() {
           <div className="card-text">
             <h2 className="p-title">The Odd Dystrict</h2>
             <p className="p-desc">
-              Website and web3 interface where users could mint an art NFT and interact with their portfolio.
+              Website and web3 interface where users could mint an art NFT and
+              interact with their portfolio.
             </p>
           </div>
           <ul className="proj-links">
@@ -204,7 +213,8 @@ export default function Home() {
           <div className="card-text">
             <h2 className="p-title">N7 Ipsum</h2>
             <p className="p-desc">
-              A Mass Effect lorem ipsum dummy text generator built with vanilla JS. Does what it says on the tin.
+              A Mass Effect lorem ipsum dummy text generator built with vanilla
+              JS. Does what it says on the tin.
             </p>
           </div>
           <ul className="proj-links">
@@ -221,17 +231,28 @@ export default function Home() {
         <div className="col-12 text-center">
           <div className="home-contact">
             <p>
-              If you'd like to see more work or get in touch, please fill out the <a href="/contact">contact form</a>,
-              or you can email me at:
+              If you'd like to see more work or get in touch, please fill out
+              the <a href="/contact">contact form</a>, or you can email me at:
               <a href="mailto:hello@scho.pro" className="email-big gradient">
                 hello@scho.pro
               </a>
             </p>
-            <div className="social-icons pt-3">
-              <a href="https://github.com/indoct/" target="_blank" aria-label="github (opens in new tab)">
-                <i className="fa-brands fa-square-github" aria-hidden="true"></i>
+            <div className="social-icons">
+              <a
+                href="https://github.com/indoct/"
+                target="_blank"
+                aria-label="github (opens in new tab)"
+              >
+                <i
+                  className="fa-brands fa-square-github"
+                  aria-hidden="true"
+                ></i>
               </a>
-              <a href="https://linkedin.com/in/shoul" target="_blank" aria-label="linkedin (opens in new tab)">
+              <a
+                href="https://linkedin.com/in/shoul"
+                target="_blank"
+                aria-label="linkedin (opens in new tab)"
+              >
                 <i className="fa-brands fa-linkedin" />
               </a>
             </div>

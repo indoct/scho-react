@@ -1034,12 +1034,13 @@ footer {
 
 .light-mode footer {
   background-color: var(--schostone);
-  color: #aba6a2;
+  color: #695d54;
 }
 
 .light-mode footer a {
-  color: var(--schoash);
+  color: #695d54;
 }
+
 .footer-soc {
   display: flex;
   gap: 20px;

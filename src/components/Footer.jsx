@@ -4,7 +4,13 @@ export default function Footer() {
       <section className="container">
         <div className="row footer-text align-items-center">
           <div className="col-12 col-sm-6 copyright">
-            © 2023 <span className="dys">scho.</span> All rights reserved.
+            © 2024 <span className="dys">scho.</span>{" "}
+            <a
+              href="https://creativecommons.org/licenses/by-nc/4.0/"
+              target="_blank"
+            >
+              CC BY-NC 4.0
+            </a>
           </div>
           <div className="col-12 col-sm-6 socials pt-2 pt-s-0">
             <ul className="footer-soc">
