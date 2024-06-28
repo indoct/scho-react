@@ -57,7 +57,7 @@ export default function Home() {
         <li className="col-12 col-md-6 col-xl-4 proj-card">
           <div className="p-card-img">
             <div className="react">
-              <i class="fa-brands fa-react"></i>
+              <i className="fa-brands fa-react"></i>
               <span>react</span>
             </div>
             <picture>
@@ -130,7 +130,7 @@ export default function Home() {
           <div className="p-card-img">
             <picture>
               <div className="react">
-                <i class="fa-brands fa-react"></i>
+                <i className="fa-brands fa-react"></i>
                 <span>react</span>
               </div>
               <source srcSet="assets/images/project/comp/project-cover-quiz.webp" />
