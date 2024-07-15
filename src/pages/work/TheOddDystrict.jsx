@@ -5,7 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import assets from "../../images";
+import { srcToWebp } from "../../App";
 
 import BackButton from "../../components/BackButton";
 
@@ -13,37 +13,37 @@ export default function TheOddDystrict() {
   const [index, setIndex] = useState(-1);
   const [slides, setSlides] = useState([
     {
-      src: assets.tod01,
+      src: "/assets/images/tod/tod-01.jpg",
       alt: "TOD Website Hero",
       description: "TOD Website Hero",
     },
     {
-      src: assets.tod02,
+      src: "/assets/images/tod/tod-02.jpg",
       alt: "TOD Website Intro + Discord Link",
       description: "TOD Website Intro + Discord Link",
     },
     {
-      src: assets.tod03,
+      src: "/assets/images/tod/tod-03.jpg",
       alt: "TOD Website NFT Technology Block",
       description: "TOD Website NFT Technology Block",
     },
     {
-      src: assets.tod04,
+      src: "/assets/images/tod/tod-04.jpg",
       alt: "TOD Website Team Bio Cards",
       description: "TOD Website Team Bio Cards",
     },
     {
-      src: assets.tod05,
+      src: "/assets/images/tod/tod-05.jpg",
       alt: "TOD Portal - Web3 Wallet Connect UI",
       description: "TOD Portal - Web3 Wallet Connect UI",
     },
     {
-      src: assets.tod06,
+      src: "/assets/images/tod/tod-06.jpg",
       alt: "TOD Portal - NFT Display + Contract Interaction",
       description: "TOD Portal - NFT Display + Contract Interaction",
     },
     {
-      src: assets.tod07,
+      src: "/assets/images/tod/tod-07.jpg",
       alt: "TOD Portal NFT Checker",
       description: "TOD Portal NFT Checker",
     },
@@ -123,11 +123,16 @@ export default function TheOddDystrict() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <a href="#" onClick={() => setIndex(0)}>
-              <img
-                src={assets.tod01}
-                alt="TOD Website Hero"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[0].src)} type="image/webp" />
+                <img
+                  src={slides[0].src}
+                  alt={slides[0].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -139,29 +144,44 @@ export default function TheOddDystrict() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
-              <img
-                src={assets.tod02}
-                alt="TOD Website Intro + Discord Link"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[1].src)} type="image/webp" />
+                <img
+                  src={slides[1].src}
+                  alt={slides[1].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(2)}>
-              <img
-                src={assets.tod03}
-                alt="TOD Website NFT Technology Block"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[2].src)} type="image/webp" />
+                <img
+                  src={slides[2].src}
+                  alt={slides[2].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(3)}>
-              <img
-                src={assets.tod04}
-                alt="TOD Website Team Bio Cards"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[3].src)} type="image/webp" />
+                <img
+                  src={slides[3].src}
+                  alt={slides[3].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -173,29 +193,44 @@ export default function TheOddDystrict() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(4)}>
-              <img
-                src={assets.tod05}
-                alt="TOD Portal - Web3 Wallet Connect UI"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[4].src)} type="image/webp" />
+                <img
+                  src={slides[4].src}
+                  alt={slides[4].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(5)}>
-              <img
-                src={assets.tod06}
-                alt="TOD Portal - NFT Display + Contract Interaction"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[5].src)} type="image/webp" />
+                <img
+                  src={slides[5].src}
+                  alt={slides[5].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(6)}>
-              <img
-                src={assets.tod07}
-                alt="TOD Portal NFT Checker"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[6].src)} type="image/webp" />
+                <img
+                  src={slides[6].src}
+                  alt={slides[6].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
         </div>

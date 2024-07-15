@@ -5,7 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import assets from "../../images";
+import { srcToWebp } from "../../App";
 
 import BackButton from "../../components/BackButton";
 
@@ -13,22 +13,22 @@ export default function Quizzical() {
   const [index, setIndex] = useState(-1);
   const [slides, setSlides] = useState([
     {
-      src: assets.quiz01,
+      src: "/assets/images/quiz/quizzical-01.jpg",
       alt: "Quizzical Options (API)",
       description: "Quizzical Options (API)",
     },
     {
-      src: assets.quiz02,
+      src: "/assets/images/quiz/quizzical-02.jpg",
       alt: "Quizzical Answer Choices",
       description: "Quizzical Answer Choices",
     },
     {
-      src: assets.quiz03,
+      src: "/assets/images/quiz/quizzical-03.jpg",
       alt: "Quizzical Answer UI Feedback",
       description: "Quizzical Answer UI Feedback",
     },
     {
-      src: assets.quiz04,
+      src: "/assets/images/quiz/quizzical-04.jpg",
       alt: "Quizzical Confetti - All Correct Answers",
       description: "Quizzical Options (API)",
     },
@@ -92,29 +92,44 @@ export default function Quizzical() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <a href="#" onClick={() => setIndex(0)}>
-              <img
-                src={assets.quiz01}
-                alt="Quizzical Options (API)"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[0].src)} type="image/webp" />
+                <img
+                  src={slides[0].src}
+                  alt={slides[0].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
-              <img
-                src={assets.quiz02}
-                alt="Quizzical Answer Choices"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[1].src)} type="image/webp" />
+                <img
+                  src={slides[1].src}
+                  alt={slides[1].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(2)}>
-              <img
-                src={assets.quiz03}
-                alt="Quizzical Answer UI Feedback"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[2].src)} type="image/webp" />
+                <img
+                  src={slides[2].src}
+                  alt={slides[2].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
         </div>

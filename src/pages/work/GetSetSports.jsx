@@ -5,48 +5,45 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import assets from "../../images";
+import { srcToWebp } from "../../App";
 
 import BackButton from "../../components/BackButton";
 
 export default function GetSetSports() {
   const [index, setIndex] = useState(-1);
-  const [xsTag, setXsTag] = useState(
-    "Building an attractive & maintainable website for a leading athletics academy."
-  );
   const [slides, setSlides] = useState([
     {
-      src: assets.getset01,
+      src: "/assets/images/gs/get-set-01.jpg",
       alt: "Homepage Hero Slider",
       description: "Homepage Hero Slider",
     },
     {
-      src: assets.getset02,
+      src: "/assets/images/gs/get-set-02.jpg",
       alt: "Get Set Course Blocks",
       description: "Get Set Course Blocks",
     },
     {
-      src: assets.getset03,
+      src: "/assets/images/gs/get-set-03.jpg",
       alt: "Get Set Coach Carousel",
       description: "Get Set Coach Carousel",
     },
     {
-      src: assets.getset04,
+      src: "/assets/images/gs/get-set-04.jpg",
       alt: "Course Venues and Schedules",
       description: "Course Venues and Schedules",
     },
     {
-      src: assets.getset05,
+      src: "/assets/images/gs/get-set-05.jpg",
       alt: "Package Fees & Discounts",
       description: "Package Fees & Discounts",
     },
     {
-      src: assets.getset06,
+      src: "/assets/images/gs/get-set-06.jpg",
       alt: "Weather and Leave Policy",
       description: "Weather and Leave Policy",
     },
     {
-      src: assets.getset07,
+      src: "/assets/images/gs/get-set-07.jpg",
       alt: "Frequently Asked Questions",
       description: "Frequently Asked Questions",
     },
@@ -111,38 +108,58 @@ export default function GetSetSports() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <a href="#" onClick={() => setIndex(0)}>
-              <img
-                src={assets.getset01}
-                alt="Homepage Hero Slider"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[0].src)} type="image/webp" />
+                <img
+                  src={slides[0].src}
+                  alt={slides[0].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
-              <img
-                src={assets.getset02}
-                alt="Get Set Course Blocks"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[1].src)} type="image/webp" />
+                <img
+                  src={slides[1].src}
+                  alt={slides[1].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(2)}>
-              <img
-                src={assets.getset03}
-                alt="Get Set Coach Carousel"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[2].src)} type="image/webp" />
+                <img
+                  src={slides[2].src}
+                  alt={slides[2].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(3)}>
-              <img
-                src={assets.getset04}
-                alt="Course Venues and Schedules"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[3].src)} type="image/webp" />
+                <img
+                  src={slides[3].src}
+                  alt={slides[3].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -155,29 +172,44 @@ export default function GetSetSports() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(4)}>
-              <img
-                src={assets.getset05}
-                alt="Package Fees & Discounts"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[4].src)} type="image/webp" />
+                <img
+                  src={slides[4].src}
+                  alt={slides[4].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(5)}>
-              <img
-                src={assets.getset06}
-                alt="Weather and Leave Policy"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[5].src)} type="image/webp" />
+                <img
+                  src={slides[5].src}
+                  alt={slides[5].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(6)}>
-              <img
-                src={assets.getset07}
-                alt="Frequently Asked Questions"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[6].src)} type="image/webp" />
+                <img
+                  src={slides[6].src}
+                  alt={slides[6].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
         </div>

@@ -14,7 +14,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BG3SetCreator from "./pages/work/BG3SetCreator";
-import Scho from "./pages/work/Scho";
 import TheOddDystrict from "./pages/work/TheOddDystrict";
 import Quizzical from "./pages/work/Quizzical";
 import "./App.css";
@@ -48,7 +47,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/work/esfjoinus" element={<ESFJoinUs />} />
             <Route path="/work/bg3setcreator" element={<BG3SetCreator />} />
-            <Route path="/work/scho" element={<Scho />} />
             <Route path="/work/getsetsports" element={<GetSetSports />} />
             <Route path="/work/theodddystrict" element={<TheOddDystrict />} />
             <Route path="/work/quizzical" element={<Quizzical />} />

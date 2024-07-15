@@ -5,7 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import assets from "../../images";
+import { srcToWebp } from "../../App";
 
 import BackButton from "../../components/BackButton";
 
@@ -13,27 +13,27 @@ export default function BG3SetCreator() {
   const [index, setIndex] = useState(-1);
   const [slides, setSlides] = useState([
     {
-      src: assets.prc01,
+      src: "/assets/images/prc/piercings-01.jpg",
       alt: "Set Creator Web App Interface",
       description: "Set Creator Web App Interface",
     },
     {
-      src: assets.prc02,
+      src: "/assets/images/prc/piercings-02.jpg",
       alt: "Set Creator Instructions Modal",
       description: "Set Creator Instructions Modal",
     },
     {
-      src: assets.prc03,
+      src: "/assets/images/prc/piercings-03.jpg",
       alt: "Set Creator User Selections + Filters",
       description: "Set Creator User Selections + Filters",
     },
     {
-      src: assets.prc04,
+      src: "/assets/images/prc/piercings-04.jpg",
       alt: "Current Piercing Set Config UI",
       description: "Current Piercing Set Config UI",
     },
     {
-      src: assets.prc06,
+      src: "/assets/images/prc/piercings-06.jpg",
       alt: "Custom Code Generation - Copied to Clipboard",
       description: "Custom Code Generation - Copied to Clipboard",
     },
@@ -44,7 +44,7 @@ export default function BG3SetCreator() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeInOut", duration: 0.4 }}
+      transition={{ ease: "easeInOut", duration: 0.6 }}
     >
       <div className="container d-flex flex-column page pt-sm-4 pt-xxl-5 justify-content-center">
         <div className="row pb-2">
@@ -100,20 +100,30 @@ export default function BG3SetCreator() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <a href="#" onClick={() => setIndex(0)}>
-              <img
-                src={assets.prc01}
-                alt="Set Creator Web App Interface"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[0].src)} type="image/webp" />
+                <img
+                  src={slides[0].src}
+                  alt={slides[0].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
-              <img
-                src={assets.prc02}
-                alt="Set Creator Instructions Modal"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[1].src)} type="image/webp" />
+                <img
+                  src={slides[1].src}
+                  alt={slides[1].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
@@ -125,11 +135,16 @@ export default function BG3SetCreator() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(2)}>
-              <img
-                src={assets.prc03}
-                alt="Set Creator User Selections + Filters"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[2].src)} type="image/webp" />
+                <img
+                  src={slides[2].src}
+                  alt={slides[2].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
@@ -140,20 +155,30 @@ export default function BG3SetCreator() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(3)}>
-              <img
-                src={assets.prc04}
-                alt="Current Piercing Set Config UI"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[3].src)} type="image/webp" />
+                <img
+                  src={slides[3].src}
+                  alt={slides[3].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
-            <a href="#" onClick={() => setIndex(5)}>
-              <img
-                src={assets.prc06}
-                alt="Custom Code Generation - Copied to Clipboard"
-                className="proj-img img-fluid"
-              />
+            <a href="#" onClick={() => setIndex(4)}>
+              <picture>
+                <source srcSet={srcToWebp(slides[4].src)} type="image/webp" />
+                <img
+                  src={slides[4].src}
+                  alt={slides[4].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
