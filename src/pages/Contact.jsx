@@ -33,7 +33,7 @@ export default function Contact() {
               </label>
               <input
                 type="text"
-                autocomplete="name"
+                autoComplete="name"
                 className="form-control"
                 id="inputName"
                 name="name"
@@ -46,7 +46,7 @@ export default function Contact() {
               </label>
               <input
                 type="email"
-                autocomplete="email"
+                autoComplete="email"
                 className="form-control"
                 name="email"
                 id="inputEmail"

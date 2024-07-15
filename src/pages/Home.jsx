@@ -130,6 +130,7 @@ export default function Home() {
       >
         {projects.map((proj) => (
           <motion.li
+            key={proj.link}
             variants={itemVariants}
             className="col-12 col-md-6 col-xl-4 proj-card"
           >
