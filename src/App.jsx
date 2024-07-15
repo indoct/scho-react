@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <main className={isDarkMode ? "dark-mode" : "light-mode"}>
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <AnimatePresence mode="wait" initial={false}>
+        <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
