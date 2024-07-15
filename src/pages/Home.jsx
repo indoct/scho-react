@@ -1,9 +1,112 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+const projects = [
+  {
+    title: "ESF Join Us",
+    src: "project-cover-esf.jpg",
+    webp: "project-cover-esf.webp",
+    name: "English Schools Foundation",
+    tagline:
+      "A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.",
+    link: "esfjoinus",
+    url: "https://join-us.esf.edu.hk",
+  },
+  {
+    title: "BG3 Piercing Set Creator",
+    src: "project-cover-prc.jpg",
+    webp: "project-cover-prc.webp",
+    name: "BG3 Piercing Set Creator",
+    tagline:
+      "A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.",
+    link: "bg3setcreator",
+    url: "https://piercings.indoc.dev",
+  },
+  {
+    title: "Get Set Sports Academy",
+    src: "project-cover-gs.jpg",
+    webp: "project-cover-gs.webp",
+    name: "Get Set Sports Academy",
+    tagline:
+      "Building an attractive and easily maintainable web presence for a leading athletics academy.",
+    link: "getsetsports",
+    url: "https://getsetsportsacademy.com",
+  },
+  {
+    title: "Quizzical",
+    src: "project-cover-quiz.jpg",
+    webp: "project-cover-quiz.webp",
+    name: "Quizzical",
+    tagline:
+      "An interactive quiz web app, built with React and utilising the TMDb database.",
+    link: "quizzical",
+    url: "https://quizzical.scho.pro",
+  },
+  {
+    title: "The Odd Dystrict NFT",
+    src: "project-cover-tod.jpg",
+    webp: "project-cover-tod.webp",
+    name: "The Odd Dystrict",
+    tagline:
+      "Website and web3 interface where users could mint an art NFT and interact with their portfolio.",
+    link: "theodddystrict",
+    url: "https://the-odd-dystrict.com",
+  },
+  {
+    title: "N7 Ipsum",
+    src: "project-cover-n7i.jpg",
+    webp: "project-cover-n7i.webp",
+    name: "N7 Ipsum",
+    tagline:
+      "A Mass Effect lorem ipsum dummy text generator built with vanilla JS. Does what it says on the tin.",
+    link: "",
+    url: "https://n7-ipsum.scho.pro",
+  },
+];
+
 export default function Home() {
+  const pageVisible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    pageVisible,
+  };
+
+  const ulVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const liVariants = {
+    hidden: {
+      y: 30,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        duration: 3,
+      },
+    },
+  };
+
   return (
-    <div className="container page">
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={pageVisible}
+      className="container page"
+    >
       <section className="header home row">
         <div className="col-12 col-sm-10 col-xl-8 col-xxl-7">
           <h1>
@@ -20,214 +123,55 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <ul id="case-studies" className="row mb-2 gy-4 gx-3">
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="p-card-img">
-            <picture>
-              <source srcSet="assets/images/project/comp/project-cover-esf.webp" />
-              <img
-                src="assets/images/project/comp/project-cover-esf.jpg"
-                alt="ESF Join Us cover image"
-                height="354"
-                width="538"
-              />
-            </picture>
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">English Schools Foundation</h2>
-            <p className="p-desc">
-              A fresh, dynamic face for the ESF, Hong Kong's largest provider of
-              English-medium education.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <Link to="work/esfjoinus">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <a href="https://join-us.esf.edu.hk" target="_blank">
-                website
-                <i className="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="p-card-img">
-            <div className="react">
-              <i className="fa-brands fa-react"></i>
-              <span>react</span>
+      <motion.ul
+        id="case-studies"
+        variants={ulVariants}
+        initial="hidden"
+        animate="visible"
+        className="row mb-2 gy-4 gx-3"
+      >
+        {projects.map((proj) => (
+          <motion.li
+            variants={liVariants}
+            className="col-12 col-md-6 col-xl-4 proj-card"
+          >
+            <div className="p-card-img">
+              <picture>
+                <source srcSet={`assets/images/project/comp/${proj.webp}`} />
+                <img
+                  src={`assets/images/project/comp/${proj.src}`}
+                  alt={`${proj.title} cover image`}
+                  height="354"
+                  width="538"
+                />
+              </picture>
             </div>
-            <picture>
-              <source srcSet="assets/images/project/comp/project-cover-prc.webp" />
-              <img
-                src="assets/images/project/comp/project-cover-prc.jpg"
-                alt="BG3 Piercing Set Creator project cover image"
-                height="354"
-                width="538"
-              />
-            </picture>
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">BG3 Piercing Set Creator</h2>
-            <p className="p-desc">
-              A web app for people to easily create their own custom Baldur's
-              Gate 3 piercing combinations.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <Link to="work/bg3setcreator">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <a href="https://piercings.indoc.dev" target="_blank">
-                website
-                <i className="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="p-card-img">
-            <picture>
-              <source srcSet="assets/images/project/comp/project-cover-gs.webp" />
-              <img
-                src="assets/images/project/comp/project-cover-gs.jpg"
-                alt="Get Set Sports Academy project cover image"
-                height="354"
-                width="538"
-              />
-            </picture>
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">Get Set Sports Academy</h2>
-            <p className="p-desc">
-              Building an attractive and easily maintainable web presence for a
-              leading athletics academy.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <Link to="work/getsetsports">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <a href="https://getsetsportsacademy.com" target="_blank">
-                website
-                <i className="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="p-card-img">
-            <picture>
-              <div className="react">
-                <i className="fa-brands fa-react"></i>
-                <span>react</span>
-              </div>
-              <source srcSet="assets/images/project/comp/project-cover-quiz.webp" />
-              <img
-                src="assets/images/project/comp/project-cover-quiz.jpg"
-                alt="Quizzical project cover image"
-                height="354"
-                width="538"
-              />
-            </picture>
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">Quizzical</h2>
-            <p className="p-desc">
-              An interactive quiz web app, built with React and utilising the
-              TMDb database.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <Link to="work/quizzical">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <a href="https://quizzical.scho.pro" target="_blank">
-                website
-                <i className="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="p-card-img">
-            <picture>
-              <source srcSet="assets/images/project/comp/project-cover-tod.webp" />
-              <img
-                src="assets/images/project/comp/project-cover-tod.jpg"
-                alt="The Odd Dystrict project cover image"
-                height="354"
-                width="538"
-              />
-            </picture>
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">The Odd Dystrict</h2>
-            <p className="p-desc">
-              Website and web3 interface where users could mint an art NFT and
-              interact with their portfolio.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <Link to="work/theodddystrict">
-                project
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </Link>
-            </li>
-            <li>
-              <a href="https://the-odd-dystrict.com" target="_blank">
-                website
-                <i className="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="col-12 col-md-6 col-xl-4 proj-card">
-          <div className="p-card-img">
-            <picture>
-              <source srcSet="assets/images/project/comp/project-cover-n7i.webp" />
-              <img
-                src="assets/images/project/comp/project-cover-n7i.jpg"
-                alt="N7 Ipsum Project cover image"
-                height="354"
-                width="538"
-              />
-            </picture>
-          </div>
-          <div className="card-text">
-            <h2 className="p-title">N7 Ipsum</h2>
-            <p className="p-desc">
-              A Mass Effect lorem ipsum dummy text generator built with vanilla
-              JS. Does what it says on the tin.
-            </p>
-          </div>
-          <ul className="proj-links">
-            <li>
-              <a href="https://n7-ipsum.scho.pro" target="_blank">
-                website
-                <i className="fa fa-external-link" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+            <div className="card-text">
+              <h2 className="p-title">{proj.name}</h2>
+              <p className="p-desc">{proj.tagline}</p>
+            </div>
+            <ul className="proj-links">
+              {proj.link !== "" && (
+                <li>
+                  <Link to={`work/${proj.link}`}>
+                    project
+                    <i
+                      className="fa-solid fa-arrow-right"
+                      aria-hidden="true"
+                    ></i>
+                  </Link>
+                </li>
+              )}
+              <li>
+                <a href={proj.url} target="_blank">
+                  website
+                  <i className="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </motion.li>
+        ))}
+      </motion.ul>
       <section className="row mt-5 mb-1 my-sm-5 justify-content-center">
         <div className="col-12 text-center">
           <div className="home-contact">
@@ -260,6 +204,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }
