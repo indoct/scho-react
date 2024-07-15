@@ -44,7 +44,7 @@ export default function BG3SetCreator() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeInOut", duration: 0.6 }}
+      transition={{ ease: "easeInOut", duration: 0.4 }}
     >
       <div className="container d-flex flex-column page pt-sm-4 pt-xxl-5 justify-content-center">
         <div className="row pb-2">

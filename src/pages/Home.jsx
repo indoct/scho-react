@@ -108,7 +108,7 @@ export default function Home() {
           className="col-12 col-sm-10 col-xl-8 col-xxl-7"
         >
           <h1>
-            <span className="underline gradient">scho.</span>
+            <span className="gradient">scho.</span>
           </h1>
           <div>
             <p className="intro">

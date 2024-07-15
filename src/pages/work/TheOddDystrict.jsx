@@ -54,7 +54,7 @@ export default function TheOddDystrict() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeInOut", duration: 0.6 }}
+      transition={{ ease: "easeInOut", duration: 0.4 }}
       style={{ overflowY: "scroll" }}
     >
       <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
