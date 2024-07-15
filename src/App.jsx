@@ -21,6 +21,10 @@ import "./App.css";
 import ESFJoinUs from "./pages/work/ESFJoinUs";
 import GetSetSports from "./pages/work/GetSetSports";
 
+export const srcToWebp = (src) => {
+  return src.replace(".jpg", ".webp");
+};
+
 function App() {
   const location = useLocation();
 

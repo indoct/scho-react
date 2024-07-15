@@ -136,7 +136,10 @@ export default function Home() {
           >
             <div className="p-card-img">
               <picture>
-                <source srcSet={`assets/images/project/comp/${proj.webp}`} />
+                <source
+                  srcSet={`assets/images/project/comp/${proj.webp}`}
+                  type="image/webp"
+                />
                 <img
                   src={`assets/images/project/comp/${proj.src}`}
                   alt={`${proj.title} cover image`}

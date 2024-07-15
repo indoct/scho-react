@@ -5,7 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import assets from "../../images";
+import { srcToWebp } from "../../App";
 
 import BackButton from "../../components/BackButton";
 
@@ -13,64 +13,64 @@ export default function ESFJoinUs() {
   const [index, setIndex] = useState(-1);
   const [slides, setSlides] = useState([
     {
-      src: assets.joinus01,
+      src: "/assets/images/esf/joinus-01.jpg",
       alt: "ESF Homepage Hero",
       description: "ESF Homepage Hero",
     },
     {
-      src: assets.joinus02,
+      src: "../assets/images/esf/joinus-02.jpg",
       alt: "ESF Intro and Welcome",
       description: "ESF Intro and Welcome",
     },
     {
-      src: assets.joinus03,
+      src: "../assets/images/esf/joinus-03.jpg",
       alt: "ESF Culture Highlights",
       description: "ESF Culture Highlights",
     },
     {
-      src: assets.joinus04,
+      src: "../assets/images/esf/joinus-04.jpg",
       alt: "ESF School Map Static",
       description: "ESF School Map Static",
     },
     {
-      src: assets.joinus05,
+      src: "../assets/images/esf/joinus-05.jpg",
       alt: "ESF School Map Dynamic",
       description: "ESF School Map Dynamic",
     },
     {
-      src: assets.joinus06,
+      src: "../assets/images/esf/joinus-06.jpg",
       alt: "ESF School Dynamic Filters",
       description: "ESF School Dynamic Filters",
     },
     {
-      src: assets.joinus07,
+      src: "../assets/images/esf/joinus-07.jpg",
       alt: "ESF School Modal",
       description: "ESF School Modal",
     },
     {
-      src: assets.joinus08,
+      src: "../assets/images/esf/joinus-08.jpg",
       alt: "ESF Admissions Video & Highlights",
       description: "ESF Admissions Video & Highlights",
     },
     {
-      src: assets.joinus09,
+      src: "../assets/images/esf/joinus-09.jpg",
       alt: "ESF Admissions Landing Page",
       description: "ESF Admissions Landing Page",
     },
     {
-      src: assets.joinus10,
-      alt: "ESF Admissions / Enquiry Form",
-      description: "ESF Admissions / Enquiry Form",
-    },
-    {
-      src: assets.joinus11,
+      src: "../assets/images/esf/joinus-10.jpg",
       alt: "ESF Admissions Information Accordion",
       description: "ESF Admissions Information Accordion",
     },
     {
-      src: assets.joinus12,
+      src: "../assets/images/esf/joinus-11.jpg",
       alt: "ESF Frequently Asked Questions",
       description: "ESF Frequently Asked Questions",
+    },
+    {
+      src: "../assets/images/esf/joinus-12.jpg",
+      alt: "ESF Admissions / Enquiry Form",
+      description: "ESF Admissions / Enquiry Form",
     },
   ]);
 
@@ -133,11 +133,16 @@ export default function ESFJoinUs() {
         <div className="row pb-2 py-lg-3 project-images justify-content-center">
           <div className="col-12">
             <a href="#" onClick={() => setIndex(0)}>
-              <img
-                src={assets.joinus01}
-                alt="ESF Homepage Hero"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[0].src)} type="image/webp" />
+                <img
+                  src={slides[0].src}
+                  alt={slides[0].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -150,20 +155,30 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(1)}>
-              <img
-                src={assets.joinus02}
-                alt="ESF Intro and Welcome"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[1].src)} type="image/webp" />
+                <img
+                  src={slides[1].src}
+                  alt={slides[1].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(2)}>
-              <img
-                src={assets.joinus03}
-                alt="ESF Culture Highlights"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[2].src)} type="image/webp" />
+                <img
+                  src={slides[2].src}
+                  alt={slides[2].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -175,11 +190,16 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(3)}>
-              <img
-                src={assets.joinus04}
-                alt="ESF School Map Static"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[3].src)} type="image/webp" />
+                <img
+                  src={slides[3].src}
+                  alt={slides[3].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -192,20 +212,30 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(4)}>
-              <img
-                src={assets.joinus05}
-                alt="ESF Culture Highlights"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[4].src)} type="image/webp" />
+                <img
+                  src={slides[4].src}
+                  alt={slides[4].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(5)}>
-              <img
-                src={assets.joinus06}
-                alt="ESF School Map Dynamic Filters"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[5].src)} type="image/webp" />
+                <img
+                  src={slides[5].src}
+                  alt={slides[5].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -219,11 +249,16 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(6)}>
-              <img
-                src={assets.joinus07}
-                alt="ESF School Modal"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[6].src)} type="image/webp" />
+                <img
+                  src={slides[6].src}
+                  alt={slides[6].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -237,38 +272,58 @@ export default function ESFJoinUs() {
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(7)}>
-              <img
-                src={assets.joinus08}
-                alt="ESF Admissions Video & Highlights"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[7].src)} type="image/webp" />
+                <img
+                  src={slides[7].src}
+                  alt={slides[7].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(8)}>
-              <img
-                src={assets.joinus09}
-                alt="ESF Admissions Landing Page"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[8].src)} type="image/webp" />
+                <img
+                  src={slides[8].src}
+                  alt={slides[8].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
+            </a>
+          </div>
+          <div className="col-12">
+            <a href="#" onClick={() => setIndex(9)}>
+              <picture>
+                <source srcSet={srcToWebp(slides[9].src)} type="image/webp" />
+                <img
+                  src={slides[9].src}
+                  alt={slides[9].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12">
             <a href="#" onClick={() => setIndex(10)}>
-              <img
-                src={assets.joinus11}
-                alt="ESF Admissions Information Accordion"
-                className="proj-img img-fluid"
-              />
-            </a>
-          </div>
-          <div className="col-12">
-            <a href="#" onClick={() => setIndex(11)}>
-              <img
-                src={assets.joinus12}
-                alt="ESF Frequently Asked Questions"
-                className="proj-img img-fluid"
-              />
+              <picture>
+                <source srcSet={srcToWebp(slides[10].src)} type="image/webp" />
+                <img
+                  src={slides[10].src}
+                  alt={slides[10].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
           <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
@@ -280,12 +335,17 @@ export default function ESFJoinUs() {
             </p>
           </div>
           <div className="col-12">
-            <a href="#" onClick={() => setIndex(9)}>
-              <img
-                src={assets.joinus10}
-                alt="ESF Admissions / Enquiry Form"
-                className="proj-img img-fluid"
-              />
+            <a href="#" onClick={() => setIndex(11)}>
+              <picture>
+                <source srcSet={srcToWebp(slides[11].src)} type="image/webp" />
+                <img
+                  src={slides[11].src}
+                  alt={slides[11].alt}
+                  height="945"
+                  width="1902"
+                  className="proj-img img-fluid"
+                />
+              </picture>
             </a>
           </div>
         </div>
