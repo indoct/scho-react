@@ -65,14 +65,7 @@ const projects = [
 ];
 
 export default function Home() {
-  const pageVisible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    pageVisible,
-  };
-
-  const ulVariants = {
+  const variants = {
     hidden: {
       opacity: 0,
     },
@@ -85,7 +78,7 @@ export default function Home() {
     },
   };
 
-  const liVariants = {
+  const itemVariants = {
     hidden: {
       y: 30,
       opacity: 0,
@@ -103,12 +96,17 @@ export default function Home() {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={pageVisible}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="container page"
     >
       <section className="header home row">
-        <div className="col-12 col-sm-10 col-xl-8 col-xxl-7">
+        <motion.div
+          variants={itemVariants}
+          initial="hidden"
+          animate="visible"
+          className="col-12 col-sm-10 col-xl-8 col-xxl-7"
+        >
           <h1>
             <span className="underline gradient">scho.</span>
           </h1>
@@ -121,18 +119,18 @@ export default function Home() {
               </span>
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
       <motion.ul
         id="case-studies"
-        variants={ulVariants}
+        variants={variants}
         initial="hidden"
         animate="visible"
         className="row mb-2 gy-4 gx-3"
       >
         {projects.map((proj) => (
           <motion.li
-            variants={liVariants}
+            variants={itemVariants}
             className="col-12 col-md-6 col-xl-4 proj-card"
           >
             <div className="p-card-img">

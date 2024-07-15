@@ -8,7 +8,7 @@ export default function About() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ ease: "easeInOut", duration: 0.6 }}
+        transition={{ ease: "easeInOut", duration: 0.4 }}
         className="row"
       >
         <div className="col-12 col-md-7 col-xxl-6 bio pe-md-5">

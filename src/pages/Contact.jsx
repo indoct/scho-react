@@ -7,7 +7,7 @@ export default function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.4 }}
       className="container pt-sm-4 pt-xxl-5 page"
     >
       <div className="row justify-content-between align-items-start">
