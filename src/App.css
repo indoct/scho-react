@@ -424,6 +424,12 @@ h1 {
   font-size: 7rem;
 }
 
+.intro h1 {
+  font-size: 2.2rem;
+  display: inline;
+  padding: 0 5px;
+}
+
 h2 {
   font-size: 3rem;
 }
@@ -549,7 +555,7 @@ h6 {
 /* HOME & FRONT PAGE */
 
 .home .intro {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -636,10 +642,10 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   background-color: var(--schogrey);
   margin-bottom: 0.75rem;
-  padding: 10px;
+  /* padding: 10px; */
   position: relative;
 }
 
@@ -1098,9 +1104,9 @@ footer {
   }
 }
 @media (min-width: 670px) {
-  .intro-2 {
+  /* .intro-2 {
     display: block;
-  }
+  } */
 }
 @media (max-width: 760px) {
   .pp-info {
@@ -1200,11 +1206,11 @@ footer {
 
 @media only screen and (min-width: 992px) {
   .container {
-    width: 80%;
-    max-width: 1400px;
+    width: 98%;
+    max-width: 1840px;
   }
   .header {
-    padding: 4rem 0;
+    padding: 8em 0 2em;
   }
   .home-contact {
     max-width: 60%;

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "ESF Join Us",
-    src: "project-cover-esf.jpg",
-    webp: "project-cover-esf.webp",
+    src: "project-cover-bb-mid.jpg",
+    webp: "project-cover-bb-mid.jpg",
     name: "English Schools Foundation",
     tagline:
       "A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.",
@@ -14,8 +14,8 @@ const projects = [
   },
   {
     title: "BG3 Piercing Set Creator",
-    src: "project-cover-prc.jpg",
-    webp: "project-cover-prc.webp",
+    src: "placehold-tall.png",
+    webp: "placehold-tall.png",
     name: "BG3 Piercing Set Creator",
     tagline:
       "A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.",
@@ -24,8 +24,8 @@ const projects = [
   },
   {
     title: "Get Set Sports Academy",
-    src: "project-cover-gs.jpg",
-    webp: "project-cover-gs.webp",
+    src: "placehold-short.png",
+    webp: "placehold-short.png",
     name: "Get Set Sports Academy",
     tagline:
       "Building an attractive and easily maintainable web presence for a leading athletics academy.",
@@ -34,8 +34,8 @@ const projects = [
   },
   {
     title: "Quizzical",
-    src: "project-cover-quiz.jpg",
-    webp: "project-cover-quiz.webp",
+    src: "placehold-mid.png",
+    webp: "placehold-mid.png",
     name: "Quizzical",
     tagline:
       "An interactive quiz web app, built with React and utilising the TMDb database.",
@@ -105,17 +105,19 @@ export default function Home() {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="col-12 col-sm-10 col-xl-8 col-xxl-7"
+          className="col-12 col-sm-10 col-xl-6"
         >
-          <h1>
-            <span className="gradient">scho.</span>
-          </h1>
           <div>
             <p className="intro">
-              Hi there! I'm SC Houlihan, but 'scho' is easier to spell
-              <i className="fa-regular fa-face-smile-wink ps-1"></i>.{" "}
+              Hi there! Welcome to{" "}
+              <h1>
+                <span className="gradient">scho.</span>
+              </h1>{" "}
+              studio. I'm a designer and UX/UI Engineer based in London{" "}
+              <i className="fa-regular fa-face-smile ps-1"></i>.{" "}
               <span className="intro-2">
-                I'm a Front-end Engineer & UX/UI Designer in London.
+                I design and build visually appealing digital interfaces that
+                are thoughtful, accessible, and SEO-friendly.
               </span>
             </p>
           </div>
@@ -126,13 +128,13 @@ export default function Home() {
         variants={variants}
         initial="hidden"
         animate="visible"
-        className="row mb-2 gy-4 gx-3"
+        className="row mb-2 gy-4 gx-2"
       >
         {projects.map((proj) => (
           <motion.li
             key={proj.link}
             variants={itemVariants}
-            className="col-12 col-md-6 col-xl-4 proj-card"
+            className="col-12 col-md-6 col-xl-4 col-xxl-3 proj-card"
           >
             <div className="p-card-img">
               <picture>
@@ -143,8 +145,8 @@ export default function Home() {
                 <img
                   src={`assets/images/project/comp/${proj.src}`}
                   alt={`${proj.title} cover image`}
-                  height="354"
-                  width="538"
+                  height="750"
+                  width="601"
                 />
               </picture>
             </div>
