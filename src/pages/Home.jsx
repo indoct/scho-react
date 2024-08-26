@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "ESF Join Us",
-    src: "project-cover-bb-mid.jpg",
-    webp: "project-cover-bb-mid.jpg",
+    src: "placehold-8x7.png",
+    webp: "placehold-8x7.png",
     name: "English Schools Foundation",
     tagline:
       "A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.",
@@ -14,8 +14,8 @@ const projects = [
   },
   {
     title: "BG3 Piercing Set Creator",
-    src: "placehold-tall.png",
-    webp: "placehold-tall.png",
+    src: "placehold-bg3.png",
+    webp: "placehold-bg3.png",
     name: "BG3 Piercing Set Creator",
     tagline:
       "A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.",
@@ -24,8 +24,8 @@ const projects = [
   },
   {
     title: "Get Set Sports Academy",
-    src: "placehold-short.png",
-    webp: "placehold-short.png",
+    src: "placehold-gs.png",
+    webp: "placehold-gs.png",
     name: "Get Set Sports Academy",
     tagline:
       "Building an attractive and easily maintainable web presence for a leading athletics academy.",
@@ -44,8 +44,8 @@ const projects = [
   },
   {
     title: "The Odd Dystrict NFT",
-    src: "project-cover-tod.jpg",
-    webp: "project-cover-tod.webp",
+    src: "placehold-tod.png",
+    webp: "placehold-tod.png",
     name: "The Odd Dystrict",
     tagline:
       "Website and web3 interface where users could mint an art NFT and interact with their portfolio.",
@@ -54,8 +54,8 @@ const projects = [
   },
   {
     title: "N7 Ipsum",
-    src: "project-cover-n7i.jpg",
-    webp: "project-cover-n7i.webp",
+    src: "placehold-n7i.png",
+    webp: "placehold-n7i.png",
     name: "N7 Ipsum",
     tagline:
       "A Mass Effect lorem ipsum dummy text generator built with vanilla JS. Does what it says on the tin.",
@@ -134,7 +134,7 @@ export default function Home() {
           <motion.li
             key={proj.link}
             variants={itemVariants}
-            className="col-12 col-md-6 col-xl-4 col-xxl-3 proj-card"
+            className="col-12 col-md-6 col-xl-4 proj-card"
           >
             <div className="p-card-img">
               <picture>
@@ -145,8 +145,8 @@ export default function Home() {
                 <img
                   src={`assets/images/project/comp/${proj.src}`}
                   alt={`${proj.title} cover image`}
-                  height="750"
-                  width="601"
+                  height="1750"
+                  width="2000"
                 />
               </picture>
             </div>

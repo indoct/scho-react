@@ -41,9 +41,9 @@ export default function Quizzical() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.4 }}
     >
-      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page project-page">
         <div className="row pb-2">
-          <div className="col-lg-10">
+          <div className="col-lg-10 col-xxl-7">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}

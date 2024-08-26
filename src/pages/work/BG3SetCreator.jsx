@@ -46,9 +46,9 @@ export default function BG3SetCreator() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column page pt-sm-4 pt-xxl-5 justify-content-center">
+      <div className="container d-flex flex-column page project-page pt-sm-4 pt-xxl-5 justify-content-center">
         <div className="row pb-2">
-          <div className="col-lg-10">
+          <div className="col-lg-10 col-xxl-7">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -126,7 +126,7 @@ export default function BG3SetCreator() {
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-xxl-5 cs-caption">
             <p>
               State is used here to disable the piercings in the same location
               as another in the set. React Router provides the dynamic URL
@@ -147,7 +147,7 @@ export default function BG3SetCreator() {
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-xxl-5 cs-caption">
             <p>
               The current set config is accessible to view as long as it's not
               empty. Each piercing's key stats are clearly indicated in the UI.
@@ -181,7 +181,7 @@ export default function BG3SetCreator() {
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-xxl-5 cs-caption">
             <p>
               Once the user is done, they can generate the code. Using Prism.js
               for syntax formatting, this code can be copied using the button

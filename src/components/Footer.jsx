@@ -5,12 +5,12 @@ export default function Footer() {
         <div className="row footer-text align-items-center">
           <div className="col-12 col-sm-6 copyright">
             © 2024 <span className="dys">scho.</span>{" "}
-            <a
+            {/* <a
               href="https://creativecommons.org/licenses/by-nc/4.0/"
               target="_blank"
             >
               CC BY-NC 4.0
-            </a>
+            </a> */}
           </div>
           <div className="col-12 col-sm-6 socials pt-2 pt-s-0">
             <ul className="footer-soc">
