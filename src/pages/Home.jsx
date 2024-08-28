@@ -176,17 +176,24 @@ export default function Home() {
           </motion.li>
         ))}
       </motion.ul>
-      <section className="row mt-5 mb-1 my-sm-5 justify-content-center">
+      <section
+        id="hc-row"
+        className="row mt-5 mb-1 my-sm-5 justify-content-center"
+      >
         <div className="col-12 text-center">
           <div className="home-contact">
             <p>
               Let's make something great. If you're interested in working
-              together or just have some questions, you can email me at:
-              <a href="mailto:hello@scho.pro" className="email-big gradient">
-                hello@scho.pro
-              </a>
-              <button className="copy-btn">copy email</button>
+              together, please get in touch at:
             </p>
+            <div className="hc-links">
+              <div>
+                <a href="mailto:hello@scho.pro" className="email-big gradient">
+                  hello@scho.pro
+                </a>
+                <button className="copy-btn">copy email</button>
+              </div>
+            </div>
             <div className="social-icons">
               <a
                 href="https://github.com/indoct/"
@@ -204,6 +211,9 @@ export default function Home() {
                 aria-label="linkedin (opens in new tab)"
               >
                 <i className="fa-brands fa-linkedin" />
+              </a>
+              <a href="/contact">
+                <i id="form-icon" class="fa-solid fa-envelope-open-text"></i>
               </a>
             </div>
           </div>

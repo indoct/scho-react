@@ -792,22 +792,6 @@ h6 {
   background: transparent;
 }
 
-.home-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0;
-  padding: 6em 0;
-}
-
-.home-contact p {
-  margin-bottom: 0;
-}
-
-.light-mode .home-contact {
-  background-color: #f4f3f0;
-}
-
 /* CONTACT PAGE */
 
 .contact-block {
@@ -863,19 +847,73 @@ form .form-control::placeholder {
   border: 2px solid var(--scholapis);
 }
 
+.home-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 6em 0;
+  align-items: center;
+}
+
+.home-contact p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  margin-bottom: 1.5em;
+}
+
+.light-mode .home-contact {
+  background-color: #f4f3f0;
+}
+
+.hc-links {
+  display: flex;
+  flex-basis: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.hc-links div {
+  display: flex;
+  padding: 6px 6px 6px 20px;
+  gap: 24px;
+  border: 1px solid var(--schoclay);
+  border-radius: 40px;
+}
+
+.hc-links a {
+  padding: 8px;
+}
+
+.copy-btn {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 0 1.6em;
+  background-color: #695d54;
+  color: var(--schopearl);
+  border: 0;
+  border-radius: 40px;
+  display: block;
+  transition: all 0.6s;
+}
+
+.copy-btn:hover {
+  background-color: var(--schoiris);
+}
+
 a.email-big {
-  display: inline-block;
-  font-size: 2rem;
+  display: block;
+  font-size: 2.2rem;
   transition: all 0.8s;
-  padding: 0.4rem 0.6rem;
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
+  line-height: 1.1;
   border: 2px solid transparent;
   text-decoration: none;
 }
 
-.email-big:hover {
-  transform: scale(1.04);
+.email-big.gradient:hover {
+  /* transform: scale(1.04); */
+  text-decoration: underline;
 }
 
 /* PROJECT PAGE */
@@ -1079,8 +1117,8 @@ footer {
 
 .social-icons {
   display: flex;
-  gap: 1rem;
-  align-items: center;
+  gap: 2rem;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -1091,8 +1129,22 @@ footer {
 }
 
 .social-icons i {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   transition: all 0.5s;
+}
+
+#form-icon {
+  font-size: 24.73px;
+  background-color: #695d54;
+  color: var(--schopearl);
+  padding: 5px 4px 3px;
+  border-radius: 3px;
+  margin-top: 3px;
+  transition: all 0.5s;
+}
+
+#form-icon:hover {
+  background-color: var(--schoiris);
 }
 
 .social-icons i:hover {
@@ -1185,10 +1237,6 @@ footer {
   .container-sm {
     max-width: 94%;
   }
-  /* .container-xxl {
-    padding-left: 2%;
-    padding-right: 1.5%;
-  } */
   .footer-text {
     justify-content: space-between;
   }
@@ -1219,10 +1267,6 @@ footer {
     font-size: 1.15rem;
     line-height: 1.42;
   }
-  .home-contact {
-    max-width: 80%;
-  }
-
   .proj-nav-body {
     font-size: 1rem;
   }
@@ -1239,9 +1283,6 @@ footer {
   .header {
     padding: 9em 0 3em;
   }
-  /* .home-contact {
-    max-width: 60%;
-  } */
 }
 
 @media only screen and (min-width: 1800px) {
@@ -1257,7 +1298,7 @@ footer {
     justify-content: space-between;
     min-height: 260px;
     margin: 0 auto;
-    padding: 2rem 10%;
+    padding: 7em 10%;
   }
 }
 
@@ -1359,13 +1400,55 @@ footer {
     height: auto;
   }
   .social-icons {
-    gap: 2rem;
+    gap: 45px;
   }
   .social-icons i {
-    font-size: 1.7rem;
+    font-size: 2.6rem;
+  }
+  #form-icon {
+    font-size: 1.688rem;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 3px;
   }
   .navbar.py-3 {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
+  }
+  #hc-row {
+    background-color: #f4f3f0;
+  }
+  .hc-links div {
+    padding: 6px 6px 6px 12px;
+    gap: 8px;
+  }
+  .copy-btn {
+    line-height: 1.3;
+  }
+  .hc-links {
+    margin-bottom: 3em;
+  }
+  #hc-row.mt-5 {
+    margin-top: 5em;
+  }
+  footer.mt-5 {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  a.email-big {
+    font-size: 1.9rem;
+  }
+  .hc-links div {
+    padding: 8px 8px 8px 14px;
+    gap: 10px;
+  }
+  .copy-btn {
+    line-height: 1.2;
+    padding: 0px 1em;
+  }
+  .hc-links a {
+    padding: 4px;
   }
 }
