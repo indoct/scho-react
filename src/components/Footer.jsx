@@ -22,11 +22,6 @@ export default function Footer() {
                   github
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/in/shoul" target="blank_">
-                  linkedin
-                </a>
-              </li>
             </ul>
           </div>
         </div>

@@ -797,8 +797,7 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 0;
-  padding: 2rem 10%;
-  border: 2px solid var(--schogrey);
+  padding: 6em 0;
 }
 
 .home-contact p {
@@ -806,7 +805,7 @@ h6 {
 }
 
 .light-mode .home-contact {
-  border: 2px solid var(--schoclay);
+  background-color: #f4f3f0;
 }
 
 /* CONTACT PAGE */
@@ -1135,9 +1134,6 @@ footer {
   }
 }
 @media (min-width: 670px) {
-  /* .intro-2 {
-    display: block;
-  } */
 }
 @media (max-width: 760px) {
   .pp-info {
@@ -1243,9 +1239,9 @@ footer {
   .header {
     padding: 9em 0 3em;
   }
-  .home-contact {
+  /* .home-contact {
     max-width: 60%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1800px) {
@@ -1262,7 +1258,6 @@ footer {
     min-height: 260px;
     margin: 0 auto;
     padding: 2rem 10%;
-    border: 2px solid var(--schogrey);
   }
 }
 

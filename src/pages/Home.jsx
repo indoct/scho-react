@@ -180,11 +180,12 @@ export default function Home() {
         <div className="col-12 text-center">
           <div className="home-contact">
             <p>
-              If you'd like to see more work or get in touch, please fill out
-              the <a href="/contact">contact form</a>, or you can email me at:
+              Let's make something great. If you're interested in working
+              together or just have some questions, you can email me at:
               <a href="mailto:hello@scho.pro" className="email-big gradient">
                 hello@scho.pro
               </a>
+              <button className="copy-btn">copy email</button>
             </p>
             <div className="social-icons">
               <a
