@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="container about page pt-sm-4 pt-xxl-5">
+    <section className="container about page pt-sm-4 pt-xxl-5 project-page">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -36,26 +36,6 @@ export default function About() {
             and a joy to use. When I'm not working, I enjoy building personal
             projects, gaming, modding, football (KTBFFH!), and travelling.
           </p>
-          {/* <div className="intro">
-            For more projects & examples of my work:
-            <ul>
-              <li>
-                <strong>
-                  <a href="scho-portfolio-2023.pdf" className="gradient" download>
-                    download my portfolio
-                  </a>
-                </strong>
-                <span className="small"> (PDF, 17mb)</span>
-              </li>
-              <li>
-                <strong>
-                  <a href="scho-portfolio-2023.pdf" className="gradient">
-                    view in browser
-                  </a>
-                </strong>
-              </li>
-            </ul>
-          </div> */}
           <p className="about-copy">
             I'm currently
             <strong> available for freelance opportunities</strong>, so please

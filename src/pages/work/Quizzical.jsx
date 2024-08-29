@@ -97,8 +97,8 @@ export default function Quizzical() {
                 <img
                   src={slides[0].src}
                   alt={slides[0].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -111,8 +111,8 @@ export default function Quizzical() {
                 <img
                   src={slides[1].src}
                   alt={slides[1].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -125,8 +125,8 @@ export default function Quizzical() {
                 <img
                   src={slides[2].src}
                   alt={slides[2].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>

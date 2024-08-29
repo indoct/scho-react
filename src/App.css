@@ -889,13 +889,14 @@ form .form-control::placeholder {
 .copy-btn {
   font-size: 14px;
   letter-spacing: 0.5px;
-  padding: 0 1.6em;
+  padding: 0 1.2em;
   background-color: #695d54;
   color: var(--schopearl);
   border: 0;
   border-radius: 40px;
   display: block;
   transition: all 0.6s;
+  min-width: 109px;
 }
 
 .copy-btn:hover {

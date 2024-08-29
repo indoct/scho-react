@@ -138,8 +138,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[0].src}
                   alt={slides[0].alt}
-                  height="945"
-                  width="1902"
+                  height="814"
+                  width="1711"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -160,8 +160,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[1].src}
                   alt={slides[1].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -174,8 +174,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[2].src}
                   alt={slides[2].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -195,8 +195,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[3].src}
                   alt={slides[3].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -217,8 +217,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[4].src}
                   alt={slides[4].alt}
-                  height="945"
-                  width="1902"
+                  height="835"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -231,8 +231,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[5].src}
                   alt={slides[5].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -254,8 +254,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[6].src}
                   alt={slides[6].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -277,8 +277,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[7].src}
                   alt={slides[7].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -291,8 +291,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[8].src}
                   alt={slides[8].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -305,8 +305,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[9].src}
                   alt={slides[9].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -319,8 +319,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[10].src}
                   alt={slides[10].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -341,8 +341,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[11].src}
                   alt={slides[11].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>

@@ -105,8 +105,8 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[0].src}
                   alt={slides[0].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -119,8 +119,8 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[1].src}
                   alt={slides[1].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -140,8 +140,8 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[2].src}
                   alt={slides[2].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -160,8 +160,8 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[3].src}
                   alt={slides[3].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -174,8 +174,8 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[4].src}
                   alt={slides[4].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -187,8 +187,8 @@ export default function BG3SetCreator() {
               for syntax formatting, this code can be copied using the button
               and pasted directly into the game file and works out of the box.
               The piercing database also contains the mod page's URL /
-              information and the generated code is commented dynamically, so
-              the user knows exactly what each node is.
+              information and generated code is commented dynamically, so the
+              user knows exactly what each node is.
             </p>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const projects = [
   {
@@ -65,6 +66,9 @@ const projects = [
 ];
 
 export default function Home() {
+  let timeoutId;
+  const [copyBtnPressed, setCopyBtnPressed] = useState(false);
+
   const variants = {
     hidden: {
       opacity: 0,
@@ -93,6 +97,23 @@ export default function Home() {
       },
     },
   };
+
+  async function copyToClipboard() {
+    await navigator.clipboard.writeText("hello@scho.pro");
+  }
+
+  const handleCopyBtn = () => {
+    setCopyBtnPressed(true);
+    timeoutId = setTimeout(() => {
+      setCopyBtnPressed(false);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
 
   return (
     <motion.div
@@ -191,10 +212,26 @@ export default function Home() {
                 <a href="mailto:hello@scho.pro" className="email-big gradient">
                   hello@scho.pro
                 </a>
-                <button className="copy-btn">copy email</button>
+                <button
+                  className="copy-btn"
+                  disabled={copyBtnPressed}
+                  onClick={() => {
+                    handleCopyBtn();
+                    copyToClipboard();
+                  }}
+                >
+                  {!copyBtnPressed ? <>copy email</> : <>copied!</>}
+                </button>
               </div>
             </div>
+
             <div className="social-icons">
+              <a href="/contact">
+                <i
+                  id="form-icon"
+                  className="fa-solid fa-envelope-open-text"
+                ></i>
+              </a>
               <a
                 href="https://github.com/indoct/"
                 target="_blank"
@@ -204,16 +241,6 @@ export default function Home() {
                   className="fa-brands fa-square-github"
                   aria-hidden="true"
                 ></i>
-              </a>
-              <a
-                href="https://linkedin.com/in/shoul"
-                target="_blank"
-                aria-label="linkedin (opens in new tab)"
-              >
-                <i className="fa-brands fa-linkedin" />
-              </a>
-              <a href="/contact">
-                <i id="form-icon" class="fa-solid fa-envelope-open-text"></i>
               </a>
             </div>
           </div>
