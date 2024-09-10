@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 const projects = [
   {
     title: "ESF Join Us",
-    src: "placehold-8x7.png",
-    webp: "placehold-8x7.png",
+    src: "project-cover-esf.png",
+    webp: "project-cover-esf.webp",
     name: "English Schools Foundation",
     tagline:
       "A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.",
@@ -15,8 +15,8 @@ const projects = [
   },
   {
     title: "BG3 Piercing Set Creator",
-    src: "placehold-bg3.png",
-    webp: "placehold-bg3.png",
+    src: "project-cover-prc.png",
+    webp: "project-cover-prc.webp",
     name: "BG3 Piercing Set Creator",
     tagline:
       "A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.",
@@ -25,8 +25,8 @@ const projects = [
   },
   {
     title: "Get Set Sports Academy",
-    src: "placehold-gs.png",
-    webp: "placehold-gs.png",
+    src: "project-cover-gs.png",
+    webp: "project-cover-gs.webp",
     name: "Get Set Sports Academy",
     tagline:
       "Building an attractive and easily maintainable web presence for a leading athletics academy.",
@@ -35,8 +35,8 @@ const projects = [
   },
   {
     title: "Quizzical",
-    src: "placehold-mid.png",
-    webp: "placehold-mid.png",
+    src: "project-cover-quiz.png",
+    webp: "project-cover-quiz.webp",
     name: "Quizzical",
     tagline:
       "An interactive quiz web app, built with React and utilising the TMDb database.",
@@ -45,8 +45,8 @@ const projects = [
   },
   {
     title: "The Odd Dystrict NFT",
-    src: "placehold-tod.png",
-    webp: "placehold-tod.png",
+    src: "project-cover-tod.png",
+    webp: "project-cover-tod.webp",
     name: "The Odd Dystrict",
     tagline:
       "Website and web3 interface where users could mint an art NFT and interact with their portfolio.",
@@ -55,8 +55,8 @@ const projects = [
   },
   {
     title: "N7 Ipsum",
-    src: "placehold-n7i.png",
-    webp: "placehold-n7i.png",
+    src: "project-cover-n7i.png",
+    webp: "project-cover-n7i.webp",
     name: "N7 Ipsum",
     tagline:
       "A Mass Effect lorem ipsum dummy text generator built with vanilla JS. Does what it says on the tin.",
@@ -126,7 +126,7 @@ export default function Home() {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="col-12 col-sm-10 col-xl-8 col-xxl-6"
+          className="col-12 col-sm-11 col-lg-10 col-xl-8 col-xxl-6"
         >
           <div className="intro">
             <h2>Hi there! Welcome to </h2>
@@ -148,7 +148,7 @@ export default function Home() {
         variants={variants}
         initial="hidden"
         animate="visible"
-        className="row mb-2 gy-4 gx-2"
+        className="row mb-2 gy-4 gy-xxl-5 gx-2"
       >
         {projects.map((proj) => (
           <motion.li
@@ -165,8 +165,8 @@ export default function Home() {
                 <img
                   src={`assets/images/project/comp/${proj.src}`}
                   alt={`${proj.title} cover image`}
-                  height="1750"
-                  width="2000"
+                  height="1106"
+                  width="1264"
                 />
               </picture>
             </div>

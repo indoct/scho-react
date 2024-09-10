@@ -1248,6 +1248,8 @@ footer {
   .project-page .intro {
     font-size: 18px;
   }
+}
+@media only screen and (min-width: 993px) {
   .project-page.container {
     margin-top: 5em;
   }
@@ -1312,6 +1314,24 @@ footer {
   #case-studies.gx-3 {
     --bs-gutter-x: 1.5rem;
   }
+  .proj-links {
+    margin-top: 0.8em;
+  }
+  .proj-links li a {
+    letter-spacing: 0.08rem;
+    font-size: 0.78rem;
+  }
+  .p-title {
+    margin-bottom: 0.3em;
+    font-size: 1.13rem;
+  }
+  .p-desc {
+    font-size: 1rem;
+    max-width: 85%;
+  }
+  .p-card-img {
+    margin-bottom: 1.05em;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 991px) {
   .container-xxl {
@@ -1331,8 +1351,10 @@ footer {
   h1 {
     font-size: 6.2rem;
   }
-  .home .intro {
-    font-size: 1.15rem;
+  .home .intro,
+  .home h2,
+  .home .intro .studio {
+    font-size: 1.3rem;
     line-height: 1.42;
   }
   .proj-nav-body {
