@@ -444,8 +444,37 @@ h6 {
   line-height: 1.2;
 }
 
-.smallerh1 {
-  font-size: 3rem;
+.logo-cont a {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2.3rem;
+  color: var(--scholight);
+  font-weight: 600;
+  display: none;
+}
+
+/* .studio {
+  font-family: neue-haas-grotesk-text;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-left: 2px;
+  color: #aca097;
+} */
+
+.light-mode .title {
+  color: #201f1db0;
+}
+
+.fw-600 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  display: inline-block;
 }
 
 .gradient {
@@ -553,8 +582,34 @@ h6 {
 }
 
 /* HOME & FRONT PAGE */
+.home h2,
+.home .studio {
+  color: var(--scholight);
+  display: inline;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 400;
+}
+.light-mode .home h2,
+.light-mode .home .studio {
+  color: var(--schoonyx);
+}
+.home h1 {
+  display: inline;
+}
+.home h1 .gradient {
+  padding-right: 4px;
+}
+.home .intro p {
+  display: inline;
+}
 
-.home .intro {
+.home .studio {
+  font-weight: 500;
+}
+
+.home .intro,
+.home h2,
+.home .intro .studio {
   font-size: 1.5rem;
 }
 
@@ -587,9 +642,9 @@ h6 {
   padding: 0;
 }
 
-#case-studies a:hover img {
+/* #case-studies a:hover img {
   transform: scale(1.1);
-}
+} */
 
 .proj-links {
   display: flex;
@@ -654,7 +709,7 @@ h6 {
 }
 
 .p-card-img img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -684,18 +739,6 @@ h6 {
 .card-text {
   padding-left: 6px;
 }
-
-/* .card-text {
-  background: linear-gradient(#ffffff00, #000000), rgba(0, 0, 0, 0);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 8px;
-  padding-bottom: 8px;
-  bottom: 114px;
-  height: 100px;
-  justify-content: flex-end;
-} */
 
 .p-title {
   font-size: 1.1rem;
@@ -854,6 +897,7 @@ form .form-control::placeholder {
   margin-bottom: 0;
   padding: 6em 0;
   align-items: center;
+  border: 2px dotted var(--schogrey);
 }
 
 .home-contact p {
@@ -863,7 +907,8 @@ form .form-control::placeholder {
 }
 
 .light-mode .home-contact {
-  background-color: #f4f3f0;
+  /* background-color: #f4f3f0; */
+  border: 2px dotted var(--schoclay);
 }
 
 .hc-links {
@@ -878,8 +923,12 @@ form .form-control::placeholder {
   display: flex;
   padding: 6px 6px 6px 20px;
   gap: 24px;
-  border: 1px solid var(--schoclay);
+  border: 1px solid var(--schogrey);
   border-radius: 40px;
+}
+
+.light-mode .hc-links div {
+  border: 1px solid var(--schoclay);
 }
 
 .hc-links a {
@@ -890,9 +939,9 @@ form .form-control::placeholder {
   font-size: 14px;
   letter-spacing: 0.5px;
   padding: 0 1.2em;
-  background-color: #695d54;
-  color: var(--schopearl);
-  border: 0;
+  background-color: #323539;
+  color: var(--scholight);
+  border: 1px solid #484c51;
   border-radius: 40px;
   display: block;
   transition: all 0.6s;
@@ -900,6 +949,14 @@ form .form-control::placeholder {
 }
 
 .copy-btn:hover {
+  background-color: #484c51;
+}
+
+.light-mode .copy-btn {
+  background-color: #695d54;
+  color: var(--schopearl);
+}
+.light-mode .copy-btn:hover {
   background-color: var(--schoiris);
 }
 
@@ -1006,9 +1063,9 @@ h2.mb-3 {
   transition: all 0.6s;
 }
 
-.p-card-img img:hover {
+/* .p-card-img img:hover {
   transform: scale(1.05);
-}
+} */
 
 .categories {
   color: var(--scholight);
@@ -1089,7 +1146,7 @@ h2.mb-3 {
 /* FOOTER */
 
 footer {
-  font-family: neue-haas-grotesk-text, sans-serif;
+  font-family: "neue-haas-grotesk-text", sans-serif;
   margin-top: 2rem;
   padding: 1rem 0;
   background-color: #1c1e20;
@@ -1136,16 +1193,25 @@ footer {
 
 #form-icon {
   font-size: 24.73px;
-  background-color: #695d54;
-  color: var(--schopearl);
-  padding: 5px 4px 3px;
+  background-color: var(--scholight);
+  color: var(--schodark);
+  padding: 4px;
   border-radius: 3px;
   margin-top: 3px;
   transition: all 0.5s;
 }
 
-#form-icon:hover {
+.light-mode #form-icon {
+  color: var(--schopearl);
+  background-color: #695d54;
+}
+
+.light-mode #form-icon:hover {
   background-color: var(--schoiris);
+}
+
+#form-icon:hover {
+  background-color: var(--schopurp);
 }
 
 .social-icons i:hover {
@@ -1198,7 +1264,7 @@ footer {
 }
 @media (max-width: 992px) {
   .navbar {
-    background-color: #2c2f32;
+    background-color: #1b1c1e;
   }
   nav.fixed-top {
     position: absolute;
@@ -1253,6 +1319,7 @@ footer {
   }
   .header {
     padding-top: 2rem;
+    padding-bottom: 3rem;
   }
   .p-title {
     font-size: 1.1rem;
@@ -1299,7 +1366,10 @@ footer {
     justify-content: space-between;
     min-height: 260px;
     margin: 0 auto;
-    padding: 7em 10%;
+    padding: 6em 10%;
+  }
+  #hc-row {
+    margin-top: 6em;
   }
 }
 

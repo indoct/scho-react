@@ -126,20 +126,19 @@ export default function Home() {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="col-12 col-sm-10 col-xl-6"
+          className="col-12 col-sm-10 col-xl-8 col-xxl-6"
         >
-          <div>
-            <p className="intro">
-              Hi there! Welcome to{" "}
-              <h1>
-                <span className="gradient">scho.</span>
-              </h1>{" "}
-              studio. I'm a designer and UX/UI Engineer based in London{" "}
-              <i className="fa-regular fa-face-smile ps-1"></i>.{" "}
-              <span className="intro-2">
-                I design and build visually appealing digital interfaces that
-                are thoughtful, accessible, and SEO-friendly.
-              </span>
+          <div className="intro">
+            <h2>Hi there! Welcome to </h2>
+            <h1 className="fw-600">
+              <span className="gradient">scho.</span>{" "}
+              <span className="studio">studio.</span>
+            </h1>{" "}
+            <p>
+              I'm Siobhan, a designer and UX/UI Engineer based in London{" "}
+              <i className="fa-regular fa-face-smile ps-1"></i>. I design and
+              build thoughtful, accessible and visually appealing digital
+              interfaces.
             </p>
           </div>
         </motion.div>
@@ -197,10 +196,7 @@ export default function Home() {
           </motion.li>
         ))}
       </motion.ul>
-      <section
-        id="hc-row"
-        className="row mt-5 mb-1 my-sm-5 justify-content-center"
-      >
+      <section id="hc-row" className="row justify-content-center">
         <div className="col-12 text-center">
           <div className="home-contact">
             <p>

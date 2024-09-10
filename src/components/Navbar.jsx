@@ -36,6 +36,7 @@ export default function Navbar(props) {
               width="50"
               height="50"
             />
+            <h1 className="title">scho.</h1>
           </NavLink>
         </div>
         <div className="navbar-right">
