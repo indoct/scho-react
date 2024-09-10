@@ -907,7 +907,6 @@ form .form-control::placeholder {
 }
 
 .light-mode .home-contact {
-  /* background-color: #f4f3f0; */
   border: 2px dotted var(--schoclay);
 }
 
@@ -945,7 +944,6 @@ form .form-control::placeholder {
   border-radius: 40px;
   display: block;
   transition: all 0.6s;
-  min-width: 109px;
 }
 
 .copy-btn:hover {
@@ -961,7 +959,8 @@ form .form-control::placeholder {
 }
 
 a.email-big {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 2.2rem;
   transition: all 0.8s;
   line-height: 1.1;
@@ -1393,6 +1392,9 @@ footer {
   #hc-row {
     margin-top: 6em;
   }
+  .copy-btn {
+    min-width: 109px;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -1414,7 +1416,7 @@ footer {
     min-height: auto;
   }
   .header {
-    padding: 0 0 1rem;
+    padding: 0 0 1.5em;
   }
   .categories {
     margin-bottom: 1.2em;
@@ -1435,14 +1437,17 @@ footer {
   .plink-cont a {
     font-size: 16px;
   }
-  .home .intro {
+  .home .intro,
+  .home h2,
+  .home .intro .studio {
     font-size: 1.12rem;
+    line-height: 1.4;
   }
-  .home h1 {
-    font-size: 5rem;
+  .home .intro h1 {
+    font-size: 1.8rem;
   }
   .proj-links li a {
-    font-size: 0.88rem;
+    font-size: 0.8rem;
     letter-spacing: 0.1rem;
     padding: 0.8rem 1.2rem;
     justify-content: space-between;
@@ -1453,7 +1458,7 @@ footer {
     gap: 20px;
   }
   .p-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.25rem;
   }
   .p-desc {
@@ -1488,9 +1493,20 @@ footer {
   .p-cat {
     font-size: 0.85rem;
   }
-  .navbar-brand img {
-    max-width: 50px;
-    height: auto;
+  .navbar-brand {
+    max-width: 40px;
+  }
+  .home-contact {
+    border-top: 2px dotted var(--schogrey);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .light-mode .home-contact {
+    border-top: 2px dotted var(--schoclay);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
   }
   .social-icons {
     gap: 45px;
@@ -1507,9 +1523,6 @@ footer {
   .navbar.py-3 {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
-  }
-  #hc-row {
-    background-color: #f4f3f0;
   }
   .hc-links div {
     padding: 6px 6px 6px 12px;
@@ -1531,7 +1544,7 @@ footer {
 
 @media only screen and (max-width: 420px) {
   a.email-big {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
   .hc-links div {
     padding: 8px 8px 8px 14px;
@@ -1539,7 +1552,7 @@ footer {
   }
   .copy-btn {
     line-height: 1.2;
-    padding: 0px 1em;
+    padding: 8px 1em;
   }
   .hc-links a {
     padding: 4px;

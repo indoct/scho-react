@@ -126,7 +126,7 @@ export default function Home() {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="col-12 col-sm-11 col-lg-10 col-xl-8 col-xxl-6"
+          className="col-12 col-sm-11 col-lg-9 col-xl-8 col-xxl-6"
         >
           <div className="intro">
             <h2>Hi there! Welcome to </h2>
@@ -148,7 +148,7 @@ export default function Home() {
         variants={variants}
         initial="hidden"
         animate="visible"
-        className="row mb-2 gy-4 gy-xxl-5 gx-2"
+        className="row mb-5 mb-sm-2 gy-4 gy-xxl-5 gx-2"
       >
         {projects.map((proj) => (
           <motion.li
