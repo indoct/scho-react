@@ -35,14 +35,14 @@ function App() {
     setIsDarkMode(!isDarkMode);
     localStorage.setItem("isDarkMode", JSON.stringify(checked));
   };
-
+  console.log("app.jsx: " + isDarkMode);
   return (
     <div className="App">
       <main className={isDarkMode ? "dark-mode" : "light-mode"}>
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route index element={<Home />} />
+            <Route index element={<Home isDarkMode={isDarkMode} />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/work/esfjoinus" element={<ESFJoinUs />} />

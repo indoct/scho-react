@@ -7,12 +7,6 @@ nav.navbar .container-xxl {
   align-items: flex-start;
 }
 
-@media only screen and (min-width: 992px) {
-  nav.navbar .container-xxl {
-    max-width: 1840px;
-  }
-}
-
 :focus-visible,
 .hamburger-react:focus-visible,
 .nav-link:focus-visible,
@@ -48,8 +42,6 @@ nav.navbar .container-xxl {
   --scholapis: #1476b3;
   --schoteal: #2ca58d;
   --schoapple: #a2bd4a;
-
-  text-rendering: optimizeLegibility;
 }
 
 html,
@@ -59,6 +51,9 @@ body {
   font-style: normal;
   font-size: 17px;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 main {
@@ -406,7 +401,7 @@ button.g2:hover,
 /* TYPOGRAPHY */
 
 .dys {
-  font-family: dystopian, sans-serif;
+  font-family: "dystopian", sans-serif;
   font-weight: 900;
   font-style: normal;
   padding: 0 6px;
@@ -416,7 +411,7 @@ button.g2:hover,
 h1,
 h2,
 h3 {
-  font-family: dystopian, sans-serif;
+  font-family: "dystopian", sans-serif;
   font-weight: 900;
 }
 
@@ -457,15 +452,6 @@ h6 {
   font-weight: 600;
   display: none;
 }
-
-/* .studio {
-  font-family: neue-haas-grotesk-text;
-  font-size: 1rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  padding-left: 2px;
-  color: #aca097;
-} */
 
 .light-mode .title {
   color: #201f1db0;
@@ -754,6 +740,7 @@ h6 {
 
 .p-desc {
   font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 400;
   color: #bfc3c5;
   margin-bottom: 0;
   line-height: 1.4;
@@ -778,9 +765,6 @@ h6 {
   font-size: 3rem;
 }
 
-/* .bio.pe-md-5 {
-  padding-right: 2rem !important;
-} */
 .profile p,
 .profile {
   font-size: 0.9rem;
@@ -817,7 +801,7 @@ h6 {
   padding-left: 10px;
 }
 
-.faux-btn {
+/* .faux-btn {
   background: #93f0a3;
   color: var(--schodark);
   font-weight: 600;
@@ -833,7 +817,7 @@ h6 {
   border: 2px solid var(--schogreen);
   color: var(--schogreen);
   background: transparent;
-}
+} */
 
 /* CONTACT PAGE */
 
@@ -1046,7 +1030,7 @@ h2.mb-3 {
 
 .intro {
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .proj-img {
@@ -1372,7 +1356,16 @@ footer {
   .header {
     padding: 9em 0 3em;
   }
+  nav.navbar .container-xxl {
+    max-width: 1840px;
+  }
 }
+
+/* @media only screen and (min-width: 992px) and (max-width: 1399px) {
+  .p-card-img img {
+    max-width: 560px;
+  }
+} */
 
 @media only screen and (min-width: 1800px) {
   .header {
@@ -1556,5 +1549,11 @@ footer {
   }
   .hc-links a {
     padding: 4px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  img {
+    image-rendering: -webkit-optimize-contrast !important;
   }
 }

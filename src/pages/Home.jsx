@@ -5,8 +5,7 @@ import { useState, useEffect } from "react";
 const projects = [
   {
     title: "ESF Join Us",
-    src: "project-cover-esf.png",
-    webp: "project-cover-esf.webp",
+    src: "project-cover-esf",
     name: "English Schools Foundation",
     tagline:
       "A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.",
@@ -15,8 +14,7 @@ const projects = [
   },
   {
     title: "BG3 Piercing Set Creator",
-    src: "project-cover-prc.png",
-    webp: "project-cover-prc.webp",
+    src: "project-cover-prc",
     name: "BG3 Piercing Set Creator",
     tagline:
       "A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.",
@@ -25,8 +23,7 @@ const projects = [
   },
   {
     title: "Get Set Sports Academy",
-    src: "project-cover-gs.png",
-    webp: "project-cover-gs.webp",
+    src: "project-cover-gs",
     name: "Get Set Sports Academy",
     tagline:
       "Building an attractive and easily maintainable web presence for a leading athletics academy.",
@@ -35,8 +32,7 @@ const projects = [
   },
   {
     title: "Quizzical",
-    src: "project-cover-quiz.png",
-    webp: "project-cover-quiz.webp",
+    src: "project-cover-quiz",
     name: "Quizzical",
     tagline:
       "An interactive quiz web app, built with React and utilising the TMDb database.",
@@ -45,8 +41,7 @@ const projects = [
   },
   {
     title: "The Odd Dystrict NFT",
-    src: "project-cover-tod.png",
-    webp: "project-cover-tod.webp",
+    src: "project-cover-tod",
     name: "The Odd Dystrict",
     tagline:
       "Website and web3 interface where users could mint an art NFT and interact with their portfolio.",
@@ -55,8 +50,7 @@ const projects = [
   },
   {
     title: "N7 Ipsum",
-    src: "project-cover-n7i.png",
-    webp: "project-cover-n7i.webp",
+    src: "project-cover-n7i",
     name: "N7 Ipsum",
     tagline:
       "A Mass Effect lorem ipsum dummy text generator built with vanilla JS. Does what it says on the tin.",
@@ -65,9 +59,12 @@ const projects = [
   },
 ];
 
-export default function Home() {
+export default function Home(props) {
+  const { isDarkMode } = props;
   let timeoutId;
   const [copyBtnPressed, setCopyBtnPressed] = useState(false);
+
+  console.log(isDarkMode);
 
   const variants = {
     hidden: {
@@ -154,19 +151,23 @@ export default function Home() {
           <motion.li
             key={proj.link}
             variants={itemVariants}
-            className="col-12 col-md-6 col-xl-4 proj-card"
+            className="col-12 col-lg-6 col-xxl-4 proj-card"
           >
             <div className="p-card-img">
               <picture>
                 <source
-                  srcSet={`assets/images/project/comp/${proj.webp}`}
-                  type="image/webp"
+                  srcSet={`assets/images/project/comp/${proj.src}-${
+                    isDarkMode ? "d" : "l"
+                  }.png`}
+                  type="image/png"
                 />
                 <img
-                  src={`assets/images/project/comp/${proj.src}`}
+                  src={`assets/images/project/comp/${proj.src}-${
+                    isDarkMode ? "d" : "l"
+                  }.png`}
                   alt={`${proj.title} cover image`}
-                  height="1106"
-                  width="1264"
+                  height="650"
+                  width="800"
                 />
               </picture>
             </div>
