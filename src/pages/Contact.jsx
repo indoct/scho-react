@@ -17,8 +17,8 @@ export default function Contact() {
           </h1>
           <p className="pb-2 pb-sm-4 contact-intro">
             Do you have a cool project in mind, or maybe just the inklings of
-            inspiration that you want to bring to life? Fill out this form and
-            I'll get back to you as soon as possible!
+            inspiration that you want to bring to life? Put your thoughts in the
+            form below and I'll get back to you as soon as possible!
           </p>
           <form
             name="contact"
