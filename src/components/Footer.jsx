@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="container-fluid mt-0 mt-sm-5">
+    <footer className="container-fluid mt-5">
       <section className="container">
         <div className="row footer-text align-items-center">
           <div className="col-12 col-sm-6 copyright">

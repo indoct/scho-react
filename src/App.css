@@ -206,57 +206,6 @@ button.g2:hover,
   color: var(--scholime);
 }
 
-.card-info {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: 10;
-}
-
-.card-cover img {
-  margin-bottom: 0.5rem;
-}
-
-.card-info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 75%;
-  opacity: 0;
-  transition: 0.45s ease-in-out;
-  background-color: rgba(83, 87, 94, 0.98);
-}
-
-.light-mode .card-info {
-  background-color: rgb(205 198 193 / 97%);
-}
-
-.card-info a {
-  border: 2px solid var(--schoonyx);
-  align-self: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  color: var(--schoonyx);
-  padding: 0.5em 1em;
-  column-gap: 1.2em;
-  border-radius: 32px;
-  font-size: 1rem;
-  background-color: var(--schoiris);
-  color: var(--schopearl);
-}
-
-.card-info a:hover {
-  background-color: var(--schoapple);
-  color: var(--schoonyx);
-}
-
 .light-mode .nav-link:hover,
 .light-mode .project-nav .accordion-button:hover,
 .light-mode .project-nav .accordion-button:not(.collapsed) {
@@ -813,7 +762,8 @@ h6 {
 }
 
 .contact-intro {
-  font-size: 1.12rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
 
 .light-mode .contact-block {
@@ -1269,7 +1219,7 @@ footer {
     max-width: 540px;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 577px) and (pointer: fine) {
   .container,
   .container-sm {
     max-width: 94%;
@@ -1323,7 +1273,6 @@ footer {
   .home h2,
   .home .intro .studio {
     font-size: 1.3rem;
-    line-height: 1.42;
   }
   .proj-nav-body {
     font-size: 1rem;
@@ -1343,6 +1292,8 @@ footer {
   }
   nav.navbar .container-xxl {
     max-width: 1840px;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   }
 }
 
@@ -1537,14 +1488,51 @@ footer {
   }
 }
 
-@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) and (orientation: portrait) {
+@media (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .home .intro,
+  .home h2,
+  .home .intro .studio {
+    font-size: 1.2rem;
+    line-height: 1.38;
+  }
   .page.project-page.pt-sm-4 {
     padding-top: 1rem !important;
   }
   .p-desc {
-    font-size: 1rem;
+    font-size: 0.94rem;
     line-height: 1.34;
+  }
+  #case-studies .col-12 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .container {
+    width: 98%;
+    max-width: 98%;
+  }
+  .proj-links li a {
+    padding: 13px 16px 15px;
+  }
+  .p-title {
+    font-size: 1rem;
+    margin-bottom: 0.3em;
+  }
+  .proj-links {
+    margin-top: 0.7em;
+  }
+  .card-text {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .proj-links {
+    padding-left: 4px;
+  }
+  .profile p,
+  .profile {
+    font-size: 1rem;
+  }
+  .item {
+    font-size: 16px;
   }
 }
 
@@ -1565,5 +1553,15 @@ footer {
   }
   .project-page .intro {
     font-size: 1rem;
+  }
+  h1.mb-3,
+  h2.mb-3 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 892px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hide-2x {
+    display: none;
   }
 }

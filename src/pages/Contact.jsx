@@ -11,14 +11,14 @@ export default function Contact() {
       className="container pt-sm-4 pt-xxl-5 page content-page"
     >
       <div className="row justify-content-center align-items-start">
-        <div className="col-12 col-lg-8 col-xxl-6">
+        <div className="col-12 col-md-10 col-lg-8 col-xxl-6">
           <h1 className="mb-3 smallerh1">
             <span className="gradient">Get in Touch</span>
           </h1>
           <p className="pb-2 pb-sm-4 contact-intro">
             Do you have a cool project in mind, or maybe just the inklings of
-            inspiration that you want to bring to life? Fill out this form with
-            some details and I'll get back to you as soon as possible!
+            inspiration that you want to bring to life? Fill out this form and
+            I'll get back to you as soon as possible!
           </p>
           <form
             name="contact"
@@ -76,7 +76,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="row justify-content-center align-items-start">
-        <div className="col-12 col-lg-8 col-xxl-6 contact-block mt-5">
+        <div className="col-12 col-md-10 col-lg-8 col-xxl-6 contact-block mt-5">
           <p className="contact-intro pb-2">
             You can also email me at: <br />
           </p>

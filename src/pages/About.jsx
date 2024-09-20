@@ -11,16 +11,48 @@ export default function About() {
         transition={{ ease: "easeInOut", duration: 0.4 }}
       >
         <div className="row justify-content-center">
-          <div className="col-12 col-lg-7 col-xxl-6 bio pe-md-5">
+          <div className="col-12 col-md-10 col-lg-7 col-xxl-6 profile">
+            <h2 className="mb-3">
+              <span className="gradient">Services</span>
+            </h2>
+            <h6>Design:</h6>
+            <p className="mb-3 mb-xxl-4 d-flex">
+              <span className="item">Web & App</span>
+              <span className="item">User Experience (UX)</span>
+              <span className="item">User Interface (UI)</span>
+              <span className="item">Digital & Print</span>
+            </p>
+            <h6>Development:</h6>
+            <p className="mb-3 mb-xxl-4 d-flex">
+              <span className="item">Front-End</span>
+              <span className="item">Wordpress</span>
+              <span className="item">HTML/CSS</span>
+              <span className="item">Javascript</span>
+              <span className="item">React</span>
+              <span className="item">Typescript</span>
+              <span className="item">Bootstrap</span>
+              <span className="item">Webflow</span>
+            </p>
+            <h6>Software Used:</h6>
+            <p className="mb-3 mb-xxl-4 d-flex">
+              <span className="item">Adobe Illustrator</span>
+              <span className="item">Adobe Photoshop</span>
+              <span className="item">Adobe XD</span>
+              <span className="item">Figma</span>
+              <span className="item">InDesign</span>
+            </p>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-10 col-lg-7 col-xxl-6 bio pe-md-5">
             <h1 className="mb-3">
               <span className="gradient">About</span>
             </h1>
             <p className="intro">
-              Hi there, my name is Siobhan. I'm a designer and UX/UI engineer
-              with over 8 years experience, based in the United Kingdom. My
-              focus is on digital experiences and UX/UI, but I'm a designer in
-              general who's also experienced in print, marketing, indentity and
-              collateral design.
+              Hello! I'm Siobhan, a designer and UX/UI engineer with over 8
+              years of experience. My focus is on digital experiences and UX/UI,
+              but I'm a designer in general who's also experienced in print,
+              marketing, indentity and collateral design.
             </p>
             <p className="intro">
               What is a UX/UI Engineer? To put it simply, I design and build
@@ -28,7 +60,7 @@ export default function About() {
               the human aspect and user experience. Starting with the research
               and discovery process, through to iteration, design and build,
               I'll help take your product from an idea to reality. We can also
-              work together on only one or a few stages in the process, if
+              work together on only one - or a few - stages in the process if
               that's more suitable for your time frame and budget.
             </p>
             <p className="intro">
@@ -45,39 +77,6 @@ export default function About() {
               <Link to="/contact">head to the contact page</Link> and fill out
               the form or you can email me at:{" "}
               <a href="mailto:hello@scho.pro">hello@scho.pro</a>
-            </p>
-          </div>
-        </div>
-        <div className="row justify-content-center">
-          <div className="col-12 col-lg-7 col-xxl-6 profile">
-            <h2 className="mb-3">
-              <span className="gradient">Services</span>
-            </h2>
-            <h6>Design:</h6>
-            <p className="mb-3 mb-xxl-4 d-flex">
-              <span className="item">Web & App Design</span>
-              <span className="item">User Experience Design (UX)</span>
-              <span className="item">User Interface Design (UI)</span>
-              <span className="item">Graphic/Digital Design</span>
-            </p>
-            <h6>Development:</h6>
-            <p className="mb-3 mb-xxl-4 d-flex">
-              <span className="item">Front-End (Code)</span>
-              <span className="item">Wordpress</span>
-              <span className="item">Webflow</span>
-              <span className="item">HTML/CSS</span>
-              <span className="item">Javascript</span>
-              <span className="item">React</span>
-              <span className="item">Typescript</span>
-              <span className="item">Bootstrap</span>
-            </p>
-            <h6>Software Used:</h6>
-            <p className="mb-3 mb-xxl-4 d-flex">
-              <span className="item">Adobe Illustrator</span>
-              <span className="item">Adobe Photoshop</span>
-              <span className="item">Adobe XD</span>
-              <span className="item">Figma</span>
-              <span className="item">Adobe InDesign</span>
             </p>
           </div>
         </div>

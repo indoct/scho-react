@@ -77,7 +77,7 @@ export default function TheOddDystrict() {
               <span className="gradient">The Odd Dystrict</span>
             </h1>
             <p className="proj-tagline">
-              Website and web3 interface where users could mint an art NFT and
+              Website and web3 interface where users could mint an art NFT &
               interact with their portfolio.
             </p>
             <p className="intro">
