@@ -35,7 +35,7 @@ function App() {
     setIsDarkMode(!isDarkMode);
     localStorage.setItem("isDarkMode", JSON.stringify(checked));
   };
-  console.log("app.jsx: " + isDarkMode);
+
   return (
     <div className="App">
       <main className={isDarkMode ? "dark-mode" : "light-mode"}>

@@ -64,8 +64,6 @@ export default function Home(props) {
   let timeoutId;
   const [copyBtnPressed, setCopyBtnPressed] = useState(false);
 
-  console.log(isDarkMode);
-
   const variants = {
     hidden: {
       opacity: 0,
@@ -154,22 +152,22 @@ export default function Home(props) {
             className="col-12 col-lg-6 col-xxl-4 proj-card"
           >
             <div className="p-card-img">
-              <picture>
-                <source
-                  srcSet={`assets/images/project/comp/${proj.src}-${
-                    isDarkMode ? "d" : "l"
-                  }.png`}
-                  type="image/png"
-                />
-                <img
-                  src={`assets/images/project/comp/${proj.src}-${
-                    isDarkMode ? "d" : "l"
-                  }.png`}
-                  alt={`${proj.title} cover image`}
-                  height="650"
-                  width="800"
-                />
-              </picture>
+              <img
+                src={`assets/images/project/comp/${proj.src}-${
+                  isDarkMode ? "d" : "l"
+                }.png`}
+                srcSet={`
+                  assets/images/project/comp/${proj.src}-${
+                  isDarkMode ? "d" : "l"
+                }.png 1x,
+                  assets/images/project/comp/${proj.src}-${
+                  isDarkMode ? "d" : "l"
+                }-2x.png 2x
+                `}
+                alt={`${proj.title} cover image`}
+                height="650"
+                width="800"
+              />
             </div>
             <div className="card-text">
               <h2 className="p-title">{proj.name}</h2>

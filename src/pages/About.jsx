@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="container about page pt-sm-4 pt-xxl-5 project-page">
+    <section className="container about page pt-sm-4 pt-xxl-5 content-page">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
