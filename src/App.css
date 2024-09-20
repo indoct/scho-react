@@ -801,29 +801,19 @@ h6 {
   padding-left: 10px;
 }
 
-/* .faux-btn {
-  background: #93f0a3;
-  color: var(--schodark);
-  font-weight: 600;
-  text-decoration: none;
-  max-width: 250px;
-  padding: 0.6rem;
-  text-align: center;
-  border: 2px solid transparent;
-  transition: all 0.6s;
-}
-
-.faux-btn:hover {
-  border: 2px solid var(--schogreen);
-  color: var(--schogreen);
-  background: transparent;
-} */
-
 /* CONTACT PAGE */
 
 .contact-block {
-  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 0;
   border: 2px solid var(--schogrey);
+}
+
+.contact-intro {
+  font-size: 1.12rem;
 }
 
 .light-mode .contact-block {
@@ -1214,12 +1204,6 @@ footer {
   .proj-tagline {
     font-size: 1.1rem;
   }
-  .bio {
-    border-right: 2px solid #32353a;
-  }
-  .light-mode .bio {
-    border-right: 2px dotted var(--schostone);
-  }
   .cs-caption p {
     font-size: 17px;
   }
@@ -1549,6 +1533,28 @@ footer {
   }
   .hc-links a {
     padding: 4px;
+  }
+}
+
+/* @media (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) and (orientation: portrait) {
+  .container,
+  .container-sm {
+    max-width: 96%;
+  }
+} */
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) and (orientation: portrait) {
+  .home-contact {
+    padding: 4em 0;
+  }
+  #hc-row {
+    margin-top: 4em;
+  }
+  #case-studies .col-12 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 

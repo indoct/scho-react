@@ -159,6 +159,16 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <NavLink
                   className="nav-link g4 ml"
+                  to="/about"
+                  tabIndex={menuIsOpen ? 0 : -1}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Services
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link g4 ml"
                   to="/contact"
                   tabIndex={menuIsOpen ? 0 : -1}
                   onClick={() => setMenuOpen(false)}
