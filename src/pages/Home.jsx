@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const projects = [
   {
     title: "ESF Join Us",
-    src: "project-cover-esf.jpg",
-    webp: "project-cover-esf.webp",
+    src: "project-cover-esf",
     name: "English Schools Foundation",
     tagline:
       "A fresh, dynamic face for the ESF, Hong Kong's largest provider of English-medium education.",
@@ -14,8 +14,7 @@ const projects = [
   },
   {
     title: "BG3 Piercing Set Creator",
-    src: "project-cover-prc.jpg",
-    webp: "project-cover-prc.webp",
+    src: "project-cover-prc",
     name: "BG3 Piercing Set Creator",
     tagline:
       "A web app for people to easily create their own custom Baldur's Gate 3 piercing combinations.",
@@ -24,8 +23,7 @@ const projects = [
   },
   {
     title: "Get Set Sports Academy",
-    src: "project-cover-gs.jpg",
-    webp: "project-cover-gs.webp",
+    src: "project-cover-gs",
     name: "Get Set Sports Academy",
     tagline:
       "Building an attractive and easily maintainable web presence for a leading athletics academy.",
@@ -34,8 +32,7 @@ const projects = [
   },
   {
     title: "Quizzical",
-    src: "project-cover-quiz.jpg",
-    webp: "project-cover-quiz.webp",
+    src: "project-cover-quiz",
     name: "Quizzical",
     tagline:
       "An interactive quiz web app, built with React and utilising the TMDb database.",
@@ -44,8 +41,7 @@ const projects = [
   },
   {
     title: "The Odd Dystrict NFT",
-    src: "project-cover-tod.jpg",
-    webp: "project-cover-tod.webp",
+    src: "project-cover-tod",
     name: "The Odd Dystrict",
     tagline:
       "Website and web3 interface where users could mint an art NFT and interact with their portfolio.",
@@ -54,8 +50,7 @@ const projects = [
   },
   {
     title: "N7 Ipsum",
-    src: "project-cover-n7i.jpg",
-    webp: "project-cover-n7i.webp",
+    src: "project-cover-n7i",
     name: "N7 Ipsum",
     tagline:
       "A Mass Effect lorem ipsum dummy text generator built with vanilla JS. Does what it says on the tin.",
@@ -64,7 +59,11 @@ const projects = [
   },
 ];
 
-export default function Home() {
+export default function Home(props) {
+  const { isDarkMode } = props;
+  let timeoutId;
+  const [copyBtnPressed, setCopyBtnPressed] = useState(false);
+
   const variants = {
     hidden: {
       opacity: 0,
@@ -94,6 +93,23 @@ export default function Home() {
     },
   };
 
+  async function copyToClipboard() {
+    await navigator.clipboard.writeText("hello@scho.pro");
+  }
+
+  const handleCopyBtn = () => {
+    setCopyBtnPressed(true);
+    timeoutId = setTimeout(() => {
+      setCopyBtnPressed(false);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -105,18 +121,19 @@ export default function Home() {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="col-12 col-sm-10 col-xl-8 col-xxl-7"
+          className="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-6"
         >
-          <h1>
-            <span className="gradient">scho.</span>
-          </h1>
-          <div>
-            <p className="intro">
-              Hi there! I'm SC Houlihan, but 'scho' is easier to spell
-              <i className="fa-regular fa-face-smile-wink ps-1"></i>.{" "}
-              <span className="intro-2">
-                I'm a Front-end Engineer & UX/UI Designer in London.
-              </span>
+          <div className="intro">
+            <h2>Hi there! Welcome to </h2>
+            <h1 className="fw-600">
+              <span className="gradient">scho.</span>{" "}
+              <span className="studio">studio.</span>
+            </h1>{" "}
+            <p>
+              I'm Siobhan, a designer and UX/UI Engineer based in London{" "}
+              <i className="fa-regular fa-face-smile ps-1"></i>. I design and
+              build thoughtful, accessible and visually appealing digital
+              interfaces.
             </p>
           </div>
         </motion.div>
@@ -126,27 +143,31 @@ export default function Home() {
         variants={variants}
         initial="hidden"
         animate="visible"
-        className="row mb-2 gy-4 gx-3"
+        className="row mb-5 mb-sm-2 gy-4 gy-xxl-5 gx-2"
       >
         {projects.map((proj) => (
           <motion.li
             key={proj.link}
             variants={itemVariants}
-            className="col-12 col-md-6 col-xl-4 proj-card"
+            className="col-12 col-lg-6 col-xxl-4 proj-card"
           >
             <div className="p-card-img">
-              <picture>
-                <source
-                  srcSet={`assets/images/project/comp/${proj.webp}`}
-                  type="image/webp"
-                />
-                <img
-                  src={`assets/images/project/comp/${proj.src}`}
-                  alt={`${proj.title} cover image`}
-                  height="354"
-                  width="538"
-                />
-              </picture>
+              <img
+                src={`assets/images/project/comp/${proj.src}-${
+                  isDarkMode ? "d" : "l"
+                }.png`}
+                srcSet={`
+                  assets/images/project/comp/${proj.src}-${
+                  isDarkMode ? "d" : "l"
+                }.png 1x,
+                  assets/images/project/comp/${proj.src}-${
+                  isDarkMode ? "d" : "l"
+                }-2x.png 2x
+                `}
+                alt={`${proj.title} cover image`}
+                height="650"
+                width="800"
+              />
             </div>
             <div className="card-text">
               <h2 className="p-title">{proj.name}</h2>
@@ -174,17 +195,38 @@ export default function Home() {
           </motion.li>
         ))}
       </motion.ul>
-      <section className="row mt-5 mb-1 my-sm-5 justify-content-center">
+      <section id="hc-row" className="row justify-content-center">
         <div className="col-12 text-center">
           <div className="home-contact">
             <p>
-              If you'd like to see more work or get in touch, please fill out
-              the <a href="/contact">contact form</a>, or you can email me at:
-              <a href="mailto:hello@scho.pro" className="email-big gradient">
-                hello@scho.pro
-              </a>
+              Let's make something great. If you're interested in working
+              together, please get in touch at:
             </p>
+            <div className="hc-links">
+              <div>
+                <a href="mailto:hello@scho.pro" className="email-big gradient">
+                  hello@scho.pro
+                </a>
+                <button
+                  className="copy-btn"
+                  disabled={copyBtnPressed}
+                  onClick={() => {
+                    handleCopyBtn();
+                    copyToClipboard();
+                  }}
+                >
+                  {!copyBtnPressed ? <>copy email</> : <>copied!</>}
+                </button>
+              </div>
+            </div>
+
             <div className="social-icons">
+              <a href="/contact">
+                <i
+                  id="form-icon"
+                  className="fa-solid fa-envelope-open-text"
+                ></i>
+              </a>
               <a
                 href="https://github.com/indoct/"
                 target="_blank"
@@ -194,13 +236,6 @@ export default function Home() {
                   className="fa-brands fa-square-github"
                   aria-hidden="true"
                 ></i>
-              </a>
-              <a
-                href="https://linkedin.com/in/shoul"
-                target="_blank"
-                aria-label="linkedin (opens in new tab)"
-              >
-                <i className="fa-brands fa-linkedin" />
               </a>
             </div>
           </div>

@@ -41,9 +41,9 @@ export default function Quizzical() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.4 }}
     >
-      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page project-page">
         <div className="row pb-2">
-          <div className="col-lg-10">
+          <div className="col-lg-10 col-xxl-7">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -97,8 +97,8 @@ export default function Quizzical() {
                 <img
                   src={slides[0].src}
                   alt={slides[0].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -111,8 +111,8 @@ export default function Quizzical() {
                 <img
                   src={slides[1].src}
                   alt={slides[1].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -125,8 +125,8 @@ export default function Quizzical() {
                 <img
                   src={slides[2].src}
                   alt={slides[2].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>

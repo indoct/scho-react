@@ -57,9 +57,9 @@ export default function TheOddDystrict() {
       transition={{ ease: "easeInOut", duration: 0.4 }}
       style={{ overflowY: "scroll" }}
     >
-      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page project-page">
         <div className="row pb-2">
-          <div className="col-lg-10">
+          <div className="col-lg-10 col-xxl-7">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -77,7 +77,7 @@ export default function TheOddDystrict() {
               <span className="gradient">The Odd Dystrict</span>
             </h1>
             <p className="proj-tagline">
-              Website and web3 interface where users could mint an art NFT and
+              Website and web3 interface where users could mint an art NFT &
               interact with their portfolio.
             </p>
             <p className="intro">
@@ -128,8 +128,8 @@ export default function TheOddDystrict() {
                 <img
                   src={slides[0].src}
                   alt={slides[0].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -149,8 +149,8 @@ export default function TheOddDystrict() {
                 <img
                   src={slides[1].src}
                   alt={slides[1].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -163,8 +163,8 @@ export default function TheOddDystrict() {
                 <img
                   src={slides[2].src}
                   alt={slides[2].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -177,8 +177,8 @@ export default function TheOddDystrict() {
                 <img
                   src={slides[3].src}
                   alt={slides[3].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -198,8 +198,8 @@ export default function TheOddDystrict() {
                 <img
                   src={slides[4].src}
                   alt={slides[4].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -212,8 +212,8 @@ export default function TheOddDystrict() {
                 <img
                   src={slides[5].src}
                   alt={slides[5].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -226,8 +226,8 @@ export default function TheOddDystrict() {
                 <img
                   src={slides[6].src}
                   alt={slides[6].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>

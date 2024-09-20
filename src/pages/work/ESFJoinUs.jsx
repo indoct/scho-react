@@ -81,9 +81,9 @@ export default function ESFJoinUs() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.4 }}
     >
-      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page">
+      <div className="container d-flex flex-column pt-sm-4 pt-xxl-5 justify-content-center page project-page">
         <div className="row pb-2">
-          <div className="col-lg-10 col-xxl-8">
+          <div className="col-lg-10 col-xxl-7">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -138,14 +138,14 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[0].src}
                   alt={slides[0].alt}
-                  height="945"
-                  width="1902"
+                  height="814"
+                  width="1711"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-sm-2 py-xxl-4 cs-caption">
             <p>
               An important part of the refresh was a much greater focus on media
               as opposed to static text. I designed the landing page with space
@@ -160,8 +160,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[1].src}
                   alt={slides[1].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -174,14 +174,14 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[2].src}
                   alt={slides[2].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-sm-2 py-xxl-4 cs-caption">
             <p>
               Each landing page block is a call to action, leading to its own
               section on the website. I wanted to entice people and make it easy
@@ -195,14 +195,14 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[3].src}
                   alt={slides[3].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-sm-2 py-xxl-4 cs-caption">
             <p>
               One of the most important features of the ESF is their 22 schools.
               While having a dynamic, filterable way to spotlight each school
@@ -217,8 +217,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[4].src}
                   alt={slides[4].alt}
-                  height="945"
-                  width="1902"
+                  height="835"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -231,14 +231,14 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[5].src}
                   alt={slides[5].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-sm-2 py-xxl-4 cs-caption">
             <p>
               The organisation made clear their desire for a better user
               experience when searching for a school. I created this live map &
@@ -254,14 +254,14 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[6].src}
                   alt={slides[6].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-sm-2 py-xxl-4 cs-caption">
             <p>
               Another key objective was to organise and display the large amount
               of text information on the current website. I used information
@@ -277,8 +277,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[7].src}
                   alt={slides[7].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -291,8 +291,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[8].src}
                   alt={slides[8].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -305,8 +305,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[9].src}
                   alt={slides[9].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -319,14 +319,14 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[10].src}
                   alt={slides[10].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-sm-2 py-xxl-4 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-sm-2 py-xxl-4 cs-caption">
             <p>
               I was asked to improve conversion rates for the enquiry form,
               without removing questions from the current form. To this end, I
@@ -341,8 +341,8 @@ export default function ESFJoinUs() {
                 <img
                   src={slides[11].src}
                   alt={slides[11].alt}
-                  height="945"
-                  width="1902"
+                  height="889"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>

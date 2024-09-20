@@ -36,6 +36,7 @@ export default function Navbar(props) {
               width="50"
               height="50"
             />
+            <h1 className="title">scho.</h1>
           </NavLink>
         </div>
         <div className="navbar-right">
@@ -141,15 +142,6 @@ export default function Navbar(props) {
                             Quizzical
                           </NavLink>
                         </li>
-                        {/* <li className="sub-li">
-                          <NavLink
-                            className="nav-link g1 sub-link"
-                            to="/work/scho"
-                            onClick={() => setMenuOpen(false)}
-                          >
-                            SCHO. Portfolio
-                          </NavLink>
-                        </li> */}
                         <li className="sub-li">
                           <NavLink
                             className="nav-link g2 sub-link"
@@ -166,12 +158,12 @@ export default function Navbar(props) {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="nav-link g3 ml"
+                  className="nav-link g4 ml"
                   to="/about"
                   tabIndex={menuIsOpen ? 0 : -1}
                   onClick={() => setMenuOpen(false)}
                 >
-                  About
+                  Services
                 </NavLink>
               </li>
               <li className="nav-item">

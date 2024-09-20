@@ -46,9 +46,9 @@ export default function BG3SetCreator() {
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.6 }}
     >
-      <div className="container d-flex flex-column page pt-sm-4 pt-xxl-5 justify-content-center">
+      <div className="container d-flex flex-column page project-page pt-sm-4 pt-xxl-5 justify-content-center">
         <div className="row pb-2">
-          <div className="col-lg-10">
+          <div className="col-lg-10 col-xxl-7">
             <Lightbox
               open={index >= 0}
               close={() => setIndex(-1)}
@@ -92,7 +92,8 @@ export default function BG3SetCreator() {
               </p>
               <p className="plink-cont">
                 <span className="tech">built with:</span>
-                React, Router, Typescript, Redux, Bootstrap, Prism.js
+                React, Router, Typescript, Redux, Bootstrap
+                <span className="hide-2x">, Prism.js</span>
               </p>
             </div>
           </div>
@@ -105,8 +106,8 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[0].src}
                   alt={slides[0].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -119,14 +120,14 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[1].src}
                   alt={slides[1].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-xxl-5 cs-caption">
             <p>
               State is used here to disable the piercings in the same location
               as another in the set. React Router provides the dynamic URL
@@ -140,14 +141,14 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[2].src}
                   alt={slides[2].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-xxl-5 cs-caption">
             <p>
               The current set config is accessible to view as long as it's not
               empty. Each piercing's key stats are clearly indicated in the UI.
@@ -160,8 +161,8 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[3].src}
                   alt={slides[3].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
@@ -174,21 +175,21 @@ export default function BG3SetCreator() {
                 <img
                   src={slides[4].src}
                   alt={slides[4].alt}
-                  height="945"
-                  width="1902"
+                  height="888"
+                  width="1789"
                   className="proj-img img-fluid"
                 />
               </picture>
             </a>
           </div>
-          <div className="col-12 col-sm-9 col-xxl-7 py-xxl-5 cs-caption">
+          <div className="col-12 col-sm-9 col-xxl-5 py-xxl-5 cs-caption">
             <p>
               Once the user is done, they can generate the code. Using Prism.js
               for syntax formatting, this code can be copied using the button
               and pasted directly into the game file and works out of the box.
               The piercing database also contains the mod page's URL /
-              information and the generated code is commented dynamically, so
-              the user knows exactly what each node is.
+              information and generated code is commented dynamically, so the
+              user knows exactly what each node is.
             </p>
           </div>
         </div>

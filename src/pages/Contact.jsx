@@ -7,18 +7,18 @@ export default function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.4 }}
-      className="container pt-sm-4 pt-xxl-5 page"
+      transition={{ duration: 0.6 }}
+      className="container pt-sm-4 pt-xxl-5 page content-page"
     >
-      <div className="row justify-content-between align-items-start">
-        <div className="col-12 col-md-8 col-xxl-6">
+      <div className="row justify-content-center align-items-start">
+        <div className="col-12 col-md-10 col-lg-8 col-xxl-6">
           <h1 className="mb-3 smallerh1">
             <span className="gradient">Get in Touch</span>
           </h1>
-          <p className="pb-2 pb-sm-4">
+          <p className="pb-2 pb-sm-4 contact-intro">
             Do you have a cool project in mind, or maybe just the inklings of
-            inspiration that you want to bring to life? Fill out this form with
-            some details and I'll get back to you as soon as possible!
+            inspiration that you want to bring to life? Put your thoughts in the
+            form below and I'll get back to you as soon as possible!
           </p>
           <form
             name="contact"
@@ -74,9 +74,11 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        <div className="col-12 col-md-8 col-xxl-5 text-center ms-xxl-2 mt-4 mt-xl-3 mt-xxl-0 contact-block">
-          <p>
-            Or, you can email me at: <br />
+      </div>
+      <div className="row justify-content-center align-items-start">
+        <div className="col-12 col-md-10 col-lg-8 col-xxl-6 contact-block mt-5">
+          <p className="contact-intro pb-2">
+            You can also email me at: <br />
           </p>
           <a href="mailto:hello@scho.pro" className="email-big gradient">
             hello@scho.pro
