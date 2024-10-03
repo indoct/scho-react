@@ -114,13 +114,11 @@ export default function ESFJoinUs() {
               <p className="plink-cont">
                 <span className="tech">url:</span>
                 <a
-                  href="https://join-us.esf.edu.hk"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="mailto:hello@scho.pro?subject=Please send me the link to the demo site!"
                   className="proj-url"
                 >
-                  https://join-us.esf.edu.hk
-                  <i className="fa-solid fa-up-right-from-square"></i>
+                  temporarily unavailable <i class="fa-solid fa-envelope"></i>
+                  {/* <i className="fa-solid fa-up-right-from-square"></i> */}
                 </a>
               </p>
               <p className="plink-cont">
