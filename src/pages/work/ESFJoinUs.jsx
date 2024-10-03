@@ -117,7 +117,8 @@ export default function ESFJoinUs() {
                   href="mailto:hello@scho.pro?subject=Please send me the link to the demo site!"
                   className="proj-url"
                 >
-                  temporarily unavailable <i class="fa-solid fa-envelope"></i>
+                  temporarily unavailable{" "}
+                  <i className="fa-solid fa-envelope"></i>
                   {/* <i className="fa-solid fa-up-right-from-square"></i> */}
                 </a>
               </p>
