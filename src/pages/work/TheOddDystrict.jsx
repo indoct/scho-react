@@ -95,7 +95,7 @@ export default function TheOddDystrict() {
               <p className="plink-cont">
                 <span className="tech">url:</span>
                 <a
-                  href="https://the-odd-dystrict.com/home.html"
+                  href="https://the-odd-dystrict.netlify.app"
                   target="_blank"
                   rel="noreferrer"
                   className="proj-url"
@@ -103,7 +103,7 @@ export default function TheOddDystrict() {
                   main website
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
-                <span className="tech ps-4">URL2:</span>
+                {/* <span className="tech ps-4">URL2:</span>
                 <a
                   href="https://portal.the-odd-dystrict.com"
                   target="_blank"
@@ -111,7 +111,7 @@ export default function TheOddDystrict() {
                   className="proj-url"
                 >
                   portal <i className="fa-solid fa-up-right-from-square"></i>
-                </a>
+                </a> */}
               </p>
               <p className="plink-cont">
                 <span className="tech">built with:</span>
