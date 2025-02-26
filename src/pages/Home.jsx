@@ -221,7 +221,7 @@ export default function Home(props) {
             </div>
 
             <div className="social-icons">
-              <a href="/contact">
+              <a href="/contact" aria-label="Go to the contact form page">
                 <i
                   id="form-icon"
                   className="fa-solid fa-envelope-open-text"
